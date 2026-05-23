@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Vores Miljø — Miljøfaglig rådgivning og sagsanalyse</title>
+
+  <meta name="description" content="Miljøfaglig rådgivning, miljøgodkendelser, VVM-screeninger, miljøtilladelser og høringssvar.">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
+
     :root {
       --earth: #2C3E2D;
       --moss: #4A6741;
@@ -17,7 +21,11 @@
       --light: #FAFAF7;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Source Serif 4', Georgia, serif;
@@ -29,6 +37,10 @@
 
     p {
       margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: inherit;
     }
 
     header {
@@ -45,6 +57,7 @@
       text-transform: uppercase;
       color: var(--stone);
       margin-bottom: 2rem;
+      font-weight: 600;
     }
 
     h1 {
@@ -52,13 +65,16 @@
       font-size: clamp(2.8rem, 6vw, 5rem);
       color: var(--sand);
       line-height: 1.1;
+      margin-bottom: 1.5rem;
     }
 
-    h1 em { color: var(--stone); }
+    h1 em {
+      color: var(--stone);
+    }
 
     .hero-sub {
       color: rgba(232, 224, 208, 0.75);
-      max-width: 520px;
+      max-width: 620px;
       margin-top: 1rem;
     }
 
@@ -69,6 +85,7 @@
       border: 1px solid var(--stone);
       color: var(--sand);
       text-decoration: none;
+      transition: 0.2s ease;
     }
 
     .hero-cta:hover {
@@ -85,9 +102,60 @@
       font-weight: 600;
     }
 
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--earth);
+    }
+
+    h3 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
     .hjaelp {
       background: var(--cream);
       padding: 6rem 0;
+    }
+
+    .seo-links {
+      padding: 6rem 0;
+      background: var(--light);
+    }
+
+    .seo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .seo-card {
+      background: white;
+      border: 1px solid rgba(139,158,127,0.2);
+      padding: 2rem;
+      transition: 0.2s ease;
+    }
+
+    .seo-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--stone);
+    }
+
+    .seo-card a {
+      text-decoration: none;
+    }
+
+    .seo-card h3 {
+      margin-top: 0;
+      color: var(--earth);
+    }
+
+    .seo-card p {
+      color: #555;
+      font-size: 0.95rem;
     }
 
     .kontakt-section {
@@ -107,21 +175,30 @@
       font-size: 1.2rem;
     }
 
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--earth);
+    @media (max-width: 768px) {
+
+      header,
+      .hjaelp,
+      .seo-links,
+      .kontakt-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
     }
+
   </style>
 </head>
 
 <body>
 
 <header>
+
   <div class="hero-content">
 
-    <p class="hero-label">Miljøfaglig rådgivning & sagsanalyse</p>
+    <p class="hero-label">
+      Miljøfaglig rådgivning & sagsanalyse
+    </p>
 
     <h1>
       Miljøfaglig<br>
@@ -129,17 +206,20 @@
     </h1>
 
     <p class="hero-sub">
-      Jeg hjælper borgere, organisationer og virksomheder med at forstå, analysere og navigere i miljøfaglige afgørelser og myndighedsprocesser.
+      Jeg hjælper borgere, organisationer og virksomheder med at forstå, analysere og navigere i miljøfaglige afgørelser, miljøgodkendelser og myndighedsprocesser.
     </p>
 
-    <a href="#kontakt" class="hero-cta">Bestil indledende vurdering</a>
+    <a href="#kontakt" class="hero-cta">
+      Bestil indledende vurdering
+    </a>
 
   </div>
+
 </header>
 
 <section class="hjaelp">
 
-  <div style="max-width:1100px;margin:auto;padding:0 4rem;">
+  <div style="max-width:1100px;margin:auto;">
 
     <p class="section-label">Ydelser</p>
 
@@ -155,7 +235,9 @@
       Send relevant materiale og få en skriftlig indledende vurdering af sagen, procesgrundlaget og centrale opmærksomhedspunkter.
     </p>
 
-    <p><strong>Pris: 2.000 kr. · Levering: 1–4 hverdage</strong></p>
+    <p>
+      <strong>Pris: 2.000 kr. · Levering: 1–4 hverdage</strong>
+    </p>
 
     <h3>Teknisk og faglig sagsanalyse</h3>
 
@@ -170,6 +252,49 @@
     <p>
       Opgaver af denne karakter aftales individuelt afhængigt af sagens omfang.
     </p>
+
+  </div>
+
+</section>
+
+<section class="seo-links">
+
+  <div style="max-width:1100px;margin:auto;">
+
+    <p class="section-label">Fagområder</p>
+
+    <h2>Udvalgte miljøfaglige områder</h2>
+
+    <div class="seo-grid">
+
+      <div class="seo-card">
+        <a href="miljoegodkendelser.html">
+          <h3>Miljøgodkendelser</h3>
+          <p>
+            Faglig analyse og gennemgang af miljøgodkendelser, vilkår og procesgrundlag.
+          </p>
+        </a>
+      </div>
+
+      <div class="seo-card">
+        <a href="vvm-screening.html">
+          <h3>VVM-screening</h3>
+          <p>
+            Analyse af screeningsafgørelser, miljøpåvirkninger og miljøvurderinger.
+          </p>
+        </a>
+      </div>
+
+      <div class="seo-card">
+        <a href="hoeringssvar.html">
+          <h3>Høringssvar og indsigelser</h3>
+          <p>
+            Hjælp til faglige høringssvar og miljøfaglige indsigelser i konkrete sager.
+          </p>
+        </a>
+      </div>
+
+    </div>
 
   </div>
 
@@ -199,7 +324,9 @@
 
     <div>
 
-      <p class="section-label" style="color:var(--stone)">Kontakt</p>
+      <p class="section-label" style="color:var(--stone)">
+        Kontakt
+      </p>
 
       <h2 style="color:var(--sand)">
         Har du en sag?<br>
@@ -218,15 +345,19 @@
 
     <div class="kontakt-card">
 
-      <p class="section-label">Kontakt</p>
+      <p class="section-label">
+        Kontakt
+      </p>
 
-      <p style="color:var(--sand); margin-bottom:1rem;">Email</p>
+      <p style="color:var(--sand); margin-bottom:1rem;">
+        Email
+      </p>
 
       <a href="mailto:kontakt@voresmiljo.dk" class="email-link">
         kontakt@voresmiljo.dk
       </a>
 
-      <div style="margin-top:2rem; border-top:1px solid rgba(139,158,127,0.3); padding-top:1.5rem;">
+      <div style="margin-top:2rem;border-top:1px solid rgba(139,158,127,0.3);padding-top:1.5rem;">
 
         <p style="color:var(--stone); font-size:0.8rem;">
           Telefon (kun ved konkrete sager efter skriftlig henvendelse)
