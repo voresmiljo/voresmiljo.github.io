@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VVM-screening og miljøvurdering | Vores Miljø</title>
+
+  <meta name="description" content="Miljøfaglig rådgivning om VVM-screening, miljøvurdering og myndighedsprocesser. Analyse af screeningsafgørelser, miljørapporter og teknisk dokumentation.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --earth: #2C3E2D;
+      --moss: #4A6741;
+      --stone: #8B9E7F;
+      --sand: #E8E0D0;
+      --cream: #F4F0E8;
+      --light: #FAFAF7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--light);
+      color: var(--earth);
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    header {
+      background: var(--earth);
+      padding: 2.5rem 4rem 6rem 4rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+
+    .logo {
+      color: var(--sand);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+    }
+
+    .menu {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .menu a {
+      color: rgba(232,224,208,0.8);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+    }
+
+    .menu a:hover {
+      color: var(--sand);
+    }
+
+    .hero-label {
+      color: var(--stone);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1.1;
+      color: var(--sand);
+      max-width: 900px;
+      margin-bottom: 2rem;
+    }
+
+    h1 em {
+      color: var(--stone);
+    }
+
+    .hero-sub {
+      max-width: 700px;
+      color: rgba(232,224,208,0.75);
+      font-size: 1.15rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 6rem 4rem;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--moss);
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--earth);
+    }
+
+    h3 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: var(--earth);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      max-width: 850px;
+    }
+
+    .highlight-box {
+      background: var(--cream);
+      border-left: 4px solid var(--stone);
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .cta-box {
+      background: var(--earth);
+      padding: 4rem;
+      margin-top: 6rem;
+    }
+
+    .cta-box h2 {
+      color: var(--sand);
+    }
+
+    .cta-box p {
+      color: rgba(232,224,208,0.75);
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border: 1px solid var(--stone);
+      color: var(--sand);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      background: var(--stone);
+      color: var(--earth);
+    }
+
+    footer {
+      background: var(--earth);
+      color: rgba(232,224,208,0.5);
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(139,158,127,0.2);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+
+      header {
+        padding: 2rem;
+      }
+
+      main {
+        padding: 4rem 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <nav>
+
+    <div class="logo">
+      Vores Miljø
+    </div>
+
+    <div class="menu">
+      <a href="index.html">Forside</a>
+      <a href="miljoetilladelser.html">Miljøtilladelser</a>
+      <a href="hoeringssvar.html">Høringssvar</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </div>
+
+  </nav>
+
+  <p class="hero-label">VVM-screening & miljøvurdering</p>
+
+  <h1>
+    Analyse af VVM-screeninger og <em>miljøvurderinger</em>
+  </h1>
+
+  <p class="hero-sub">
+    Jeg hjælper med faglig analyse af screeningsafgørelser, miljøvurderinger og teknisk dokumentation i sager om anlæg, planforhold og miljøpåvirkning.
+  </p>
+
+</header>
+
+<main>
+
+  <p class="section-label">Fagområde</p>
+
+  <h2>Hvad er en VVM-screening?</h2>
+
+  <p>
+    En VVM-screening er myndighedens vurdering af, om et projekt kan forventes at påvirke miljøet væsentligt og derfor kræver en egentlig miljøvurdering.
+  </p>
+
+  <p>
+    Screeningen er ofte afgørende for det videre sagsforløb, fordi den fastlægger, om projektet kan behandles administrativt, eller om der skal udarbejdes en miljøkonsekvensrapport med offentlig høring og yderligere undersøgelser.
+  </p>
+
+  <p>
+    VVM-screeninger indgår typisk i sager om råstofindvinding, energianlæg, erhvervsudvikling, infrastruktur, landbrugsanlæg og tekniske installationer.
+  </p>
+
+  <div class="highlight-box">
+
+    <strong>Typiske problemstillinger i screeningssager:</strong>
+
+    <p style="margin-top:1rem;">
+      Mangelfulde beskrivelser af påvirkninger, utilstrækkelig vurdering af kumulative effekter, begrænset offentlig inddragelse eller uklart fagligt grundlag for myndighedens konklusioner.
+    </p>
+
+  </div>
+
+  <h3>Faglig gennemgang af screeningsafgørelser</h3>
+
+  <p>
+    Jeg arbejder med analyse af screeningsafgørelser og det tekniske materiale, der ligger til grund for myndighedens vurdering.
+  </p>
+
+  <p>
+    Det kan blandt andet omfatte vurdering af:
+  </p>
+
+  <p>
+    • miljøpåvirkninger og afværgeforanstaltninger<br>
+    • støj, trafik, natur og landskab<br>
+    • påvirkning af beskyttede naturområder<br>
+    • kumulative effekter<br>
+    • procesgrundlag og myndighedsbehandling
+  </p>
+
+  <h3>Miljøvurderinger og miljøkonsekvensrapporter</h3>
+
+  <p>
+    Hvis et projekt vurderes VVM-pligtigt, skal der normalt udarbejdes en miljøkonsekvensrapport.
+  </p>
+
+  <p>
+    Jeg bistår med faglig sparring, analyse og gennemgang af miljøvurderinger, tekniske bilag og høringsmateriale i forbindelse med disse processer.
+  </p>
+
+  <h3>Indledende faglig vurdering</h3>
+
+  <p>
+    Det er muligt at sende materiale til en indledende vurdering af sagen og det miljøfaglige grundlag.
+  </p>
+
+  <p>
+    <strong>Pris: 2.000 kr. · Levering: 1–4 hverdage</strong>
+  </p>
+
+  <div class="cta-box">
+
+    <h2>Har du en screeningssag eller miljøvurdering?</h2>
+
+    <p>
+      Send relevant materiale og en kort beskrivelse af sagen, så vender jeg tilbage med en indledende faglig vurdering.
+    </p>
+
+    <a href="mailto:kontakt@voresmiljo.dk" class="cta-button">
+      kontakt@voresmiljo.dk
+    </a>
+
+  </div>
+
+</main>
+
+<footer>
+  © Vores Miljø · VVM-screening og miljøfaglig rådgivning
+</footer>
+
+</body>
+</html>
