@@ -44,7 +44,7 @@
     .logo { color: var(--sand); font-family: 'Playfair Display', serif; font-size: 1.4rem; text-decoration: none; }
     .menu { display: flex; gap: 2rem; }
     .menu a { color: rgba(232,224,208,0.8); text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.08em; }
-    .menu a:hover, .menu a.active { color: var(--sand); }
+    .menu a:hover { color: var(--sand); }
     .hero-label { color: var(--stone); text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.8rem; margin-bottom: 2rem; }
     h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 6vw, 5rem); line-height: 1.1; color: var(--sand); max-width: 900px; margin-bottom: 2rem; }
     h1 em { color: var(--stone); }
@@ -58,11 +58,11 @@
     .cta-box { background: var(--earth); padding: 4rem; margin-top: 6rem; }
     .cta-box h2 { color: var(--sand); }
     .cta-box p { color: rgba(232,224,208,0.75); }
-    .cta-button { display: inline-block; margin-top: 2rem; padding: 1rem 2rem; border: 1px solid var(--stone); color: var(--sand); text-decoration: none; }
+    .cta-button { display: inline-block; margin-top: 2rem; padding: 1rem 2rem; border: 1px solid var(--stone); color: var(--sand); text-decoration: none; transition: 0.3s; }
     .cta-button:hover { background: var(--stone); color: var(--earth); }
     footer { background: var(--earth); color: rgba(232,224,208,0.5); text-align: center; padding: 2rem; border-top: 1px solid rgba(139,158,127,0.2); font-size: 0.9rem; }
 
-    /* NY CSS: Læs også om - sektion */
+    /* Læs også om - sektion */
     .related-links {
       background: var(--cream);
       padding: 2rem;
@@ -106,9 +106,9 @@
   <nav>
     <a href="index.html" class="logo">Vores Miljø</a>
     <div class="menu">
-      <a href="#">Ydelser</a>
-      <a href="#">Fagområder</a>
-      <a href="#">Erfaring</a>
+      <a href="index.html#ydelser">Ydelser</a>
+      <a href="index.html#fagomraader">Fagområder</a>
+      <a href="index.html#erfaring">Erfaring</a>
       <a href="index.html#kontakt">Kontakt</a>
     </div>
   </nav>
@@ -171,11 +171,11 @@
   </p>
   <p><strong>Pris: 2.000 kr. · Levering: 1–4 hverdage</strong></p>
 
-  <!-- NY SEKTION: Læs også om -->
+  <!-- Læs også om - sektion -->
   <div class="related-links">
     <h3>Læs også om:</h3>
     <ul>
-      <li><a href="vvm-screening.html">VVM-screening</a></li>
+      <li><a href="vvm-screening.html">VVM-screening & miljøvurdering</a></li>
       <li><a href="hoeringssvar.html">Høringssvar</a></li>
       <li><a href="raastoftilladelser.html">Råstoftilladelser</a></li>
     </ul>
