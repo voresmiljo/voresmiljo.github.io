@@ -61,6 +61,37 @@
     .cta-button { display: inline-block; margin-top: 2rem; padding: 1rem 2rem; border: 1px solid var(--stone); color: var(--sand); text-decoration: none; }
     .cta-button:hover { background: var(--stone); color: var(--earth); }
     footer { background: var(--earth); color: rgba(232,224,208,0.5); text-align: center; padding: 2rem; border-top: 1px solid rgba(139,158,127,0.2); font-size: 0.9rem; }
+
+    /* NY CSS: Læs også om - sektion */
+    .related-links {
+      background: var(--cream);
+      padding: 2rem;
+      margin: 3rem 0;
+      border-left: 4px solid var(--stone);
+    }
+    .related-links h3 {
+      color: var(--earth);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+    }
+    .related-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    .related-links li {
+      margin-bottom: 0.75rem;
+    }
+    .related-links a {
+      color: var(--moss);
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .related-links a:hover {
+      color: var(--stone);
+      text-decoration: underline;
+    }
+
     @media (max-width: 900px) {
       header { padding: 2rem; }
       main { padding: 4rem 2rem; }
@@ -75,11 +106,9 @@
   <nav>
     <a href="index.html" class="logo">Vores Miljø</a>
     <div class="menu">
-      <a href="index.html">Forside</a>
-      <a href="vvm-screening.html">VVM-screening</a>
-      <a href="hoeringssvar.html">Høringssvar</a>
-      <a href="raastoftilladelser.html">Råstoftilladelser</a>
-      <a href="miljoegodkendelser.html" class="active">Miljøgodkendelser</a>
+      <a href="#">Ydelser</a>
+      <a href="#">Fagområder</a>
+      <a href="#">Erfaring</a>
       <a href="index.html#kontakt">Kontakt</a>
     </div>
   </nav>
@@ -141,6 +170,16 @@
     Det er muligt at sende materiale til en indledende vurdering af sagen og det miljøfaglige grundlag.
   </p>
   <p><strong>Pris: 2.000 kr. · Levering: 1–4 hverdage</strong></p>
+
+  <!-- NY SEKTION: Læs også om -->
+  <div class="related-links">
+    <h3>Læs også om:</h3>
+    <ul>
+      <li><a href="vvm-screening.html">VVM-screening</a></li>
+      <li><a href="hoeringssvar.html">Høringssvar</a></li>
+      <li><a href="raastoftilladelser.html">Råstoftilladelser</a></li>
+    </ul>
+  </div>
 
   <div class="cta-box">
     <h2>Har du en sag om miljøgodkendelse?</h2>
