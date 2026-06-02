@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vores Miljø — Miljøfaglig rådgivning og sagsanalyse</title>
+  <title>Vores Miljø — Miljøfaglig rådgivning</title>
 
-  <meta name="description" content="Filantropisk miljøfaglig rådgivning og sagsanalyse. Faglig bistand til miljøsager og myndighedsprocesser — uden beregning, hvor kapaciteten tillader det.">
+  <meta name="description" content="Personlig blog og miljøfaglig rådgivning. Erfaring med tilladelser, VVM, høringssvar og klager. 350 kr. pr. time.">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -34,7 +34,7 @@
     p { margin-bottom: 1.2rem; }
 
     header {
-      min-height: 100vh;
+      min-height: 90vh;
       display: grid;
       grid-template-rows: auto 1fr;
       padding: 2.5rem 4rem;
@@ -54,7 +54,7 @@
       font-size: 1.4rem;
     }
 
-    .menu { display: flex; gap: 2rem; }
+    .menu { display: flex; gap: 2rem; flex-wrap: wrap; }
 
     .menu a {
       color: rgba(232,224,208,0.8);
@@ -143,6 +143,17 @@
       color: var(--earth);
     }
 
+    .pris-boks {
+      background: var(--earth);
+      color: var(--sand);
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+    }
+
+    .pris-boks p { color: rgba(232,224,208,0.85); margin-bottom: 0.75rem; }
+    .pris-boks p:last-child { margin-bottom: 0; }
+    .pris-boks .section-label { color: var(--stone); }
+
     .faq-boks {
       background: var(--cream);
       border-left: 4px solid var(--stone);
@@ -150,9 +161,7 @@
       margin: 3rem 0 0 0;
     }
 
-    .faq-boks p {
-      margin-bottom: 1rem;
-    }
+    .faq-boks p { margin-bottom: 1rem; }
 
     .faq-link {
       display: inline-block;
@@ -177,9 +186,8 @@
     }
 
     @media (max-width: 900px) {
-      header { padding: 2rem; }
+      header { padding: 2rem; min-height: auto; padding-bottom: 4rem; }
       nav { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
-      .menu { flex-wrap: wrap; gap: 1rem; }
       .hero-sub { max-width: 100%; }
       section div { padding-left: 2rem !important; padding-right: 2rem !important; }
     }
@@ -195,47 +203,63 @@
   <nav>
     <div class="logo">Vores Miljø</div>
     <div class="menu">
+      <a href="#om-mig">Om mig</a>
       <a href="#ydelser">Ydelser</a>
       <a href="#fagomraader">Fagområder</a>
-      <a href="#om-projektet">Om projektet</a>
       <a href="#kontakt">Kontakt</a>
     </div>
   </nav>
 
   <div class="hero-content">
 
-    <p class="hero-label">Miljøfaglig rådgivning & sagsanalyse</p>
+    <p class="hero-label">Personlig blog · miljøfaglig praksis</p>
 
     <h1>
-      Miljøfaglig<br>
-      analyse, rådgivning og <em>myndighedsforståelse</em>
+      Miljøsager,<br>
+      myndigheder og <em>det praktiske arbejde</em>
     </h1>
 
     <p class="hero-sub">
-      Vores Miljø tilbyder faglig bistand til borgere, organisationer og virksomheder, der skal forstå og navigere i miljøfaglige afgørelser, myndighedsprocesser og tekniske miljøsager.
+      Jeg skriver her om det, jeg arbejder med — og tilbyder rådgivning til dem, der har brug for en, der kender processerne indefra.
     </p>
 
-    <a href="#kontakt" class="hero-cta">Send materiale til vurdering</a>
+    <a href="#kontakt" class="hero-cta">Skriv til mig</a>
 
   </div>
 
 </header>
 
+<section id="om-mig" style="max-width:1100px;margin:auto;padding:6rem 4rem;">
+
+  <p class="section-label">Om mig</p>
+
+  <p>Jeg er uddannet miljøplanlægger og har arbejdet med miljøvurderinger, lokalplaner, råstofsager og offentlig inddragelse i kommunal forvaltning. Jeg har desuden forskningserfaring inden for miljøforvaltning og governance.</p>
+
+  <p>Det er den baggrund, jeg trækker på, når jeg hjælper med tilladelser, høringssvar, klager og den slags. Jeg kender papirerne, fristerne og den måde, myndigheder tænker på — fordi jeg har siddet på begge sider af bordet.</p>
+
+  <p>Denne side er min — ikke et bureau. Du skriver til mig, og jeg laver arbejdet.</p>
+
+</section>
+
 <section class="hjaelp" id="ydelser">
   <div style="max-width:1100px;margin:auto;padding:0 4rem;">
 
     <p class="section-label">Ydelser</p>
-    <h2>Miljøfaglig rådgivning i komplekse sager</h2>
+    <h2>Hvad jeg kan hjælpe med</h2>
 
-    <p>Projektet arbejder med analyse af miljøsager og myndighedsprocesser med fokus på struktur, procesgrundlag og faglige vurderinger. Rådgivningen er <strong>uden beregning</strong>, finansieres filantropisk og tilbydes efter bedste evne — inden for projektets kapacitet.</p>
+    <p>Jeg tager opgaver inden for miljøfaglig sagsbehandling — fra en indledende gennemgang til færdigt materiale til myndighed eller klagenævn.</p>
 
-    <h3>Indledende faglig vurdering</h3>
-    <p>Send relevant materiale. Projektet kan efter en indledende gennemgang give en skriftlig vurdering af sagen, procesgrundlaget og centrale opmærksomhedspunkter.</p>
-    <p><strong>Uden beregning · Svar typisk inden for få hverdage</strong></p>
+    <h3>Høringssvar, klager og mindre sager</h3>
+    <p>Klager, høringssvar, indsigelser og tilsvarende mindre opgaver kan jeg typisk færdiggøre på omkring <strong>tre timer</strong>, afhængigt af sagens materiale.</p>
 
-    <h3>Teknisk og faglig sagsanalyse</h3>
-    <p>Mere dybdegående analyse af miljøafgørelser, VVM-redegørelser, screeningssager og teknisk dokumentation — samt bistand ved udarbejdelse af råstoftilladelser, miljøgodkendelser og høringssvar, hvor det er relevant.</p>
-    <p>Opgaver prioriteres og tilrettelægges individuelt afhængigt af sagens omfang og kapacitet.</p>
+    <h3>Tilladelser og ansøgninger</h3>
+    <p>Større opgaver som råstoftilladelser, VVM-screeninger, spildevandstilladelser og miljøgodkendelser tager længere tid og aftales ud fra sagens omfang.</p>
+
+    <div class="pris-boks">
+      <p class="section-label">Pris</p>
+      <p><strong>350 kr. pr. time</strong> excl. moms.</p>
+      <p>Det er en pris, jeg er tryg ved. Den matcher den erfaring, jeg har — og den tid, det tager at gøre arbejdet ordentligt.</p>
+    </div>
 
   </div>
 </section>
@@ -244,53 +268,50 @@
   <div style="max-width:1100px;margin:auto;padding:0 4rem;">
 
     <p class="section-label">Fagområder</p>
-    <h2>Faglig bistand inden for</h2>
+    <h2>Tilladelser og sagsarbejde</h2>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;">
 
       <a href="vvm-screening.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
         <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">VVM</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">VVM-screeninger og miljøvurderinger</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Analyse og faglig gennemgang af screeningsafgørelser og miljøkonsekvensrapporter →</p>
-      </a>
-
-      <a href="hoeringssvar.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
-        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Høringssvar</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Høringssvar og indsigelser</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Faglig bistand til høringssvar, indsigelser og klager i miljø- og plansager →</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">VVM-screeninger</h3>
+        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Screening, miljøvurdering og faglig gennemgang →</p>
       </a>
 
       <a href="raastoftilladelser.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
         <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Råstof</p>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Råstoftilladelser</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Ansøgning og sagsbehandling ved råstofindvinding →</p>
+        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Ansøgning og sagsbehandling →</p>
+      </a>
+
+      <a href="spildevandstilladelser.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
+        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Spildevand</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Spildevandstilladelser</h3>
+        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Tilladelser efter spildevandsbekendtgørelsen →</p>
       </a>
 
       <a href="miljoegodkendelser.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
         <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Miljøgodkendelse</p>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Miljøgodkendelser</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Bistand til ansøgning, revurdering og klage over miljøgodkendelser →</p>
+        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Ansøgning, revurdering og klage →</p>
+      </a>
+
+      <a href="hoeringssvar.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
+        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Høringssvar</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Høringssvar og klager</h3>
+        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Typisk ca. tre timer →</p>
       </a>
 
     </div>
   </div>
 </section>
 
-<section id="om-projektet" style="max-width:1100px;margin:auto;padding:6rem 4rem;">
+<section style="max-width:1100px;margin:auto;padding:6rem 4rem;">
 
-  <p class="section-label">Om projektet</p>
-
-  <p>Vores Miljø er et filantropisk initiativ, der efter bedste evne tilbyder miljøfaglig rådgivning og sagsanalyse til borgere, organisationer og virksomheder.</p>
-
-  <p>Projektet bygger på erfaring med miljøvurderinger, myndighedsprocesser, råstofsager og offentlig inddragelse — kombineret med forskningsbaseret indsigt i miljøforvaltning.</p>
-
-  <p>Formålet er at gøre faglig miljørådgivning tilgængelig uden økonomisk barriere. Projektet yder bistand, men kan ikke garantere udfald i enkeltsager — myndighedernes afgørelser afhænger altid af sagens konkrete omstændigheder.</p>
-
-  <!-- FAQ-boks -->
   <div class="faq-boks">
-    <p><strong>❓ Har du spørgsmål?</strong><br>
-    Mange stiller de samme spørgsmål om rådgivning, processer og klagemuligheder. Her er svar på de mest almindelige.</p>
-    <a href="faq.html" class="faq-link">Gå til Ofte stillede spørgsmål (FAQ) →</a>
+    <p><strong>Spørgsmål?</strong><br>
+    Svar på det mest almindelige om pris, processer og samarbejde.</p>
+    <a href="faq.html" class="faq-link">Gå til FAQ →</a>
   </div>
 
 </section>
@@ -302,10 +323,9 @@
       <p class="section-label" style="color:var(--stone)">Kontakt</p>
       <h2 style="color:var(--sand)">
         Har du en sag?<br>
-        <em>Send materiale til vurdering</em>
+        <em>Skriv til mig</em>
       </h2>
-      <p style="color:rgba(232,224,208,0.7)">De fleste sager starter med skriftlig henvendelse og relevant materiale.</p>
-      <p style="color:rgba(232,224,208,0.7)">Projektet bestræber sig på at vende tilbage med en indledende faglig vurdering, typisk inden for få hverdage.</p>
+      <p style="color:rgba(232,224,208,0.7)">Send materiale og en kort beskrivelse. Jeg vender tilbage med en vurdering af, hvad sagen kræver — og hvad det koster.</p>
     </div>
 
     <div class="kontakt-card">
@@ -313,7 +333,7 @@
       <p style="color:var(--sand); margin-bottom:1rem;">Email</p>
       <a href="mailto:kontakt@voresmiljo.dk" class="email-link">kontakt@voresmiljo.dk</a>
       <div style="margin-top:2rem; border-top:1px solid rgba(139,158,127,0.3); padding-top:1.5rem;">
-        <p style="color:var(--stone); font-size:0.8rem;">Telefon (kun ved konkrete sager efter skriftlig henvendelse)</p>
+        <p style="color:var(--stone); font-size:0.8rem;">Telefon (ved konkrete sager)</p>
         <p style="color:var(--sand); margin-top:0.5rem;">4140 1300</p>
       </div>
     </div>
@@ -322,7 +342,7 @@
 </section>
 
 <footer>
-  © Vores Miljø · Miljøfaglig rådgivning og sagsanalyse
+  © Vores Miljø · Personlig miljøfaglig rådgivning
 </footer>
 
 </body>
