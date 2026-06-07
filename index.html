@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vores Miljø — Miljøfaglig rådgivning</title>
+  <title>Vores Miljø — Høringssvar og miljøfaglig rådgivning</title>
 
-  <meta name="description" content="Personlig blog og miljøfaglig rådgivning. Erfaring med tilladelser, VVM, høringssvar og klager. 350 kr. pr. time.">
+  <meta name="description" content="Fagligt høringssvar til 1.000 kr. Erfaren miljøplanlægger — VVM, råstoftilladelser, spildevand og miljøgodkendelser.">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -34,7 +34,7 @@
     p { margin-bottom: 1.2rem; }
 
     header {
-      min-height: 90vh;
+      min-height: 85vh;
       display: grid;
       grid-template-rows: auto 1fr;
       padding: 2.5rem 4rem;
@@ -45,7 +45,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
 
     .logo {
@@ -79,30 +79,49 @@
       font-size: clamp(2.8rem, 6vw, 5rem);
       color: var(--sand);
       line-height: 1.1;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     h1 em { color: var(--stone); }
 
+    .hero-pris {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--sand);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-pris span {
+      font-size: 0.45em;
+      color: var(--stone);
+      letter-spacing: 0.05em;
+    }
+
     .hero-sub {
       color: rgba(232, 224, 208, 0.75);
-      max-width: 650px;
-      margin-top: 1rem;
-      font-size: 1.15rem;
+      max-width: 580px;
+      font-size: 1.1rem;
     }
 
     .hero-cta {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       display: inline-block;
       padding: 1rem 2rem;
-      border: 1px solid var(--stone);
-      color: var(--sand);
+      background: var(--sand);
+      color: var(--earth);
       text-decoration: none;
-      width: fit-content;
+      font-weight: 600;
       transition: 0.3s;
     }
 
-    .hero-cta:hover { background: var(--stone); color: var(--earth); }
+    .hero-cta:hover { background: var(--stone); }
+
+    .hero-note {
+      margin-top: 1.25rem;
+      font-size: 0.9rem;
+      color: rgba(232,224,208,0.55);
+      max-width: 480px;
+    }
 
     .section-label {
       font-size: 0.75rem;
@@ -113,7 +132,6 @@
       font-weight: 600;
     }
 
-    .hjaelp { background: var(--cream); padding: 6rem 0; }
     .kontakt-section { background: var(--earth); padding: 6rem 0; }
 
     .kontakt-card {
@@ -136,32 +154,12 @@
       color: var(--earth);
     }
 
-    h3 {
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-      color: var(--earth);
-    }
-
-    .pris-boks {
-      background: var(--earth);
-      color: var(--sand);
-      padding: 2rem 2.5rem;
-      margin: 2rem 0;
-    }
-
-    .pris-boks p { color: rgba(232,224,208,0.85); margin-bottom: 0.75rem; }
-    .pris-boks p:last-child { margin-bottom: 0; }
-    .pris-boks .section-label { color: var(--stone); }
-
     .faq-boks {
       background: var(--cream);
       border-left: 4px solid var(--stone);
       padding: 2rem;
       margin: 3rem 0 0 0;
     }
-
-    .faq-boks p { margin-bottom: 1rem; }
 
     .faq-link {
       display: inline-block;
@@ -171,10 +169,7 @@
       text-decoration: none;
     }
 
-    .faq-link:hover {
-      color: var(--stone);
-      text-decoration: underline;
-    }
+    .faq-link:hover { text-decoration: underline; }
 
     footer {
       background: var(--earth);
@@ -188,7 +183,6 @@
     @media (max-width: 900px) {
       header { padding: 2rem; min-height: auto; padding-bottom: 4rem; }
       nav { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
-      .hero-sub { max-width: 100%; }
       section div { padding-left: 2rem !important; padding-right: 2rem !important; }
     }
 
@@ -203,74 +197,41 @@
   <nav>
     <div class="logo">Vores Miljø</div>
     <div class="menu">
+      <a href="#miljoesager">Miljøsager</a>
       <a href="#om-mig">Om mig</a>
-      <a href="#ydelser">Ydelser</a>
-      <a href="#fagomraader">Fagområder</a>
       <a href="#kontakt">Kontakt</a>
     </div>
   </nav>
 
   <div class="hero-content">
 
-    <p class="hero-label">Personlig blog · miljøfaglig praksis</p>
+    <p class="hero-label">Høringssvar · fast pris</p>
 
-    <h1>
-      Miljøsager,<br>
-      myndigheder og <em>det praktiske arbejde</em>
-    </h1>
+    <h1>Fagligt høringssvar<br>til din <em>miljøsag</em></h1>
+
+    <p class="hero-pris">1.000 kr. <span>excl. moms</span></p>
 
     <p class="hero-sub">
-      Jeg skriver her om det, jeg arbejder med — og tilbyder rådgivning til dem, der har brug for en, der kender processerne indefra.
+      Send materiale fra høringen — jeg udarbejder et fagligt begrundet høringssvar til lokalplaner, VVM, miljøgodkendelser, råstof og andre myndighedssager.
     </p>
 
-    <a href="#kontakt" class="hero-cta">Skriv til mig</a>
+    <a href="mailto:kontakt@voresmiljo.dk?subject=Høringssvar%20–%201.000%20kr." class="hero-cta">Bestil høringssvar</a>
+
+    <p class="hero-note">Typisk leveret inden for få hverdage. Klager og indsigelser kan ofte løses i samme prisleje, afhængigt af materialet.</p>
 
   </div>
 
 </header>
 
-<section id="om-mig" style="max-width:1100px;margin:auto;padding:6rem 4rem;">
-
-  <p class="section-label">Om mig</p>
-
-  <p>Jeg er uddannet miljøplanlægger og har arbejdet med miljøvurderinger, lokalplaner, råstofsager og offentlig inddragelse i kommunal forvaltning. Jeg har desuden forskningserfaring inden for miljøforvaltning og governance.</p>
-
-  <p>Det er den baggrund, jeg trækker på, når jeg hjælper med tilladelser, høringssvar, klager og den slags. Jeg kender papirerne, fristerne og den måde, myndigheder tænker på — fordi jeg har siddet på begge sider af bordet.</p>
-
-  <p>Denne side er min — ikke et bureau. Du skriver til mig, og jeg laver arbejdet.</p>
-
-</section>
-
-<section class="hjaelp" id="ydelser">
+<section style="background:var(--cream); padding:6rem 0;" id="miljoesager">
   <div style="max-width:1100px;margin:auto;padding:0 4rem;">
 
-    <p class="section-label">Ydelser</p>
-    <h2>Hvad jeg kan hjælpe med</h2>
+    <p class="section-label">Miljøsager</p>
+    <h2>Andre opgaver jeg tager</h2>
 
-    <p>Jeg tager opgaver inden for miljøfaglig sagsbehandling — fra en indledende gennemgang til færdigt materiale til myndighed eller klagenævn.</p>
+    <p style="max-width:700px;margin-bottom:3rem;">Ud over høringssvar arbejder jeg med tilladelser og større miljøsager. Omfang og pris aftales ud fra materialet — send en henvendelse, så vender jeg tilbage med et tilbud.</p>
 
-    <h3>Høringssvar, klager og mindre sager</h3>
-    <p>Klager, høringssvar, indsigelser og tilsvarende mindre opgaver kan jeg typisk færdiggøre på omkring <strong>tre timer</strong>, afhængigt af sagens materiale.</p>
-
-    <h3>Tilladelser og ansøgninger</h3>
-    <p>Større opgaver som råstoftilladelser, VVM-screeninger, spildevandstilladelser og miljøgodkendelser tager længere tid og aftales ud fra sagens omfang.</p>
-
-    <div class="pris-boks">
-      <p class="section-label">Pris</p>
-      <p><strong>350 kr. pr. time</strong> excl. moms.</p>
-      <p>Det er en pris, jeg er tryg ved. Den matcher den erfaring, jeg har — og den tid, det tager at gøre arbejdet ordentligt.</p>
-    </div>
-
-  </div>
-</section>
-
-<section style="background:var(--cream); padding:6rem 0;" id="fagomraader">
-  <div style="max-width:1100px;margin:auto;padding:0 4rem;">
-
-    <p class="section-label">Fagområder</p>
-    <h2>Tilladelser og sagsarbejde</h2>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
 
       <a href="vvm-screening.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
         <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">VVM</p>
@@ -298,19 +259,26 @@
 
       <a href="hoeringssvar.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
         <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Høringssvar</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Høringssvar og klager</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Typisk ca. tre timer →</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Læs mere om høringssvar</h3>
+        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">1.000 kr. · fast pris →</p>
       </a>
 
     </div>
   </div>
 </section>
 
-<section style="max-width:1100px;margin:auto;padding:6rem 4rem;">
+<section id="om-mig" style="max-width:1100px;margin:auto;padding:6rem 4rem;">
+
+  <p class="section-label">Om mig</p>
+
+  <p>Jeg er uddannet miljøplanlægger med omkring ti års erfaring fra kommunal forvaltning — miljøvurderinger, lokalplaner, råstofsager og offentlig inddragelse. Jeg har desuden forskningserfaring inden for miljøforvaltning.</p>
+
+  <p>Det er den baggrund, jeg trækker på. Jeg kender papirerne, fristerne og myndighedernes måde at tænke på — fordi jeg har siddet på begge sider af bordet.</p>
+
+  <p>Denne side er min — ikke et bureau. Du skriver til mig, og jeg laver arbejdet.</p>
 
   <div class="faq-boks">
-    <p><strong>Spørgsmål?</strong><br>
-    Svar på det mest almindelige om pris, processer og samarbejde.</p>
+    <p><strong>Spørgsmål?</strong> Om pris, processer og samarbejde.</p>
     <a href="faq.html" class="faq-link">Gå til FAQ →</a>
   </div>
 
@@ -322,10 +290,10 @@
     <div>
       <p class="section-label" style="color:var(--stone)">Kontakt</p>
       <h2 style="color:var(--sand)">
-        Har du en sag?<br>
-        <em>Skriv til mig</em>
+        Skriv til mig
       </h2>
-      <p style="color:rgba(232,224,208,0.7)">Send materiale og en kort beskrivelse. Jeg vender tilbage med en vurdering af, hvad sagen kræver — og hvad det koster.</p>
+      <p style="color:rgba(232,224,208,0.7)">Høringssvar: 1.000 kr. — send materiale og kort beskrivelse.</p>
+      <p style="color:rgba(232,224,208,0.7)">Andre sager: jeg vender tilbage med et tilbud.</p>
     </div>
 
     <div class="kontakt-card">
@@ -342,7 +310,7 @@
 </section>
 
 <footer>
-  © Vores Miljø · Personlig miljøfaglig rådgivning
+  © Vores Miljø · Miljøfaglig rådgivning
 </footer>
 
 </body>
