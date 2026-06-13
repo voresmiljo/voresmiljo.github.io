@@ -172,6 +172,97 @@
 
     .faq-link:hover { text-decoration: underline; }
 
+    /* Radioafspiller */
+    .radio-widget {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 100;
+      background: var(--earth);
+      border: 1px solid rgba(139,158,127,0.4);
+      padding: 1rem 1.25rem;
+      width: min(320px, calc(100vw - 2rem));
+      box-shadow: 0 8px 32px rgba(44,62,45,0.25);
+    }
+
+    .radio-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .radio-title {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--stone);
+    }
+
+    .radio-toggle {
+      background: none;
+      border: none;
+      color: var(--stone);
+      cursor: pointer;
+      font-size: 1.1rem;
+      line-height: 1;
+      padding: 0.2rem;
+    }
+
+    .radio-toggle:hover { color: var(--sand); }
+
+    .radio-body.collapsed { display: none; }
+
+    .radio-station {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(139,158,127,0.35);
+      color: var(--sand);
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 0.5rem 0.75rem;
+      margin-bottom: 0.75rem;
+      cursor: pointer;
+    }
+
+    .radio-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .radio-play {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      border: 1px solid var(--stone);
+      background: var(--sand);
+      color: var(--earth);
+      cursor: pointer;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .radio-play:hover { background: var(--stone); }
+
+    .radio-play.playing { background: var(--moss); color: var(--sand); border-color: var(--moss); }
+
+    .radio-volume {
+      flex: 1;
+      accent-color: var(--stone);
+      cursor: pointer;
+    }
+
+    .radio-status {
+      font-size: 0.75rem;
+      color: rgba(232,224,208,0.5);
+      margin-top: 0.5rem;
+      min-height: 1.1em;
+    }
+
     footer {
       background: var(--earth);
       color: rgba(232,224,208,0.5);
@@ -313,6 +404,101 @@
 <footer>
   © Vores Miljø · Miljøfaglig rådgivning
 </footer>
+
+<div class="radio-widget" id="radio-widget">
+  <div class="radio-header">
+    <span class="radio-title">Radio</span>
+    <button type="button" class="radio-toggle" id="radio-collapse" aria-label="Skjul afspiller">−</button>
+  </div>
+  <div class="radio-body" id="radio-body">
+    <select class="radio-station" id="radio-station" aria-label="Vælg kanal">
+      <option value="https://live-icy.gssls.com/live.mp3">DR P1</option>
+      <option value="https://live-icy.gssls.com/alive.mp3">DR P2</option>
+      <option value="https://live-icy.gssls.com/dr-p3.mp3">DR P3</option>
+      <option value="https://ice6.somafm.com/groovesalad-128-mp3">Ambient</option>
+    </select>
+    <div class="radio-controls">
+      <button type="button" class="radio-play" id="radio-play" aria-label="Afspil">▶</button>
+      <input type="range" class="radio-volume" id="radio-volume" min="0" max="1" step="0.05" value="0.7" aria-label="Lydstyrke">
+    </div>
+    <p class="radio-status" id="radio-status">Vælg kanal og tryk afspil</p>
+  </div>
+</div>
+
+<audio id="radio-audio" preload="none"></audio>
+
+<script>
+(function () {
+  const audio = document.getElementById('radio-audio');
+  const playBtn = document.getElementById('radio-play');
+  const stationSelect = document.getElementById('radio-station');
+  const volume = document.getElementById('radio-volume');
+  const status = document.getElementById('radio-status');
+  const body = document.getElementById('radio-body');
+  const collapseBtn = document.getElementById('radio-collapse');
+  let collapsed = false;
+
+  audio.volume = 0.7;
+
+  function setStatus(msg) { status.textContent = msg; }
+
+  function loadStation() {
+    audio.src = stationSelect.value;
+    audio.load();
+  }
+
+  playBtn.addEventListener('click', async function () {
+    if (!audio.paused) {
+      audio.pause();
+      playBtn.textContent = '▶';
+      playBtn.classList.remove('playing');
+      setStatus('Pause');
+      return;
+    }
+    loadStation();
+    setStatus('Forbinder…');
+    try {
+      await audio.play();
+      playBtn.textContent = '❚❚';
+      playBtn.classList.add('playing');
+      setStatus('Afspiller ' + stationSelect.options[stationSelect.selectedIndex].text);
+    } catch (e) {
+      playBtn.textContent = '▶';
+      playBtn.classList.remove('playing');
+      setStatus('Kunne ikke afspille — prøv en anden kanal');
+    }
+  });
+
+  stationSelect.addEventListener('change', function () {
+    const wasPlaying = !audio.paused;
+    loadStation();
+    if (wasPlaying) {
+      audio.play().then(function () {
+        setStatus('Afspiller ' + stationSelect.options[stationSelect.selectedIndex].text);
+      }).catch(function () {
+        setStatus('Kunne ikke skifte kanal');
+      });
+    }
+  });
+
+  volume.addEventListener('input', function () {
+    audio.volume = volume.value;
+  });
+
+  collapseBtn.addEventListener('click', function () {
+    collapsed = !collapsed;
+    body.classList.toggle('collapsed', collapsed);
+    collapseBtn.textContent = collapsed ? '+' : '−';
+    collapseBtn.setAttribute('aria-label', collapsed ? 'Vis afspiller' : 'Skjul afspiller');
+  });
+
+  audio.addEventListener('error', function () {
+    playBtn.textContent = '▶';
+    playBtn.classList.remove('playing');
+    setStatus('Stream utilgængelig');
+  });
+})();
+</script>
 
 </body>
 </html>
