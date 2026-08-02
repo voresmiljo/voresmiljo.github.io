@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vores Miljø — Gratis miljøfaglig hjælp</title>
+  <title>Vores Miljø — Miljøfaglig hjælp til din sag</title>
 
-  <meta name="description" content="Gratis miljøfaglig hjælp til høringssvar, VVM, råstoftilladelser, spildevand og miljøgodkendelser. Én person med erfaring fra kommune, forskning og konsulentarbejde.">
+  <meta name="description" content="Faglig hjælp til miljøafgørelser, nabohøringer og tilladelser. Personligt initiativ med erfaring fra kommunalt myndighedsarbejde, forskning og rådgivning.">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -86,8 +86,15 @@
 
     .hero-sub {
       color: rgba(232, 224, 208, 0.75);
-      max-width: 580px;
+      max-width: 640px;
       font-size: 1.1rem;
+    }
+
+    .hero-lead {
+      color: var(--sand);
+      max-width: 640px;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
     }
 
     .hero-send {
@@ -103,13 +110,6 @@
     }
 
     .hero-email:hover { color: var(--stone); }
-
-    .hero-note {
-      margin-top: 1.25rem;
-      font-size: 0.9rem;
-      color: rgba(232,224,208,0.55);
-      max-width: 480px;
-    }
 
     .section-label {
       font-size: 0.75rem;
@@ -142,22 +142,43 @@
       color: var(--earth);
     }
 
-    .faq-boks {
-      background: var(--cream);
-      border-left: 4px solid var(--stone);
+    .service-card {
+      display: block;
+      background: var(--light);
+      border: 1px solid rgba(74,103,65,0.2);
       padding: 2rem;
-      margin: 3rem 0 0 0;
-    }
-
-    .faq-link {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: var(--moss);
-      font-weight: 600;
       text-decoration: none;
+      color: var(--earth);
     }
 
-    .faq-link:hover { text-decoration: underline; }
+    .service-card:hover { border-color: var(--moss); }
+
+    .service-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--moss);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin: 0 0 0.75rem 0;
+      color: var(--earth);
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: var(--moss);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-more {
+      font-size: 0.95rem;
+      color: var(--earth);
+      font-weight: 600;
+    }
 
     footer {
       background: var(--earth);
@@ -172,6 +193,7 @@
       header { padding: 2rem; min-height: auto; padding-bottom: 4rem; }
       nav { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
       section div { padding-left: 2rem !important; padding-right: 2rem !important; }
+      .kontakt-grid { grid-template-columns: 1fr !important; }
     }
 
   </style>
@@ -193,17 +215,27 @@
 
   <div class="hero-content">
 
-    <p class="hero-label">Gratis hjælp · i det omfang jeg kan</p>
+    <p class="hero-label">Faglig viden til bedre miljøbeslutninger</p>
 
     <h1>Miljøfaglig hjælp<br>til din <em>sag</em></h1>
 
-    <p class="hero-sub">
-      Jeg tilbyder gratis hjælp med høringssvar, tilladelser og miljøsager — fordi jeg bekymrer mig for vores miljø. Jeg er én person, så jeg hjælper i det omfang, jeg har tid.
+    <p class="hero-lead">
+      Har du modtaget en miljøafgørelse, en nabohøring eller en tilladelse, som er svær at gennemskue?
     </p>
 
-    <p class="hero-send">Skriv til: <a href="mailto:kontakt@voresmiljo.dk?subject=Gratis%20hjælp" class="hero-email">kontakt@voresmiljo.dk</a></p>
+    <p class="hero-sub">
+      Miljøsager kan være teknisk komplekse og vanskelige at navigere i. Jeg tilbyder faglig hjælp til borgere, lokale foreninger og andre, der ønsker et uafhængigt fagligt blik på deres sag.
+    </p>
 
-    <p class="hero-note">Send gerne en kort beskrivelse og det materiale, sagen drejer sig om. Jeg vender tilbage, når jeg kan.</p>
+    <p class="hero-sub">
+      Vores Miljø er et personligt initiativ. Jeg stiller min erfaring til rådighed, fordi jeg mener, at gode miljøbeslutninger kræver et solidt fagligt grundlag, og fordi jeg gerne vil gøre miljøfaglig viden mere tilgængelig.
+    </p>
+
+    <p class="hero-sub">
+      Du er velkommen til at sende en kort beskrivelse af din sag sammen med relevante dokumenter. Jeg gennemgår alle henvendelser og hjælper, når tid og sagens karakter gør det muligt.
+    </p>
+
+    <p class="hero-send">Skriv til: <a href="mailto:kontakt@voresmiljo.dk" class="hero-email">kontakt@voresmiljo.dk</a></p>
 
   </div>
 
@@ -215,38 +247,43 @@
     <p class="section-label">Miljøsager</p>
     <h2>Det kan jeg hjælpe med</h2>
 
-    <p style="max-width:700px;margin-bottom:3rem;">Alt det, der står på siden: høringssvar, VVM, råstof, spildevand, miljøgodkendelser og lignende. Hjælpen er gratis — inden for den tid, jeg har.</p>
+    <p style="max-width:700px;margin-bottom:3rem;">Jeg kan blandt andet hjælpe med analyse og sparring inden for:</p>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
 
-      <a href="vvm-screening.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
-        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">VVM</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">VVM-screeninger</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Screening, miljøvurdering og faglig gennemgang →</p>
+      <a href="vvm-screening.html" class="service-card">
+        <p class="service-label">VVM</p>
+        <h3>VVM-screeninger og miljøvurderinger</h3>
+        <p>Faglig gennemgang af screeningsafgørelser, miljøvurderinger og planprocesser.</p>
+        <span class="service-more">→ Læs mere</span>
       </a>
 
-      <a href="raastoftilladelser.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
-        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Råstof</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Råstoftilladelser</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Ansøgning og sagsbehandling →</p>
+      <a href="raastoftilladelser.html" class="service-card">
+        <p class="service-label">Råstof</p>
+        <h3>Råstoftilladelser</h3>
+        <p>Analyse af råstoftilladelser, ansøgninger og myndighedsprocesser.</p>
+        <span class="service-more">→ Læs mere</span>
       </a>
 
-      <a href="spildevandstilladelser.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
-        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Spildevand</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Spildevandstilladelser</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Tilladelser efter spildevandsbekendtgørelsen →</p>
+      <a href="spildevandstilladelser.html" class="service-card">
+        <p class="service-label">Spildevand</p>
+        <h3>Spildevandstilladelser</h3>
+        <p>Vurdering af tilladelser efter miljøbeskyttelsesloven og spildevandsbekendtgørelsen.</p>
+        <span class="service-more">→ Læs mere</span>
       </a>
 
-      <a href="miljoegodkendelser.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
-        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Miljøgodkendelse</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Miljøgodkendelser</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Ansøgning, revurdering og klage →</p>
+      <a href="miljoegodkendelser.html" class="service-card">
+        <p class="service-label">Miljøgodkendelser</p>
+        <h3>Miljøgodkendelser</h3>
+        <p>Gennemgang af miljøgodkendelser, revurderinger og andre miljøretlige afgørelser.</p>
+        <span class="service-more">→ Læs mere</span>
       </a>
 
-      <a href="hoeringssvar.html" style="display:block;background:var(--light);border:1px solid rgba(74,103,65,0.2);padding:2rem;text-decoration:none;color:var(--earth);">
-        <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--moss);margin-bottom:0.75rem;">Høringssvar</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.75rem;color:var(--earth);margin-top:0;">Læs mere om høringssvar</h3>
-        <p style="font-size:0.95rem;color:var(--moss);margin-bottom:0;">Gratis hjælp →</p>
+      <a href="hoeringssvar.html" class="service-card">
+        <p class="service-label">Høringssvar</p>
+        <h3>Høringssvar og indsigelser</h3>
+        <p>Hjælp til at forstå sagen og formulere fagligt relevante bemærkninger.</p>
+        <span class="service-more">→ Læs mere</span>
       </a>
 
     </div>
@@ -257,29 +294,31 @@
 
   <p class="section-label">Om mig</p>
 
-  <p>Jeg er miljøplanlægger. Jeg har syv års erfaring fra kommunalt regi som sagsbehandler og planlægger, to års forskningserfaring i miljølovgivning i Nepal og Kina, og et års erfaring med denne type konsulentarbejde.</p>
+  <p>Jeg er uddannet miljøplanlægger med syv års erfaring fra kommunalt myndighedsarbejde som sagsbehandler og planlægger.</p>
 
-  <p>Jeg har siddet på begge sider af bordet: udarbejdet tilladelser i kommunen, lavet ansøgningsmateriale for projektejere, hjulpet græsrodsorganisationer med at analysere godkendelser — og skrevet høringssvar og klagesager.</p>
+  <p>Jeg har arbejdet med miljøvurderinger, VVM-screeninger, miljøgodkendelser, råstofsager, spildevandstilladelser, lokalplaner og offentlig inddragelse.</p>
 
-  <p>Denne side er min — ikke et bureau. Jeg gør det af lyst, fordi jeg bekymrer mig for vores miljø. Du skriver til mig, sender materialet, og jeg hjælper, når jeg kan.</p>
+  <p>Derudover har jeg forsket i miljøforvaltning og miljølovgivning med fokus på beslutningsprocesser og borgerinddragelse, blandt andet i Nepal og Kina.</p>
 
-  <div class="faq-boks">
-    <p><strong>Spørgsmål?</strong> Om hjælp, processer og samarbejde.</p>
-    <a href="faq.html" class="faq-link">Gå til FAQ →</a>
-  </div>
+  <p>Jeg har siddet på begge sider af bordet – både som kommunal myndighed, som rådgiver for projektejere og som faglig sparringspartner for borgere og græsrodsorganisationer.</p>
+
+  <p>Vores Miljø er mit personlige projekt. Jeg ønsker at bidrage til bedre miljøbeslutninger ved at stille min faglige erfaring til rådighed, når jeg har mulighed for det.</p>
+
+  <p>Hvis en opgave ligger uden for det, jeg kan tilbyde som en del af dette initiativ, er du stadig velkommen til at kontakte mig. I særlige tilfælde kan større analyse- eller rådgivningsopgaver udføres efter nærmere aftale.</p>
 
 </section>
 
 <section class="kontakt-section" id="kontakt">
-  <div style="max-width:1100px;margin:auto;padding:0 4rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
+  <div class="kontakt-grid" style="max-width:1100px;margin:auto;padding:0 4rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
 
     <div>
       <p class="section-label" style="color:var(--stone)">Kontakt</p>
       <h2 style="color:var(--sand)">
         Skriv til mig
       </h2>
-      <p style="color:rgba(232,224,208,0.7)">Hjælpen er gratis. Send en kort beskrivelse og materialet — jeg vender tilbage, når jeg kan.</p>
-      <p style="color:rgba(232,224,208,0.7)">Jeg er én person, så jeg kan ikke love at tage alle sager.</p>
+      <p style="color:rgba(232,224,208,0.7)">Send en kort beskrivelse af sagen sammen med relevante dokumenter eller afgørelser.</p>
+      <p style="color:rgba(232,224,208,0.7)">Jeg gennemgår alle henvendelser og vender tilbage, hvis jeg har mulighed for at hjælpe.</p>
+      <p style="color:rgba(232,224,208,0.7)">Da Vores Miljø drives af én person, kan jeg desværre ikke tage alle sager eller garantere en bestemt svartid.</p>
     </div>
 
     <div class="kontakt-card">
@@ -296,7 +335,7 @@
 </section>
 
 <footer>
-  © Vores Miljø · Gratis miljøfaglig hjælp
+  © Vores Miljø
 </footer>
 
 </body>
