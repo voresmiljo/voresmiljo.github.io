@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vores Miljø — Miljøfaglig hjælp til din sag</title>
-
-  <meta name="description" content="Faglig hjælp til miljøafgørelser, nabohøringer og tilladelser. Personligt initiativ med erfaring fra kommunalt myndighedsarbejde, forskning og rådgivning.">
-
+  <title>Vores Miljø — Faglig viden om miljøvurderinger</title>
+  <meta name="description" content="Faglig viden om miljøvurderinger, miljøpåvirkninger og de vurderinger, der ligger bag beslutninger om vores fælles miljø.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
-
   <style>
-
     :root {
       --earth: #2C3E2D;
       --moss: #4A6741;
@@ -33,6 +29,8 @@
 
     p { margin-bottom: 1.2rem; }
 
+    a { color: var(--moss); }
+
     header {
       min-height: 85vh;
       display: grid;
@@ -46,6 +44,8 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 4rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -54,12 +54,12 @@
       font-size: 1.4rem;
     }
 
-    .menu { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .menu { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 
     .menu a {
       color: rgba(232,224,208,0.8);
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
@@ -76,40 +76,18 @@
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
       color: var(--sand);
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
+      line-height: 1.15;
+      margin-bottom: 2rem;
+      max-width: 16ch;
     }
-
-    h1 em { color: var(--stone); }
 
     .hero-sub {
       color: rgba(232, 224, 208, 0.75);
-      max-width: 640px;
+      max-width: 680px;
       font-size: 1.1rem;
     }
-
-    .hero-lead {
-      color: var(--sand);
-      max-width: 640px;
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-send {
-      margin-top: 2.5rem;
-      color: var(--sand);
-      font-size: 1.1rem;
-    }
-
-    .hero-email {
-      color: var(--sand);
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-
-    .hero-email:hover { color: var(--stone); }
 
     .section-label {
       font-size: 0.75rem;
@@ -120,7 +98,85 @@
       font-weight: 600;
     }
 
-    .kontakt-section { background: var(--earth); padding: 6rem 0; }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      margin-bottom: 1.25rem;
+      color: var(--earth);
+      line-height: 1.2;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: auto;
+      padding: 6rem 4rem;
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .topic {
+      background: var(--light);
+      border-top: 3px solid var(--stone);
+      padding: 1.75rem 0 0.5rem;
+    }
+
+    .topic h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: var(--earth);
+    }
+
+    .topic p {
+      font-size: 1rem;
+      color: var(--moss);
+      margin-bottom: 0;
+    }
+
+    .help-list {
+      margin: 1.5rem 0 0 1.25rem;
+      max-width: 700px;
+    }
+
+    .help-list li { margin-bottom: 0.5rem; }
+
+    .text-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--moss);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .text-link:hover { text-decoration: underline; }
+
+    .support-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.9rem 1.6rem;
+      border: 1px solid var(--moss);
+      color: var(--earth);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .support-btn:hover {
+      background: var(--moss);
+      color: var(--sand);
+    }
+
+    .kontakt-section { background: var(--earth); }
+
+    .kontakt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
 
     .kontakt-card {
       background: rgba(255,255,255,0.05);
@@ -135,50 +191,7 @@
       word-break: break-word;
     }
 
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--earth);
-    }
-
-    .service-card {
-      display: block;
-      background: var(--light);
-      border: 1px solid rgba(74,103,65,0.2);
-      padding: 2rem;
-      text-decoration: none;
-      color: var(--earth);
-    }
-
-    .service-card:hover { border-color: var(--moss); }
-
-    .service-label {
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--moss);
-      margin-bottom: 0.75rem;
-    }
-
-    .service-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      margin: 0 0 0.75rem 0;
-      color: var(--earth);
-    }
-
-    .service-card p {
-      font-size: 0.95rem;
-      color: var(--moss);
-      margin-bottom: 0.75rem;
-    }
-
-    .service-more {
-      font-size: 0.95rem;
-      color: var(--earth);
-      font-weight: 600;
-    }
+    .email-link:hover { color: var(--stone); }
 
     footer {
       background: var(--earth);
@@ -191,146 +204,172 @@
 
     @media (max-width: 900px) {
       header { padding: 2rem; min-height: auto; padding-bottom: 4rem; }
-      nav { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
-      section div { padding-left: 2rem !important; padding-right: 2rem !important; }
-      .kontakt-grid { grid-template-columns: 1fr !important; }
+      nav { flex-direction: column; align-items: flex-start; }
+      .wrap { padding: 4rem 2rem; }
+      .kontakt-grid { grid-template-columns: 1fr; }
     }
-
   </style>
-
 </head>
-
 <body>
 
 <header>
-
   <nav>
     <div class="logo">Vores Miljø</div>
     <div class="menu">
+      <a href="#miljoevurderinger">Miljøvurderinger</a>
       <a href="#miljoesager">Miljøsager</a>
+      <a href="#faglig-viden">Faglig viden</a>
       <a href="#om-mig">Om mig</a>
       <a href="#kontakt">Kontakt</a>
     </div>
   </nav>
 
-  <div class="hero-content">
-
-    <p class="hero-label">Faglig viden til bedre miljøbeslutninger</p>
-
-    <h1>Miljøfaglig hjælp<br>til din <em>sag</em></h1>
-
-    <p class="hero-lead">
-      Har du modtaget en miljøafgørelse, en nabohøring eller en tilladelse, som er svær at gennemskue?
-    </p>
-
+  <div>
+    <p class="hero-label">Faglig viden om miljøvurderinger</p>
+    <h1>Miljøvurderinger skal gøre det muligt at forstå, hvordan planer og projekter kan påvirke mennesker, natur og vores omgivelser.</h1>
     <p class="hero-sub">
-      Miljøsager kan være teknisk komplekse og vanskelige at navigere i. Jeg tilbyder faglig hjælp til borgere, lokale foreninger og andre, der ønsker et uafhængigt fagligt blik på deres sag.
+      Vores Miljø handler om miljøvurderinger, miljøpåvirkninger og de faglige vurderinger, der ligger bag beslutninger om vores fælles miljø.
     </p>
-
     <p class="hero-sub">
-      Vores Miljø er et personligt initiativ. Jeg stiller min erfaring til rådighed, fordi jeg mener, at gode miljøbeslutninger kræver et solidt fagligt grundlag, og fordi jeg gerne vil gøre miljøfaglig viden mere tilgængelig.
+      Jeg deler min faglige viden og erfaring med miljøvurderinger og skriver om konkrete miljøproblemstillinger, planer og projekter.
     </p>
-
-    <p class="hero-sub">
-      Du er velkommen til at sende en kort beskrivelse af din sag sammen med relevante dokumenter. Jeg gennemgår alle henvendelser og hjælper, når tid og sagens karakter gør det muligt.
-    </p>
-
-    <p class="hero-send">Skriv til: <a href="mailto:kontakt@voresmiljo.dk" class="hero-email">kontakt@voresmiljo.dk</a></p>
-
   </div>
-
 </header>
 
-<section style="background:var(--cream); padding:6rem 0;" id="miljoesager">
-  <div style="max-width:1100px;margin:auto;padding:0 4rem;">
+<section id="miljoevurderinger" style="background:var(--cream);">
+  <div class="wrap">
+    <p class="section-label">Miljøvurderinger</p>
+    <h2>Når planer og projekter påvirker miljøet</h2>
+    <p style="max-width:720px;">
+      Miljøpåvirkninger opstår i forbindelse med konkrete planer og projekter. Miljøvurderinger kræver derfor ofte, at en række forskellige miljøforhold og fagområder vurderes i sammenhæng.
+    </p>
+    <p style="max-width:720px;margin-bottom:0;">Jeg har arbejdet med miljøvurderinger inden for blandt andet:</p>
 
-    <p class="section-label">Miljøsager</p>
-    <h2>Det kan jeg hjælpe med</h2>
-
-    <p style="max-width:700px;margin-bottom:3rem;">Jeg kan blandt andet hjælpe med analyse og sparring inden for:</p>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
-
-      <a href="vvm-screening.html" class="service-card">
-        <p class="service-label">VVM</p>
-        <h3>VVM-screeninger og miljøvurderinger</h3>
-        <p>Faglig gennemgang af screeningsafgørelser, miljøvurderinger og planprocesser.</p>
-        <span class="service-more">→ Læs mere</span>
-      </a>
-
-      <a href="raastoftilladelser.html" class="service-card">
-        <p class="service-label">Råstof</p>
-        <h3>Råstoftilladelser</h3>
-        <p>Analyse af råstoftilladelser, ansøgninger og myndighedsprocesser.</p>
-        <span class="service-more">→ Læs mere</span>
-      </a>
-
-      <a href="spildevandstilladelser.html" class="service-card">
-        <p class="service-label">Spildevand</p>
-        <h3>Spildevandstilladelser</h3>
-        <p>Vurdering af tilladelser efter miljøbeskyttelsesloven og spildevandsbekendtgørelsen.</p>
-        <span class="service-more">→ Læs mere</span>
-      </a>
-
-      <a href="miljoegodkendelser.html" class="service-card">
-        <p class="service-label">Miljøgodkendelser</p>
-        <h3>Miljøgodkendelser</h3>
-        <p>Gennemgang af miljøgodkendelser, revurderinger og andre miljøretlige afgørelser.</p>
-        <span class="service-more">→ Læs mere</span>
-      </a>
-
-      <a href="hoeringssvar.html" class="service-card">
-        <p class="service-label">Høringssvar</p>
-        <h3>Høringssvar og klagesager</h3>
-        <p>Hjælp til at forstå sagen, udarbejde fagligt relevante høringssvar og vurdere mulighederne for at klage over en afgørelse. Jeg har erfaring med at udarbejde klager til Miljø- og Fødevareklagenævnet og med at følge klagesager gennem hele processen.</p>
-        <span class="service-more">→ Læs mere</span>
-      </a>
-
+    <div class="topic-grid">
+      <div class="topic">
+        <h3>Råstofindvinding</h3>
+        <p>Miljøvurderinger af råstofindvinding og vurdering af påvirkninger på blandt andet natur, landskab, grundvand, støj og trafik.</p>
+      </div>
+      <div class="topic">
+        <h3>Kommune- og lokalplanlægning</h3>
+        <p>Miljøvurdering af planer og vurdering af, hvordan ændret arealanvendelse kan påvirke miljøet.</p>
+      </div>
+      <div class="topic">
+        <h3>Vedvarende energi</h3>
+        <p>Miljøvurderinger af vindmøller, solcelleanlæg og vandkraftprojekter samt tilhørende anlæg og infrastruktur.</p>
+      </div>
+      <div class="topic">
+        <h3>Energiinfrastruktur</h3>
+        <p>Miljøvurderinger af energiinfrastruktur og de miljøpåvirkninger, der kan følge af etablering og drift af energianlæg.</p>
+      </div>
+      <div class="topic">
+        <h3>VVM-screening og miljøvurdering</h3>
+        <p>Vurdering af, om planer og projekter kan forventes at medføre væsentlige miljøpåvirkninger, samt analyse af det faglige grundlag for miljøvurderingen.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="om-mig" style="max-width:1100px;margin:auto;padding:6rem 4rem;">
+<section id="faglig-viden">
+  <div class="wrap">
+    <p class="section-label">Faglig viden</p>
+    <h2>Artikler om miljøvurderinger og miljøproblematikker</h2>
+    <p style="max-width:720px;">
+      Her deler jeg artikler, analyser og faglige gennemgange af miljøvurderinger og aktuelle miljøproblemstillinger.
+    </p>
+    <p style="max-width:720px;">
+      Jeg skriver blandt andet om, hvordan miljøpåvirkninger vurderes, hvordan miljøvurderingsprocesser fungerer, og hvordan man kan forstå de ofte omfattende dokumenter, der indgår i miljøsager.
+    </p>
+    <a class="text-link" href="#faglig-viden">Læs artikler og faglige analyser →</a>
+  </div>
+</section>
 
-  <p class="section-label">Om mig</p>
+<section id="miljoesager" style="background:var(--cream);">
+  <div class="wrap">
+    <p class="section-label">Har du en miljøsag?</p>
+    <h2>Jeg hjælper, når jeg har mulighed for det</h2>
+    <p style="max-width:720px;">
+      Hvis du står med en miljøafgørelse, en miljøvurdering, en VVM-screening eller andet materiale, som du har svært ved at gennemskue, er du velkommen til at kontakte mig.
+    </p>
+    <p style="max-width:720px;">
+      Jeg tilbyder frivillig faglig hjælp, når jeg har mulighed for at afsætte tid til det.
+    </p>
+    <p style="max-width:720px;">
+      Send gerne en kort beskrivelse af sagen sammen med de relevante dokumenter. Jeg gennemgår henvendelsen og vender tilbage, hvis jeg kan hjælpe.
+    </p>
+    <p style="max-width:720px;margin-bottom:0.5rem;">Jeg kan blandt andet hjælpe med at forstå:</p>
+    <ul class="help-list">
+      <li>miljøvurderinger og VVM-screeninger</li>
+      <li>miljøafgørelser og tilladelser</li>
+      <li>høringsmateriale</li>
+      <li>faglige vurderinger og miljøkonsekvensrapporter</li>
+      <li>høringssvar, indsigelser og klager</li>
+      <li>de miljøfaglige spørgsmål, der ligger bag en konkret sag</li>
+    </ul>
+    <a class="text-link" href="#kontakt">Skriv til mig →</a>
+  </div>
+</section>
 
-  <p>Jeg er uddannet miljøplanlægger med syv års erfaring fra kommunalt myndighedsarbejde som sagsbehandler og planlægger.</p>
+<section id="om-mig">
+  <div class="wrap">
+    <p class="section-label">Om mig</p>
+    <p>Jeg er uddannet miljøplanlægger, og min kandidatuddannelse og mit speciale er inden for miljøvurderinger.</p>
+    <p>Jeg har syv års erfaring fra kommunalt myndighedsarbejde som sagsbehandler og planlægger, hvor jeg blandt andet har arbejdet med miljøvurderinger, planlægning og miljørelaterede myndighedsprocesser.</p>
+    <p>Jeg har desuden et par års forskningserfaring med miljøvurderingsprocesser i Nepal og Kina.</p>
+    <p>Jeg er i øjeblikket i gang med en masteruddannelse i miljøvurderinger på Aalborg Universitet, hvor jeg fortsat arbejder fagligt med området.</p>
+    <p>Jeg har arbejdet med miljøvurderinger inden for blandt andet råstofindvinding, kommune- og lokalplanlægning, vindmøller, solcelleanlæg, vandkraft og energiinfrastruktur.</p>
+    <p>Jeg har også erfaring med VVM-screeninger, miljøgodkendelser, offentlig inddragelse og andre dele af de myndighedsprocesser, der knytter sig til planer og projekter med potentielle miljøpåvirkninger.</p>
+    <p>Jeg har arbejdet med miljøvurderingsprocesser fra flere perspektiver, blandt andet gennem mit kommunale myndighedsarbejde, min forskning og mit arbejde med borgere og græsrodsorganisationer.</p>
+  </div>
+</section>
 
-  <p>Jeg har arbejdet med miljøvurderinger, VVM-screeninger, miljøgodkendelser, råstofsager, spildevandstilladelser, lokalplaner og offentlig inddragelse.</p>
-
-  <p>Derudover har jeg forsket i miljøforvaltning og miljølovgivning med fokus på beslutningsprocesser og borgerinddragelse, blandt andet i Nepal og Kina.</p>
-
-  <p>Jeg har siddet på begge sider af bordet – både som kommunal myndighed, som rådgiver for projektejere og som faglig sparringspartner for borgere og græsrodsorganisationer.</p>
-
-  <p>Vores Miljø er mit personlige projekt. Jeg ønsker at bidrage til bedre miljøbeslutninger ved at stille min faglige erfaring til rådighed, når jeg har mulighed for det.</p>
-
-  <p>Hvis en opgave ligger uden for det, jeg kan tilbyde som en del af dette initiativ, er du stadig velkommen til at kontakte mig. I særlige tilfælde kan større analyse- eller rådgivningsopgaver udføres efter nærmere aftale.</p>
-
+<section id="hvorfor" style="background:var(--cream);">
+  <div class="wrap">
+    <p class="section-label">Hvorfor Vores Miljø?</p>
+    <p style="max-width:720px;">
+      Miljøbeslutninger kan få betydning for natur, mennesker og lokalsamfund i mange år frem.
+    </p>
+    <p style="max-width:720px;">
+      Jeg har valgt at bruge en del af min tid på Vores Miljø, fordi jeg mener, at gode miljøbeslutninger kræver et solidt fagligt grundlag, og fordi miljøfaglig viden bør være tilgængelig for flere.
+    </p>
+    <p style="max-width:720px;">
+      Gennem mit arbejde og min forskning har jeg set, hvor komplekse miljøvurderinger og myndighedsprocesser kan være. Jeg ønsker derfor at bruge min erfaring til at gøre miljøfaglige problemstillinger lettere at forstå og bidrage til en mere oplyst debat om, hvordan vi vurderer miljøpåvirkninger fra planer og projekter.
+    </p>
+    <p style="max-width:720px;">
+      Vores Miljø er et personligt initiativ, som jeg driver i min egen tid.
+    </p>
+    <p style="max-width:720px;">
+      Hvis du synes, at arbejdet er værdifuldt, er du velkommen til frivilligt at støtte projektet.
+    </p>
+    <a class="support-btn" href="mailto:kontakt@voresmiljo.dk?subject=Støtte%20til%20Vores%20Miljø">Støt Vores Miljø</a>
+  </div>
 </section>
 
 <section class="kontakt-section" id="kontakt">
-  <div class="kontakt-grid" style="max-width:1100px;margin:auto;padding:0 4rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
-
+  <div class="wrap kontakt-grid">
     <div>
       <p class="section-label" style="color:var(--stone)">Kontakt</p>
-      <h2 style="color:var(--sand)">
-        Skriv til mig
-      </h2>
-      <p style="color:rgba(232,224,208,0.7)">Send en kort beskrivelse af sagen sammen med relevante dokumenter eller afgørelser.</p>
-      <p style="color:rgba(232,224,208,0.7)">Jeg gennemgår alle henvendelser og vender tilbage, hvis jeg har mulighed for at hjælpe.</p>
-      <p style="color:rgba(232,224,208,0.7)">Da Vores Miljø drives af én person, kan jeg desværre ikke tage alle sager eller garantere en bestemt svartid.</p>
+      <h2 style="color:var(--sand)">Har du et spørgsmål eller en konkret sag?</h2>
+      <p style="color:rgba(232,224,208,0.7)">Du er velkommen til at skrive.</p>
+      <p style="color:rgba(232,224,208,0.7)">
+        Send gerne en kort beskrivelse af sagen og relevant materiale, hvis din henvendelse drejer sig om en konkret miljøsag.
+      </p>
+      <p style="color:rgba(232,224,208,0.55);font-size:0.95rem;">
+        Vores Miljø drives af én person, og jeg kan derfor ikke love, at jeg kan hjælpe med alle henvendelser eller garantere en bestemt svartid.
+      </p>
     </div>
 
     <div class="kontakt-card">
-      <p class="section-label">Kontakt</p>
-      <p style="color:var(--sand); margin-bottom:1rem;">Email</p>
+      <p class="section-label">Email</p>
       <a href="mailto:kontakt@voresmiljo.dk" class="email-link">kontakt@voresmiljo.dk</a>
       <div style="margin-top:2rem; border-top:1px solid rgba(139,158,127,0.3); padding-top:1.5rem;">
-        <p style="color:var(--stone); font-size:0.8rem;">Telefon (ved konkrete sager)</p>
-        <p style="color:var(--sand); margin-top:0.5rem;">4140 1300</p>
+        <p style="color:var(--stone); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Telefon</p>
+        <p style="color:var(--sand); margin-top:0.5rem; margin-bottom:0.75rem;">4140 1300</p>
+        <p style="color:rgba(232,224,208,0.55); font-size:0.9rem; margin-bottom:0;">
+          Telefonen er primært til konkrete henvendelser. Ved spørgsmål om en miljøsag er det bedst at sende en kort skriftlig beskrivelse og relevant materiale først.
+        </p>
       </div>
     </div>
-
   </div>
 </section>
 
