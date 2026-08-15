@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | Vores Miljø</title>
+  <meta name="description" content="Kontakt Vores Miljø om miljøvurderinger, VVM-screening, miljøafgørelser og frivillig faglig hjælp.">
+  <link rel="canonical" href="https://voresmiljo.dk/kontakt.html">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --earth: #2C3E2D;
+      --moss: #4A6741;
+      --stone: #8B9E7F;
+      --sand: #E8E0D0;
+      --cream: #F4F0E8;
+      --light: #FAFAF7;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--light);
+      color: var(--earth);
+      line-height: 1.8;
+      font-size: 18px;
+    }
+    header { background: var(--earth); padding: 2.5rem 4rem 6rem 4rem; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      color: var(--sand);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    .menu { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .menu a {
+      color: rgba(232,224,208,0.8);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+    }
+    .menu a:hover { color: var(--sand); }
+    .hero-label {
+      color: var(--stone);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1.1;
+      color: var(--sand);
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-sub {
+      max-width: 720px;
+      color: rgba(232,224,208,0.75);
+      font-size: 1.15rem;
+    }
+    main { max-width: 1100px; margin: auto; padding: 6rem 4rem; }
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--moss);
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      margin: 4rem 0 1.5rem;
+      color: var(--earth);
+      line-height: 1.2;
+    }
+    h2:first-of-type { margin-top: 0; }
+    h3 {
+      margin-top: 2.25rem;
+      margin-bottom: 1rem;
+      font-size: 1.35rem;
+      color: var(--earth);
+      font-family: 'Playfair Display', serif;
+    }
+    p { margin-bottom: 1.5rem; max-width: 850px; }
+    ul {
+      margin: 0 0 1.5rem 1.25rem;
+      max-width: 850px;
+    }
+    li { margin-bottom: 0.4rem; }
+    .step {
+      max-width: 850px;
+      margin: 0 0 1.75rem;
+    }
+    .step strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.35rem;
+    }
+    .email-large {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--moss);
+      text-decoration: none;
+    }
+    .email-large:hover { text-decoration: underline; }
+    .phone {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin: 0.5rem 0 1rem;
+    }
+    .cta-box {
+      background: var(--earth);
+      padding: 3.5rem;
+      margin-top: 4rem;
+    }
+    .cta-box h2 {
+      color: var(--sand);
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+    }
+    .cta-box p { color: rgba(232,224,208,0.75); }
+    .cta-box a {
+      color: var(--sand);
+      font-weight: 600;
+    }
+    .text-link {
+      display: inline-block;
+      margin: 0.5rem 1.5rem 0.5rem 0;
+      color: var(--moss);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .text-link:hover { text-decoration: underline; }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--moss);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    footer {
+      background: var(--earth);
+      color: rgba(232,224,208,0.5);
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(139,158,127,0.2);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 900px) {
+      header { padding: 2rem; }
+      main { padding: 4rem 2rem; }
+      nav { flex-direction: column; align-items: flex-start; }
+      .cta-box { padding: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">Vores Miljø</a>
+    <div class="menu">
+      <a href="miljoevurderinger.html">Miljøvurderinger</a>
+      <a href="faglig-viden.html">Faglig viden</a>
+      <a href="om-mig.html">Om mig</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+  <p class="hero-label">Kontakt</p>
+  <h1>Kontakt</h1>
+  <p class="hero-sub">Har du en miljøsag, du gerne vil have et fagligt blik på?</p>
+</header>
+
+<main>
+
+  <p class="section-label">Henvendelse</p>
+  <h2>Har du en miljøsag, du gerne vil have et fagligt blik på?</h2>
+
+  <p>
+    Hvis du som borger eller lokal borgergruppe sidder med en <strong>miljøvurdering, VVM-screening, miljøafgørelse, høringsmateriale eller anden miljøfaglig dokumentation</strong>, er du velkommen til at kontakte mig.
+  </p>
+  <p>
+    Jeg tilbyder frivillig faglig hjælp, når jeg har mulighed for det.
+  </p>
+  <p>
+    Send gerne en kort beskrivelse af sagen og de dokumenter, du ønsker, at jeg skal se på. Det gør det lettere for mig at vurdere, om sagen ligger inden for mit fagområde, og om jeg har mulighed for at hjælpe.
+  </p>
+
+  <h3>Det kan eksempelvis være:</h3>
+  <ul>
+    <li>En VVM-screening, du gerne vil forstå</li>
+    <li>En miljøkonsekvensrapport, du har svært ved at gennemskue</li>
+    <li>En miljøvurdering af en plan eller et projekt</li>
+    <li>En miljøafgørelse, du ønsker hjælp til at forstå</li>
+    <li>Et høringsmateriale, hvor du er i tvivl om, hvad der er vigtigt</li>
+    <li>Et projekt i dit lokalområde, som du gerne vil undersøge nærmere</li>
+    <li>En konkret miljøfaglig problemstilling, som du mener bør belyses</li>
+  </ul>
+
+  <h2>Skriv til mig</h2>
+
+  <p><strong>Email</strong></p>
+  <p>
+    <a class="email-large" href="mailto:kontakt@voresmiljo.dk">kontakt@voresmiljo.dk</a>
+  </p>
+
+  <p>Du er velkommen til at sende:</p>
+
+  <div class="step">
+    <strong>1. En kort beskrivelse af sagen</strong>
+    <p>Hvad handler sagen om, og hvad er det, du gerne vil have hjælp til?</p>
+  </div>
+  <div class="step">
+    <strong>2. Relevant materiale</strong>
+    <p>Send gerne afgørelser, miljøvurderinger, VVM-screeninger, høringsmateriale eller andre relevante dokumenter.</p>
+  </div>
+  <div class="step">
+    <strong>3. Eventuelle spørgsmål</strong>
+    <p>Hvis der er bestemte forhold, du er særligt bekymret for eller gerne vil have undersøgt, må du meget gerne beskrive dem.</p>
+  </div>
+
+  <h2>Hvad sker der, når du skriver?</h2>
+
+  <p>
+    Jeg gennemgår din henvendelse og vurderer, om jeg kan hjælpe.
+  </p>
+  <p>
+    Hvis jeg har mulighed for at gå videre med sagen, vender jeg tilbage.
+  </p>
+  <p>
+    Vores Miljø drives af én person, og hjælpen afhænger derfor af <strong>min tid, sagens karakter og hvor tæt den ligger på mit fagområde</strong>.
+  </p>
+  <p>
+    Jeg kan ikke love, at jeg kan tage alle sager, og en henvendelse indebærer ikke automatisk, at jeg påtager mig sagen.
+  </p>
+
+  <div class="cta-box">
+    <h2>Frivillig faglig hjælp</h2>
+    <p>
+      Vores Miljø er et personligt initiativ. Jeg tilbyder hjælpen frivilligt, fordi jeg gerne vil bruge min faglige erfaring til at gøre miljøvurderinger og miljøfaglige problemstillinger mere tilgængelige for borgere og lokale grupper.
+    </p>
+    <p>
+      Hvis du har en sag, er du derfor velkommen til at skrive – også selvom du er usikker på, om den er relevant.
+    </p>
+    <p>
+      Kontakt: <a href="mailto:kontakt@voresmiljo.dk">kontakt@voresmiljo.dk</a>
+    </p>
+    <h3 style="color:var(--sand);margin-top:2rem;">Telefon</h3>
+    <p class="phone" style="color:var(--sand);">4140 1300</p>
+    <p style="margin-bottom:0;">
+      Telefonen er primært til konkrete henvendelser. Ved en miljøsag er det bedst at skrive først og sende relevant materiale, så jeg kan sætte mig ind i sagen.
+    </p>
+  </div>
+
+  <h2>Har du ikke en konkret sag?</h2>
+  <p>
+    Du er også velkommen til at kontakte mig, hvis du har et spørgsmål eller et forslag til et emne, som kunne være relevant at belyse på Vores Miljø.
+  </p>
+  <p>
+    <a class="text-link" href="faglig-viden.html">Læs faglige artikler →</a>
+  </p>
+  <a class="back-link" href="index.html">Tilbage til forsiden →</a>
+
+</main>
+
+<footer>© Vores Miljø</footer>
+
+</body>
+</html>
