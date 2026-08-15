@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faglig viden | Vores Miljø</title>
+  <meta name="description" content="Artikler og faglige gennemgange om miljøvurderinger, skrevet til borgere og lokale borgergrupper.">
+  <link rel="canonical" href="https://voresmiljo.dk/faglig-viden.html">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --earth: #2C3E2D;
+      --moss: #4A6741;
+      --stone: #8B9E7F;
+      --sand: #E8E0D0;
+      --cream: #F4F0E8;
+      --light: #FAFAF7;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--light);
+      color: var(--earth);
+      line-height: 1.8;
+      font-size: 18px;
+    }
+    header { background: var(--earth); padding: 2.5rem 4rem 6rem 4rem; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      color: var(--sand);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    .menu { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .menu a {
+      color: rgba(232,224,208,0.8);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+    }
+    .menu a:hover { color: var(--sand); }
+    .hero-label {
+      color: var(--stone);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1.1;
+      color: var(--sand);
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-sub {
+      max-width: 720px;
+      color: rgba(232,224,208,0.75);
+      font-size: 1.15rem;
+    }
+    main { max-width: 1100px; margin: auto; padding: 6rem 4rem; }
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--moss);
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      margin: 4rem 0 1.5rem;
+      color: var(--earth);
+      line-height: 1.2;
+    }
+    h2:first-of-type { margin-top: 0; }
+    h3 {
+      margin-top: 2.25rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.35rem;
+      color: var(--earth);
+      font-family: 'Playfair Display', serif;
+    }
+    p { margin-bottom: 1.5rem; max-width: 850px; }
+    .chain {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      max-width: 850px;
+      margin: 1.5rem 0 2rem;
+      color: var(--moss);
+      line-height: 1.6;
+    }
+    .article-list { margin-top: 1rem; }
+    .article-item {
+      max-width: 850px;
+      margin: 0 0 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(74,103,65,0.15);
+    }
+    .article-item:first-of-type { border-top: none; padding-top: 0; }
+    .article-item strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      margin-bottom: 0.4rem;
+    }
+    .article-item p { margin-bottom: 0; color: var(--moss); }
+    .cta-box {
+      background: var(--earth);
+      padding: 3.5rem;
+      margin-top: 4rem;
+    }
+    .cta-box h2 {
+      color: var(--sand);
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+    }
+    .cta-box p { color: rgba(232,224,208,0.75); }
+    .cta-box a {
+      color: var(--sand);
+      font-weight: 600;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      color: var(--moss);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    footer {
+      background: var(--earth);
+      color: rgba(232,224,208,0.5);
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(139,158,127,0.2);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 900px) {
+      header { padding: 2rem; }
+      main { padding: 4rem 2rem; }
+      nav { flex-direction: column; align-items: flex-start; }
+      .cta-box { padding: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">Vores Miljø</a>
+    <div class="menu">
+      <a href="miljoevurderinger.html">Miljøvurderinger</a>
+      <a href="faglig-viden.html">Faglig viden</a>
+      <a href="index.html#om-mig">Om mig</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </div>
+  </nav>
+  <p class="hero-label">Faglig viden</p>
+  <h1>Faglig viden</h1>
+  <p class="hero-sub">Miljøvurderinger forklaret med udgangspunkt i virkelige problemstillinger</p>
+</header>
+
+<main>
+
+  <p class="section-label">Artikler og gennemgange</p>
+  <h2>Miljøvurderinger forklaret med udgangspunkt i virkelige problemstillinger</h2>
+
+  <p>
+    Miljøvurderinger kan være svære at gennemskue. Dokumenterne er ofte omfattende, og de faglige vurderinger kan være skrevet til mennesker, der allerede kender miljølovgivningen og processen.
+  </p>
+  <p>
+    Her samler jeg artikler og faglige gennemgange, der er skrevet med <strong>borgere og lokale borgergrupper</strong> som målgruppe.
+  </p>
+  <p>
+    Formålet er ikke at gøre dig til miljøekspert. Det er at gøre det lettere at forstå, hvad der faktisk står i en miljøvurdering, hvilke spørgsmål der kan være relevante, og hvordan man kan forholde sig til en konkret miljøsag.
+  </p>
+
+  <h2>Hvad skriver jeg om?</h2>
+
+  <p>
+    Jeg skriver primært om miljøvurderinger og de miljøproblemstillinger, der knytter sig til planer og projekter.
+  </p>
+  <p>
+    Det kan eksempelvis være:
+  </p>
+
+  <h3>VVM-screeninger</h3>
+  <p>
+    Hvordan fungerer en VVM-screening? Hvad vurderer myndigheden, og hvad kan man som borger se efter i en screeningsafgørelse?
+  </p>
+
+  <h3>Miljøkonsekvensvurderinger</h3>
+  <p>
+    Hvordan er en miljøkonsekvensrapport opbygget, og hvordan kan man finde frem til de vigtigste vurderinger?
+  </p>
+
+  <h3>Råstofindvinding</h3>
+  <p>
+    Hvilke miljøpåvirkninger kan en råstofgrav have? Og hvad kan være relevant at undersøge, når et nyt råstofprojekt planlægges?
+  </p>
+
+  <h3>Vindmøller og solceller</h3>
+  <p>
+    Hvordan vurderes påvirkninger fra vedvarende energiprojekter? Hvad betyder eksempelvis afstand, landskab, natur, støj og kumulative påvirkninger?
+  </p>
+
+  <h3>Vandkraft</h3>
+  <p>
+    Hvordan kan vandkraftprojekter påvirke vandløb, natur, økosystemer og landskab?
+  </p>
+
+  <h3>Planlægning</h3>
+  <p>
+    Hvordan hænger kommuneplaner, lokalplaner og miljøvurderinger sammen?
+  </p>
+
+  <h3>Kumulative miljøpåvirkninger</h3>
+  <p>
+    Hvad sker der, når flere projekter påvirker det samme område eller de samme miljøforhold?
+  </p>
+
+  <h3>Høringer og indsigelser</h3>
+  <p>
+    Hvordan kan man som borger eller lokal gruppe forholde sig til en miljøvurdering og formulere relevante spørgsmål eller bemærkninger?
+  </p>
+
+  <h2>Fra faglig rapport til forståelig viden</h2>
+
+  <p>
+    En vigtig del af arbejdet med miljøvurderinger er at kunne bevæge sig mellem mange forskellige fagområder.
+  </p>
+  <p>
+    Et enkelt projekt kan eksempelvis berøre:
+  </p>
+  <p class="chain">
+    Natur → Vand → Landskab → Klima → Støj → Trafik → Mennesker
+  </p>
+  <p>
+    Det betyder også, at en miljøvurdering sjældent kan forstås ved kun at læse ét afsnit.
+  </p>
+  <p>
+    Jeg vil derfor forsøge at forklare sammenhængene og pege på de spørgsmål, der kan være relevante at stille.
+  </p>
+
+  <h2>Artikler</h2>
+
+  <p>
+    Her kommer løbende nye artikler og faglige gennemgange.
+  </p>
+
+  <h3>Eksempel på kommende artikler</h3>
+
+  <div class="article-list">
+    <div class="article-item">
+      <strong>Hvad er en VVM-screening egentlig?</strong>
+      <p>En gennemgang af processen og de spørgsmål, der kan være relevante for borgere.</p>
+    </div>
+    <div class="article-item">
+      <strong>Når kommunen siger, at et projekt ikke har væsentlige miljøpåvirkninger</strong>
+      <p>Hvad betyder konklusionen, og hvad bygger den på?</p>
+    </div>
+    <div class="article-item">
+      <strong>Sådan læser du en miljøkonsekvensrapport</strong>
+      <p>En praktisk introduktion til de vigtigste dele af en ofte omfattende rapport.</p>
+    </div>
+    <div class="article-item">
+      <strong>Kumulative påvirkninger: Når flere projekter påvirker det samme område</strong>
+      <p>Hvorfor et projekt ikke altid bør vurderes helt isoleret.</p>
+    </div>
+    <div class="article-item">
+      <strong>Miljøvurdering af en vindmøllepark</strong>
+      <p>Hvilke miljøforhold kan være relevante, når et vindmølleprojekt planlægges?</p>
+    </div>
+    <div class="article-item">
+      <strong>Råstofgrave og grundvand</strong>
+      <p>Hvilke spørgsmål kan være relevante, når råstofindvinding foregår tæt på grundvandsressourcer?</p>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h2>Har du et emne, du gerne vil have belyst?</h2>
+    <p>
+      Hvis der er en miljøvurdering, et projekt eller en miljøproblemstilling, du synes er svær at forstå, er du velkommen til at skrive.
+    </p>
+    <p>
+      Det kan også være et emne, som flere borgere eller lokale grupper står overfor.
+    </p>
+    <p>
+      Skriv til: <a href="mailto:kontakt@voresmiljo.dk">kontakt@voresmiljo.dk</a>
+    </p>
+    <p style="margin-bottom:0;">
+      Jeg kan ikke love, at jeg skriver om alle henvendelser, men forslag til relevante emner er meget velkomne.
+    </p>
+  </div>
+
+  <h2>Om Vores Miljø</h2>
+  <p>
+    Vores Miljø er et personligt initiativ med fokus på miljøvurderinger og miljøpåvirkninger fra planer og projekter.
+  </p>
+  <p>
+    Jeg skriver med udgangspunkt i min faglige erfaring med miljøvurderinger, kommunalt myndighedsarbejde og forskning i miljøvurderingsprocesser.
+  </p>
+  <p>
+    Mit mål er at gøre miljøfaglig viden mere tilgængelig for de mennesker, der berøres af de planer og projekter, som miljøvurderingerne handler om.
+  </p>
+
+  <a class="back-link" href="index.html">Tilbage til forsiden →</a>
+
+</main>
+
+<footer>© Vores Miljø</footer>
+
+</body>
+</html>
