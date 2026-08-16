@@ -79,14 +79,54 @@
       font-size: clamp(2.4rem, 5vw, 4.2rem);
       color: var(--sand);
       line-height: 1.15;
-      margin-bottom: 2rem;
-      max-width: 16ch;
+      margin-bottom: 1.5rem;
+      max-width: 18ch;
     }
 
     .hero-sub {
       color: rgba(232, 224, 208, 0.75);
-      max-width: 680px;
-      font-size: 1.1rem;
+      max-width: 540px;
+      font-size: 1.15rem;
+      margin-bottom: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      padding: 0.9rem 1.4rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: 1px solid var(--stone);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .hero-btn-primary {
+      background: var(--sand);
+      color: var(--earth);
+      border-color: var(--sand);
+    }
+
+    .hero-btn-primary:hover {
+      background: var(--stone);
+      border-color: var(--stone);
+      color: var(--earth);
+    }
+
+    .hero-btn-secondary {
+      background: transparent;
+      color: var(--sand);
+    }
+
+    .hero-btn-secondary:hover {
+      background: rgba(232,224,208,0.1);
+      color: var(--sand);
     }
 
     .section-label {
@@ -227,13 +267,25 @@
     <p class="hero-label">Faglig viden om miljøvurderinger</p>
     <h1>Miljøvurderinger har stor betydning for de beslutninger, der træffes om vores omgivelser — men de kan være svære at forstå, når man ikke kender lovgivningen eller processen bag.</h1>
     <p class="hero-sub">
-      Vores Miljø skal gøre borgere i stand til at forstå og deltage i miljøvurderingsprocessen, når planer og projekter berører dem eller deres lokalområde. Siden tilbyder faglig viden om miljøvurderinger, VVM-screeninger og høringsprocesser.
+      Vores Miljø gør borgere i stand til at forstå og deltage i miljøvurderinger, der berører dem eller deres lokalområde.
     </p>
-    <p class="hero-sub">
+    <div class="hero-actions">
+      <a class="hero-btn hero-btn-primary" href="miljoevurderinger.html">Læs om miljøvurderinger</a>
+      <a class="hero-btn hero-btn-secondary" href="kontakt.html">Kontakt for rådgivning</a>
+    </div>
+  </div>
+</header>
+
+<section id="intro">
+  <div class="wrap">
+    <p style="max-width:720px;">
+      Med faglig viden om miljøvurderinger, VVM-screeninger og høringsprocesser skal Vores Miljø gøre det lettere for borgere at forstå og deltage i sager, der berører dem eller deres lokalområde.
+    </p>
+    <p style="max-width:720px;margin-bottom:0;">
       Borgere og lokalforeninger med en konkret sag kan desuden få frivillig faglig rådgivning.
     </p>
   </div>
-</header>
+</section>
 
 <section id="miljoevurderinger" style="background:var(--cream);">
   <div class="wrap">
