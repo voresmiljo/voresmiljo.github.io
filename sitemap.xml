@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://voresmiljo.dk/index.html</loc>
+    <loc>https://voresmiljo.dk/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://voresmiljo.dk/miljoevurderinger.html</loc>
+    <loc>https://voresmiljo.dk/vejviser.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://voresmiljo.dk/afgørelser.html</loc>
+    <loc>https://voresmiljo.dk/sagsarkiv.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://voresmiljo.dk/kontakt.html</loc>
+    <loc>https://voresmiljo.dk/sag-sanderoedgaard.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://voresmiljo.dk/vvm-screening.html</loc>
+    <loc>https://voresmiljo.dk/sag-falkenberg.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://voresmiljo.dk/hoeringssvar.html</loc>
-    <priority>0.8</priority>
+    <loc>https://voresmiljo.dk/vaerktoejskasse.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://voresmiljo.dk/raastoftilladelser.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://voresmiljo.dk/miljoegodkendelser.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://voresmiljo.dk/spildevandstilladelser.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://voresmiljo.dk/faq.html</loc>
+    <loc>https://voresmiljo.dk/om.html</loc>
     <priority>0.8</priority>
   </url>
 </urlset>

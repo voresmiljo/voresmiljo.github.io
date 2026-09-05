@@ -3,400 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vores Miljø — Om miljøvurderinger og afgørelser</title>
-  <meta name="description" content="Om miljøvurderinger, miljøpåvirkninger og faglige gennemgange af afgørelser, der ligger bag beslutninger om vores fælles miljø.">
+  <title>Vores Miljø — Projekt om miljøvurderinger</title>
+  <meta name="description" content="Vores Miljø er et projekt, der gør miljøvurderinger og afgørelser mere tilgængelige for borgere og lokalforeninger.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --earth: #2C3E2D;
-      --moss: #4A6741;
-      --stone: #8B9E7F;
-      --sand: #E8E0D0;
-      --cream: #F4F0E8;
-      --light: #FAFAF7;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Source Serif 4', Georgia, serif;
-      background-color: var(--light);
-      color: var(--earth);
-      font-size: 18px;
-      line-height: 1.7;
-    }
-
-    p { margin-bottom: 1.2rem; }
-
-    a { color: var(--moss); }
-
-    header {
-      min-height: 85vh;
-      display: grid;
-      grid-template-rows: auto 1fr;
-      padding: 2.5rem 4rem;
-      background-color: var(--earth);
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 4rem;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      color: var(--sand);
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-    }
-
-    .menu { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-
-    .menu a {
-      color: rgba(232,224,208,0.8);
-      text-decoration: none;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .menu a:hover { color: var(--sand); }
-
-    .hero-label {
-      font-size: 0.8rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--stone);
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
-      color: var(--sand);
-      line-height: 1.25;
-      margin-bottom: 1.5rem;
-      max-width: 28ch;
-    }
-
-    .hero-sub {
-      color: rgba(232, 224, 208, 0.75);
-      max-width: 540px;
-      font-size: 1.15rem;
-      margin-bottom: 0;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2.5rem;
-    }
-
-    .hero-btn {
-      display: inline-block;
-      padding: 0.9rem 1.4rem;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 600;
-      border: 1px solid var(--stone);
-      transition: background 0.2s, color 0.2s;
-    }
-
-    .hero-btn-primary {
-      background: var(--sand);
-      color: var(--earth);
-      border-color: var(--sand);
-    }
-
-    .hero-btn-primary:hover {
-      background: var(--stone);
-      border-color: var(--stone);
-      color: var(--earth);
-    }
-
-    .hero-btn-secondary {
-      background: transparent;
-      color: var(--sand);
-    }
-
-    .hero-btn-secondary:hover {
-      background: rgba(232,224,208,0.1);
-      color: var(--sand);
-    }
-
-    .section-label {
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--moss);
-      margin-bottom: 1.5rem;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.8rem, 3vw, 2.4rem);
-      margin-bottom: 1.25rem;
-      color: var(--earth);
-      line-height: 1.2;
-    }
-
-    .wrap {
-      max-width: 1100px;
-      margin: auto;
-      padding: 6rem 4rem;
-    }
-
-    .topic-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2.5rem;
-    }
-
-    .topic {
-      background: var(--light);
-      border-top: 3px solid var(--stone);
-      padding: 1.75rem 0 0.5rem;
-    }
-
-    .topic h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.35rem;
-      margin-bottom: 0.75rem;
-      color: var(--earth);
-    }
-
-    .topic p {
-      font-size: 1rem;
-      color: var(--moss);
-      margin-bottom: 0;
-    }
-
-    .help-list {
-      margin: 1.5rem 0 0 1.25rem;
-      max-width: 700px;
-    }
-
-    .help-list li { margin-bottom: 0.5rem; }
-
-    .text-link {
-      display: inline-block;
-      margin-top: 1rem;
-      color: var(--moss);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .text-link:hover { text-decoration: underline; }
-
-    .support-btn {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.9rem 1.6rem;
-      border: 1px solid var(--moss);
-      color: var(--earth);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .support-btn:hover {
-      background: var(--moss);
-      color: var(--sand);
-    }
-
-    .kontakt-section { background: var(--earth); }
-
-    .kontakt-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-    }
-
-    .kontakt-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(139, 158, 127, 0.3);
-      padding: 2.5rem;
-    }
-
-    .email-link {
-      color: var(--sand);
-      text-decoration: none;
-      font-size: 1.2rem;
-      word-break: break-word;
-    }
-
-    .email-link:hover { color: var(--stone); }
-
-    footer {
-      background: var(--earth);
-      color: rgba(232,224,208,0.5);
-      text-align: center;
-      padding: 2rem;
-      border-top: 1px solid rgba(139,158,127,0.2);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 900px) {
-      header { padding: 2rem; min-height: auto; padding-bottom: 4rem; }
-      nav { flex-direction: column; align-items: flex-start; }
-      .wrap { padding: 4rem 2rem; }
-      .kontakt-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-<header>
+<header class="site-header hero">
   <nav>
-    <div class="logo">Vores Miljø</div>
+    <a href="index.html" class="logo">Vores Miljø</a>
     <div class="menu">
-      <a href="miljoevurderinger.html">Om miljøvurderinger</a>
-      <a href="afgørelser.html">Afgørelser</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="vejviser.html">Processen</a>
+      <a href="sagsarkiv.html">Sagsarkiv</a>
+      <a href="vaerktoejskasse.html">Værktøjskasse</a>
+      <a href="om.html">Om &amp; kontakt</a>
     </div>
   </nav>
 
-  <div>
-    <p class="hero-label">Om miljøvurderinger</p>
+  <div class="hero-inner">
+    <p class="hero-label">Projekt om miljøvurderinger</p>
     <h1>Miljøvurderinger er afgørende for udviklingen i vores miljø, men de kan være svære at gennemskue</h1>
     <p class="hero-sub">
-      Formålet med Vores Miljø er at gøre foreninger og borgere i stand til at forstå og deltage i miljøvurderinger, der berører dem eller deres lokalområde.
+      Vores Miljø gør miljøvurderingsprocessen og myndighedsafgørelser mere tilgængelige for borgere og lokalforeninger.
     </p>
     <div class="hero-actions">
-      <a class="hero-btn hero-btn-primary" href="kontakt.html">Kontakt for rådgivning</a>
-      <a class="hero-btn hero-btn-secondary" href="miljoevurderinger.html">Læs om miljøvurderinger</a>
+      <a class="btn btn-primary" href="vejviser.html">Forstå processen</a>
+      <a class="btn btn-secondary" href="sagsarkiv.html">Seneste sagsanalyser</a>
     </div>
   </div>
 </header>
 
-<section id="miljoevurderinger" style="background:var(--cream);">
+<section>
   <div class="wrap">
-    <p class="section-label">Om miljøvurderinger</p>
-    <h2>De to veje i en miljøvurdering</h2>
-    <p style="max-width:720px;">
-      Inden en fuld miljøvurdering starter, skal myndigheden finde ud af, om der overhovedet er behov for en stor undersøgelse. Det sker enten via den direkte vej — miljøvurderingspligt — eller via en screening.
+    <p class="section-label">Projektet</p>
+    <h2>Hvad er Vores Miljø?</h2>
+    <p>
+      Vores Miljø er et fagligt projekt om miljøvurderinger. Formålet er at forklare, hvordan planer og projekter vurderes i forhold til miljøet — og hvordan borgere og lokalforeninger kan deltage i processen.
     </p>
-    <p style="max-width:720px;">
-      Hvis der skal laves en fuld miljøvurdering, følger processen faste trin: afgrænsning, miljørapport, høring og afgørelse. Undervejs er der muligheder for offentlig deltagelse — og efterfølgende ret til at klage.
-    </p>
-    <a class="text-link" href="miljoevurderinger.html">Læs mere om miljøvurderinger →</a>
-  </div>
-</section>
-
-<section id="afgoerelser">
-  <div class="wrap">
-    <p class="section-label">Afgørelser</p>
-    <h2>Gennemgange og analyser af afgørelser</h2>
-    <p style="max-width:720px;">
-      Her samles artikler, analyser og faglige gennemgange af miljøafgørelser og aktuelle miljøproblemstillinger.
-    </p>
-    <p style="max-width:720px;">
-      Blandt andet beskrives, hvordan miljøpåvirkninger vurderes, hvordan miljøvurderingsprocesser fungerer, og hvordan man kan forstå de ofte omfattende dokumenter, der indgår i miljøsager.
-    </p>
-    <a class="text-link" href="afgørelser.html">Læs om afgørelser →</a>
-  </div>
-</section>
-
-<section id="miljoesager" style="background:var(--cream);">
-  <div class="wrap">
-    <p class="section-label">Har du en miljøsag?</p>
-    <h2>Frivillig faglig hjælp, når der er mulighed for det</h2>
-    <p style="max-width:720px;">
-      Hvis en borger eller lokal gruppe står med en miljøafgørelse, en miljøvurdering, en VVM-screening eller andet materiale, som er svært at gennemskue, er der mulighed for at kontakte Vores Miljø.
-    </p>
-    <p style="max-width:720px;">
-      Vores Miljø tilbyder frivillig faglig hjælp, når der er mulighed for at afsætte tid til det.
-    </p>
-    <p style="max-width:720px;">
-      Send gerne en kort beskrivelse af sagen sammen med de relevante dokumenter. Henvendelsen gennemgås, og der vendes tilbage, hvis der er mulighed for at hjælpe.
-    </p>
-    <p style="max-width:720px;margin-bottom:0.5rem;">Der kan blandt andet hjælpes med at forstå:</p>
-    <ul class="help-list">
-      <li>miljøvurderinger og VVM-screeninger</li>
-      <li>miljøafgørelser og tilladelser</li>
-      <li>høringsmateriale</li>
-      <li>faglige vurderinger og miljøkonsekvensrapporter</li>
-      <li>høringssvar, indsigelser og klager</li>
-      <li>de miljøfaglige spørgsmål, der ligger bag en konkret sag</li>
-    </ul>
-    <a class="text-link" href="kontakt.html">Skriv til Vores Miljø →</a>
-  </div>
-</section>
-
-<section id="lokalforeninger" style="background:var(--cream);">
-  <div class="wrap">
-    <p class="section-label">Lokalforeninger</p>
-    <h2>Er I en lokalforening eller borgergruppe?</h2>
-    <p style="max-width:720px;">
-      Mange miljøsager rammer ikke kun én enkelt borger, men et helt lokalområde — en lokalforening, et landsbylaug eller en gruppe naboer, der står sammen om en sag.
-    </p>
-    <p style="max-width:720px;">
-      Hvis I er en forening eller gruppe, der arbejder med en konkret sag — eller løbende følger flere sager i jeres område — er I særligt velkomne til at kontakte Vores Miljø.
-    </p>
-    <p style="max-width:720px;margin-bottom:0.5rem;">Der kan blandt andet hjælpes med:</p>
-    <ul class="help-list">
-      <li>at skabe overblik over en miljøvurdering eller VVM-screening</li>
-      <li>at pege på, hvilke miljøfaglige spørgsmål der kan være relevante at rejse i et høringssvar</li>
-      <li>at forklare sammenhænge, som kan være svære at gennemskue i tekniske rapporter</li>
-    </ul>
-    <p style="max-width:720px;">
-      Da en forening ofte repræsenterer flere borgere, kan indsatsen her nå bredere ud end en enkeltstående henvendelse — og den slags sager prioriteres gerne, når der er mulighed for det.
-    </p>
-    <p style="max-width:720px;">
-      Kontakt: <a href="mailto:kontakt@voresmiljo.dk">kontakt@voresmiljo.dk</a>
+    <p>
+      Projektet samler vejledning i miljøvurderingsprocessen, analyser af konkrete afgørelser og praktiske skabeloner til høringssvar og klager. Hjælpen er frivillig og ikke-kommerciel.
     </p>
   </div>
 </section>
 
-<section id="hvorfor">
+<section class="alt">
   <div class="wrap">
-    <p style="max-width:720px;">
-      Vores Miljø er et personligt initiativ med miljøvurderinger som fagligt speciale og mange års erfaring fra myndighedsarbejde, forskning og rådgivning.
+    <p class="section-label">Borgerinddragelse</p>
+    <h2>Hvorfor er borgerinddragelse vigtig i miljøsager?</h2>
+    <p>
+      Miljøvurderinger og tilladelser kan få betydning for natur, mennesker og lokalsamfund i mange år. Materialet er ofte omfattende og skrevet til fagfolk. Når borgere og lokalforeninger forstår processen, bliver det lettere at stille relevante spørgsmål, pege på mangler og deltage i høringer.
     </p>
-    <p style="max-width:720px;">
-      Hvis arbejdet opleves som værdifuldt, er der mulighed for frivilligt at støtte projektet.
+    <p>
+      Offentlig deltagelse er en del af miljøvurderingsreglerne. Et fagligt funderet indlæg har større chance for at blive tillagt vægt end en generel protest.
     </p>
-    <a class="support-btn" href="mailto:kontakt@voresmiljo.dk?subject=Støtte%20til%20Vores%20Miljø">Støt Vores Miljø</a>
   </div>
 </section>
 
-<section class="kontakt-section" id="kontakt">
-  <div class="wrap kontakt-grid">
-    <div>
-      <p class="section-label" style="color:var(--stone)">Kontakt</p>
-      <h2 style="color:var(--sand)">Har du et spørgsmål eller en konkret sag?</h2>
-      <p style="color:rgba(232,224,208,0.7)">Der er mulighed for at skrive.</p>
-      <p style="color:rgba(232,224,208,0.7)">
-        Send gerne en kort beskrivelse af sagen og relevant materiale, hvis henvendelsen drejer sig om en konkret miljøsag.
-      </p>
-      <p style="color:rgba(232,224,208,0.55);font-size:0.95rem;">
-        Vores Miljø drives af én person, og det er derfor ikke muligt at love hjælp til alle henvendelser eller garantere en bestemt svartid.
-      </p>
-    </div>
-
-    <div class="kontakt-card">
-      <p class="section-label">Email</p>
-      <a href="mailto:kontakt@voresmiljo.dk" class="email-link">kontakt@voresmiljo.dk</a>
-      <div style="margin-top:2rem; border-top:1px solid rgba(139,158,127,0.3); padding-top:1.5rem;">
-        <p style="color:var(--stone); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Telefon</p>
-        <p style="color:var(--sand); margin-top:0.5rem; margin-bottom:0.75rem;">4140 1300</p>
-        <p style="color:rgba(232,224,208,0.55); font-size:0.9rem; margin-bottom:0;">
-          Telefonen er primært til konkrete henvendelser. Ved spørgsmål om en miljøsag er det bedst at sende en kort skriftlig beskrivelse og relevant materiale først.
-        </p>
-      </div>
+<section>
+  <div class="wrap">
+    <p class="section-label">Genveje</p>
+    <h2>Kom godt i gang</h2>
+    <div class="card-grid">
+      <a class="card" href="vejviser.html">
+        <h3>Forstå processen</h3>
+        <p>Trin-for-trin gennem miljøvurderingens faser — fra screening til klage.</p>
+        <span class="more">Åbn vejviseren →</span>
+      </a>
+      <a class="card" href="sagsarkiv.html">
+        <h3>Seneste sagsanalyser</h3>
+        <p>Gennemgange af konkrete afgørelser og screeninger — hvad der blev vurderet, og hvad der mangler.</p>
+        <span class="more">Gå til sagsarkivet →</span>
+      </a>
+      <a class="card" href="vaerktoejskasse.html">
+        <h3>Værktøjskasse</h3>
+        <p>Guides til høringssvar og klager, med henvisninger til relevant praksis.</p>
+        <span class="more">Åbn værktøjskassen →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<footer>
-  © Vores Miljø
-</footer>
-
+<footer>© Vores Miljø</footer>
 </body>
 </html>
