@@ -804,18 +804,46 @@ a.doc-item:hover {
 .tool-accordion {
   margin: 0;
   border-top: 1px solid rgba(74,103,65,0.15);
-  padding: 0 1.5rem;
+  padding: 0 1.25rem 1.15rem;
 }
 
 .tool-accordion details { border-bottom: none; }
 
 .tool-accordion summary {
-  font-size: 1.05rem;
-  padding: 1rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+  padding: 0.85rem 1.15rem;
+  background: var(--earth);
+  color: var(--sand);
+  border: 1px solid var(--earth);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tool-accordion summary::-webkit-details-marker { display: none; }
+
+.tool-accordion summary::after {
+  content: '+';
+  font-size: 1.2rem;
+  color: var(--sand);
+  flex-shrink: 0;
+}
+
+.tool-accordion details[open] summary::after { content: '−'; }
+
+.tool-accordion summary:hover {
+  background: var(--moss);
+  border-color: var(--moss);
 }
 
 .tool-accordion .accordion-content {
-  padding-bottom: 1.75rem;
+  padding: 1.25rem 0 0.5rem;
   animation: accordionIn 0.25s ease;
 }
 
