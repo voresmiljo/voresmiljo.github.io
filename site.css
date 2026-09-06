@@ -186,6 +186,10 @@ h3 {
   margin-top: 2rem;
 }
 
+.card-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
   display: block;
   background: var(--light);
@@ -609,7 +613,8 @@ footer {
   .wrap { padding: 3.5rem 1.5rem; }
   .cta-box { padding: 2rem; }
   .stat-grid,
-  .criteria-grid { grid-template-columns: 1fr; }
+  .criteria-grid,
+  .card-grid.cols-3 { grid-template-columns: 1fr; }
   .case-layout { grid-template-columns: 1fr; }
   .case-aside { position: static; }
 }
