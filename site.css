@@ -595,6 +595,130 @@ a.doc-item:hover {
   border-bottom: none;
 }
 
+/* Værktøjskasse */
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--light);
+  border: 1px solid rgba(74,103,65,0.2);
+  border-top: 3px solid var(--stone);
+  padding: 1.75rem;
+  min-height: 100%;
+}
+
+.tool-card .section-label { margin-bottom: 0.5rem; }
+
+.tool-card h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.25rem;
+}
+
+.tool-card p {
+  font-size: 0.98rem;
+  color: var(--moss);
+  max-width: none;
+}
+
+.tool-card .tool-meta {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  color: var(--moss);
+}
+
+.tool-card .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.25rem;
+  box-sizing: border-box;
+}
+
+.tool-card .btn.is-pending,
+.btn.is-pending {
+  opacity: 0.65;
+  pointer-events: none;
+  cursor: default;
+}
+
+.checklist-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.checklist-group {
+  background: var(--light);
+  border: 1px solid rgba(74,103,65,0.2);
+  padding: 1.5rem 1.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.checklist-group h3 {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(74,103,65,0.15);
+}
+
+.checklist-item {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(74,103,65,0.1);
+  cursor: pointer;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--earth);
+}
+
+.checklist-item:last-child { border-bottom: none; }
+
+.checklist-item input {
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--moss);
+}
+
+.checklist-item span { max-width: none; }
+
+.guide-aside {
+  position: sticky;
+  top: 1.5rem;
+  background: var(--earth);
+  color: rgba(232,224,208,0.85);
+  padding: 1.5rem 1.35rem;
+}
+
+.guide-aside h3 {
+  color: var(--sand);
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+}
+
+.guide-aside p {
+  color: rgba(232,224,208,0.8);
+  font-size: 0.92rem;
+  max-width: none;
+}
+
+.guide-aside .guide-note {
+  margin-top: 1.25rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(139,158,127,0.35);
+  font-size: 0.92rem;
+}
+
+.guide-aside .guide-note strong {
+  display: block;
+  color: var(--sand);
+  margin-bottom: 0.4rem;
+}
+
 footer {
   background: var(--earth);
   color: rgba(232,224,208,0.5);
@@ -615,6 +739,8 @@ footer {
   .stat-grid,
   .criteria-grid,
   .card-grid.cols-3 { grid-template-columns: 1fr; }
-  .case-layout { grid-template-columns: 1fr; }
-  .case-aside { position: static; }
+  .case-layout,
+  .checklist-layout { grid-template-columns: 1fr; }
+  .case-aside,
+  .guide-aside { position: static; }
 }
