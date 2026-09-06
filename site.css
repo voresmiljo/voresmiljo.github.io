@@ -366,10 +366,7 @@ h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
   color: var(--earth);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  display: block;
 }
 
 .accordion summary::-webkit-details-marker { display: none; }
@@ -756,20 +753,22 @@ a.doc-item:hover {
 
 .template-box .template-body,
 .template-box pre {
-  display: block;
+  display: block !important;
   margin: 0;
   padding: 1.35rem 1.4rem 1.6rem;
   white-space: pre-wrap;
   word-break: break-word;
   overflow-wrap: anywhere;
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-size: 1rem;
   line-height: 1.7;
-  color: #2C3E2D;
-  background: #fff;
-  min-height: 12rem;
+  color: #111111 !important;
+  background: #ffffff !important;
+  min-height: 10rem;
   max-height: 32rem;
   overflow: auto;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .btn-copy {
@@ -807,58 +806,47 @@ a.doc-item:hover {
   margin: 0;
 }
 
-.tool-accordion {
-  margin: 0;
-  border-top: 1px solid rgba(74,103,65,0.15);
-  padding: 0 1.25rem 1.15rem;
-}
-
-.tool-accordion details { border-bottom: none; }
-
-.tool-accordion summary {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 0.25rem;
-  padding: 0.85rem 1.15rem;
+.tool-block .template-toggle {
+  display: inline-block;
+  width: auto;
+  margin-top: 1rem;
   background: var(--earth);
-  color: var(--sand);
-  border: 1px solid var(--earth);
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
+  color: #E8E0D0;
+  border-color: var(--earth);
 }
 
-.tool-accordion summary::-webkit-details-marker { display: none; }
-
-.tool-accordion summary::after {
-  content: '+';
-  font-size: 1.2rem;
-  color: var(--sand);
-  flex-shrink: 0;
-}
-
-.tool-accordion details[open] summary::after { content: '−'; }
-
-.tool-accordion summary:hover {
+.tool-block .template-toggle:hover {
   background: var(--moss);
   border-color: var(--moss);
+  color: #fff;
 }
 
-.tool-accordion .accordion-content {
+.template-panel {
   display: block;
-  padding: 1.25rem 0 0.5rem;
-  opacity: 1;
-  color: var(--earth);
+  padding: 1.5rem 1.5rem 1.75rem;
+  border-top: 1px solid rgba(74,103,65,0.15);
+  color: #2C3E2D;
+  background: #fff;
 }
 
-.tool-accordion details[open] > .accordion-content {
-  display: block;
-  visibility: visible;
-  opacity: 1;
+.template-panel[hidden] {
+  display: none !important;
+}
+
+.template-panel h3,
+.template-panel p,
+.template-panel li {
+  color: #2C3E2D;
+}
+
+.template-panel p,
+.template-panel ul,
+.template-panel ol {
+  max-width: none;
+}
+
+.tool-accordion {
+  display: none;
 }
 
 .checklist-accordion {
