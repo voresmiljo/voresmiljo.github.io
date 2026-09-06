@@ -784,6 +784,74 @@ a.doc-item:hover {
   border-color: var(--moss);
 }
 
+.tool-blocks {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.tool-block {
+  border: 1px solid rgba(74,103,65,0.2);
+  background: var(--light);
+}
+
+.tool-block .tool-card {
+  border: none;
+  border-top: 3px solid var(--stone);
+  margin: 0;
+}
+
+.tool-accordion {
+  margin: 0;
+  border-top: 1px solid rgba(74,103,65,0.15);
+  padding: 0 1.5rem;
+}
+
+.tool-accordion details { border-bottom: none; }
+
+.tool-accordion summary {
+  font-size: 1.05rem;
+  padding: 1rem 0;
+}
+
+.tool-accordion .accordion-content {
+  padding-bottom: 1.75rem;
+  animation: accordionIn 0.25s ease;
+}
+
+.checklist-accordion {
+  margin-top: 0;
+  border-top: none;
+}
+
+.checklist-accordion details {
+  background: var(--light);
+  border: 1px solid rgba(74,103,65,0.2);
+  border-bottom: none;
+  margin-bottom: 0.75rem;
+  padding: 0 1.25rem;
+}
+
+.checklist-accordion details:last-child { margin-bottom: 0; }
+
+.checklist-accordion summary {
+  font-size: 1.1rem;
+  padding: 1.1rem 0;
+}
+
+.checklist-panel {
+  animation: accordionIn 0.25s ease;
+}
+
+.checklist-panel .checklist-item:first-child {
+  padding-top: 0;
+}
+
+@keyframes accordionIn {
+  from { opacity: 0; transform: translateY(-0.35rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 footer {
   background: var(--earth);
   color: rgba(232,224,208,0.5);
