@@ -852,6 +852,75 @@ a.doc-item:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 2rem 0 1.5rem;
+  border-bottom: 1px solid rgba(74,103,65,0.2);
+}
+
+.tab-btn {
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 0.85rem 1rem;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 0.95rem;
+  color: var(--moss);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab-btn:hover { color: var(--earth); }
+
+.tab-btn.is-active {
+  color: var(--earth);
+  font-weight: 600;
+  border-bottom-color: var(--moss);
+}
+
+.checklist-dashboard {
+  margin-top: 0;
+}
+
+.checklist-main { min-width: 0; }
+
+.checklist-panel-card {
+  background: var(--light);
+  border: 1px solid rgba(74,103,65,0.2);
+  padding: 1.35rem 1.4rem 0.5rem;
+  animation: accordionIn 0.25s ease;
+}
+
+.checklist-panel-card .section-label {
+  margin-bottom: 0.75rem;
+}
+
+.guide-aside .guidance-count {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  padding: 0.25rem 0.55rem;
+  background: rgba(232,224,208,0.15);
+  color: var(--sand);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.guide-aside #guidance-box p {
+  margin-bottom: 0.9rem;
+}
+
+.guide-aside #guidance-box p:last-child { margin-bottom: 0; }
+
+.guide-aside #guidance-box strong {
+  color: var(--sand);
+}
+
 footer {
   background: var(--earth);
   color: rgba(232,224,208,0.5);

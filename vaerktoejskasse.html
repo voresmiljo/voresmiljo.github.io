@@ -314,75 +314,84 @@ Bilagsliste:
     <p class="section-label">2 · Screening</p>
     <h2 id="tjekliste-heading">Borgerens miljøscreeningstjekliste (Bilag 6)</h2>
     <p>
-      Værktøjet er baseret direkte på de officielle udvælgelseskriterier i miljøvurderingslovens bilag 6. Tjeklisten kan anvendes til kritisk at efterprøve myndighedernes screeningsafgørelser jf. § 21. Kun én kategori er åben ad gangen.
+      Værktøjet er baseret direkte på de officielle udvælgelseskriterier i <strong>miljøvurderingslovens bilag 6</strong>. Tjeklisten anvendes til kritisk at efterprøve, om myndighedernes screeningsafgørelse hviler på et fuldstændigt grundlag.
     </p>
 
-    <div class="checklist-layout">
-      <div class="accordion checklist-accordion" data-exclusive>
-        <details open>
-          <summary>Kategori A: Projektets karakteristika og dimensioner</summary>
-          <div class="accordion-content checklist-panel">
+    <div class="tab-nav" role="tablist" aria-label="Bilag 6-kategorier">
+      <button type="button" class="tab-btn is-active" id="btn-tab-a" role="tab" aria-selected="true" aria-controls="content-tab-a" data-tab="tab-a">
+        Kategori A: Projektets karakter
+      </button>
+      <button type="button" class="tab-btn" id="btn-tab-b" role="tab" aria-selected="false" aria-controls="content-tab-b" data-tab="tab-b">
+        Kategori B: Placering &amp; sårbarhed
+      </button>
+      <button type="button" class="tab-btn" id="btn-tab-c" role="tab" aria-selected="false" aria-controls="content-tab-c" data-tab="tab-c">
+        Kategori C: Påvirkningens karakter
+      </button>
+    </div>
+
+    <div class="checklist-layout checklist-dashboard">
+      <div class="checklist-main">
+        <div id="content-tab-a" class="tab-panel is-active" role="tabpanel" aria-labelledby="btn-tab-a">
+          <div class="checklist-panel-card">
+            <p class="section-label">Dimensioner og design</p>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Dimensioner og samlet areal:</strong> Er projektets fysiske omfang, dybde eller areal fuldstændigt og korrekt beskrevet i ansøgningen?</span>
             </label>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Affalds- og spildevandsproduktion:</strong> Er typer og mængder af reststoffer, spildevand og emissioner konkret opgjort for både anlægs- og driftsfase?</span>
             </label>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Forureningsrisiko:</strong> Er der risiko for uheld, spild eller frigivelse af miljøfarlige stoffer under etableringen eller driften?</span>
             </label>
           </div>
-        </details>
-        <details>
-          <summary>Kategori B: Projektets placering og miljømæssig sårbarhed</summary>
-          <div class="accordion-content checklist-panel">
+        </div>
+
+        <div id="content-tab-b" class="tab-panel" role="tabpanel" aria-labelledby="btn-tab-b" hidden>
+          <div class="checklist-panel-card">
+            <p class="section-label">Miljømæssig følsomhed</p>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Særlige drikkevandsinteresser (OSD):</strong> Er anlægget placeret i et sårbart drikkevandsområde, og er nedsivningsrisikoen konkret og lokalt undersøgt jf. Koppers-praksis?</span>
             </label>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Beskyttet § 3-natur og vandmiljø:</strong> Er der fare for direkte eller indirekte forringelse af nærliggende vandløb, vådområder eller søer?</span>
             </label>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Fredede dyre- og plantearter (Bilag IV):</strong> Er forekomsten af strengt beskyttede arter (f.eks. spidssnudet frø eller flagermus) tilstrækkeligt kortlagt hen over hele året?</span>
             </label>
           </div>
-        </details>
-        <details>
-          <summary>Kategori C: Den potentielle påvirknings karakteristika</summary>
-          <div class="accordion-content checklist-panel">
+        </div>
+
+        <div id="content-tab-c" class="tab-panel" role="tabpanel" aria-labelledby="btn-tab-c" hidden>
+          <div class="checklist-panel-card">
+            <p class="section-label">Samlet påvirkning</p>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Kumulative effekter jf. bilag 6, pkt. 3, litra g:</strong> Er påvirkningen vurderet i sammenhæng med andre eksisterende og/eller godkendte anlæg i lokalområdet?</span>
             </label>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Støj og vibrationer:</strong> Er de reelle støjniveauer ved maksimal drift dokumenteret, og overholdes de gældende vejledende støjgrænser?</span>
             </label>
             <label class="checklist-item">
-              <input type="checkbox">
+              <input type="checkbox" class="guidance-check">
               <span><strong>Konkret vidensgrundlag:</strong> Er afgørelsen baseret på aktuelle og fysiske kontrolmålinger frem for udelukkende teoretiske fortyndingsmodeller?</span>
             </label>
           </div>
-        </details>
+        </div>
       </div>
 
-      <aside class="guide-aside" aria-label="Vejledning til tjeklisten">
-        <h3>Vejledning til tjeklisten</h3>
-        <p>
-          Hvis der kan svares »nej« eller »uafklaret« til blot ét af kriterierne i myndighedernes screening, udgør dette et potentielt fagligt og retligt grundlag for en indsigelse.
-        </p>
-        <p>
-          Miljø- og planlovgivningen kræver, at afgørelser træffes på et fuldstændigt oplyst grundlag. Mangelfulde undersøgelser (f.eks. af Bilag IV-arters overvintring eller manglende kumulative støjvurderinger) medfører ofte, at klagenævnene hjemviser sagen til fornyet behandling.
-        </p>
-        <div class="guide-note">
-          <strong>Er der fundet væsentlige mangler?</strong>
-          Brug skabelonerne ovenfor til at formulere høringssvar eller klageskrift med henvisning til de relevante bestemmelser.
+      <aside class="guide-aside" aria-label="Dynamisk retshjælp">
+        <h3>Dynamisk retshjælp</h3>
+        <div id="guidance-box">
+          <p>
+            Marker de punkter til venstre, hvor der er mistanke om mangler i myndighedernes sagsbehandling, for at få specifik juridisk vejledning.
+          </p>
         </div>
       </aside>
     </div>
@@ -431,15 +440,51 @@ Bilagsliste:
     });
   });
 
-  document.querySelectorAll('[data-exclusive]').forEach(function (group) {
-    group.querySelectorAll('details').forEach(function (detail) {
-      detail.addEventListener('toggle', function () {
-        if (!detail.open) return;
-        group.querySelectorAll('details').forEach(function (other) {
-          if (other !== detail) other.open = false;
-        });
-      });
+  function switchTab(tabId) {
+    document.querySelectorAll('.tab-panel').forEach(function (panel) {
+      panel.hidden = true;
+      panel.classList.remove('is-active');
     });
+    document.querySelectorAll('.tab-btn').forEach(function (btn) {
+      btn.classList.remove('is-active');
+      btn.setAttribute('aria-selected', 'false');
+    });
+    var panel = document.getElementById('content-' + tabId);
+    var btn = document.getElementById('btn-' + tabId);
+    if (panel) {
+      panel.hidden = false;
+      panel.classList.add('is-active');
+    }
+    if (btn) {
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-selected', 'true');
+    }
+  }
+
+  function updateGuidance() {
+    var checkedCount = document.querySelectorAll('.guidance-check:checked').length;
+    var guidanceBox = document.getElementById('guidance-box');
+    if (!guidanceBox) return;
+
+    if (checkedCount === 0) {
+      guidanceBox.innerHTML = '<p>Marker de punkter til venstre, hvor der er mistanke om mangler i myndighedernes sagsbehandling, for at få specifik juridisk vejledning.</p>';
+      return;
+    }
+
+    guidanceBox.innerHTML =
+      '<p class="guidance-count">' + checkedCount + ' potentielt kritiske mangler markeret</p>' +
+      '<p><strong>Retlig konsekvens:</strong> Miljøvurderingsloven kræver, at afgørelser skal træffes på et fuldstændigt oplyst grundlag. Mangler i de undersøgte parametre udgør et stærkt retligt grundlag for en indsigelse eller klage.</p>' +
+      '<div class="guide-note"><strong>Næste skridt</strong> Anvend »Struktureret høringssvar« eller »Formelt klageskrift« ovenfor til at formulere indsigelsen med henvisning til de markerede kriterier.</div>';
+  }
+
+  document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      switchTab(btn.getAttribute('data-tab'));
+    });
+  });
+
+  document.querySelectorAll('.guidance-check').forEach(function (box) {
+    box.addEventListener('change', updateGuidance);
   });
 </script>
 </body>
