@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sanderødgård Grusgrav — Sagsanalyse | Vores Miljø</title>
-  <meta name="description" content="Analyse af screeningen af Sanderødgård Grusgrav: PFAS, fortyndingsmodel og VVM-processen.">
+  <meta name="description" content="Case-analyse: Sanderødgård Grusgrav — PFAS-risici, kontinuitetsbrud og retlig præcedens (Koppers).">
   <link rel="canonical" href="https://voresmiljo.dk/sag-sanderoedgaard.html">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
@@ -21,55 +21,227 @@
       <a href="om.html">Om &amp; kontakt</a>
     </div>
   </nav>
-  <p class="hero-label">Sagsanalyse</p>
+  <p class="hero-label">Sagsarkiv · Case-analyse</p>
   <h1>Sanderødgård Grusgrav</h1>
   <p class="hero-sub">
-    Screening, PFAS-forurening og brugen af en teoretisk fortyndingsmodel i VVM-processen.
+    PFAS-risici, kontinuitetsbrud og retlig præcedens — en faglig gennemgang af sagsbehandlingen.
   </p>
 </header>
 
-<main class="wrap wrap-narrow">
+<main class="wrap">
 
-  <p class="case-meta">Type: råstofindvinding · Fase: screening · Tema: PFAS, grundvand, VVM-pligt</p>
+  <nav class="breadcrumb" aria-label="Brødkrumme">
+    <a href="index.html">Forside</a>
+    <span aria-hidden="true">/</span>
+    <a href="sagsarkiv.html">Sagsarkiv</a>
+    <span aria-hidden="true">/</span>
+    <span>Sanderødgård Grusgrav</span>
+  </nav>
 
-  <p class="section-label">Kernen i sagen</p>
-  <p>
-    I screeningen af Sanderødgård Grusgrav indgik spørgsmålet om PFAS-forurening. Målinger viste en væsentlig overskridelse i forhold til relevante grænseværdier — i analysen omtalt som en overskridelse på omkring <strong>faktor 28</strong>. Alligevel blev problematikken håndteret på en måde, der betød, at den ikke førte til krav om en egentlig VVM-undersøgelse.
+  <p class="case-meta">
+    Type: råstofindvinding · Myndighed: Region Hovedstaden / Helsingør Kommune · Status: klagesag verserende
   </p>
 
-  <div class="highlight">
-    <strong>Hovedpointe</strong>
-    <p style="margin:0.75rem 0 0;">
-      En teoretisk fortyndingsmodel blev brugt til at argumentere for, at koncentrationerne i recipienten ville blive tilstrækkeligt lave. Dermed blev en konkret, målt forureningsproblematik i praksis holdt ude af den fulde miljøvurderingsproces.
-    </p>
+  <div class="stat-grid">
+    <div class="stat-box">
+      <p class="stat-num">×28</p>
+      <h3>PFAS-overskridelse</h3>
+      <p>0,0553 µg/l i boring B21 — ca. 28 gange over sum-kriteriet på 0,002 µg/l.</p>
+    </div>
+    <div class="stat-box">
+      <p class="stat-num">6,4&nbsp;%</p>
+      <h3>Udnyttelse i 2024</h3>
+      <p>5.108 ton indvundet — under Regionens administrative 10&nbsp;%-grænse for udnyttelse.</p>
+    </div>
+    <div class="stat-box">
+      <p class="stat-num">OSD</p>
+      <h3>Drikkevandsinteresse</h3>
+      <p>Lokaliteten ligger i et Område med Særlige Drikkevandsinteresser nær Gurre Å.</p>
+    </div>
   </div>
 
-  <h2>Hvad er det faglige spørgsmål?</h2>
-  <p>
-    Screeningens formål er at afklare, om et projekt kan forventes at medføre væsentlige miljøpåvirkninger. Når der foreligger målinger af problematiske stoffer i væsentlige koncentrationer, er det centralt, om vurderingen bygger på:
-  </p>
-  <ul>
-    <li>de faktiske målinger og usikkerhederne omkring dem</li>
-    <li>modelantagelser (f.eks. fortynding), og om de er dokumenteret og realistiske</li>
-    <li>om usikkerhed fører til forsigtighed — eller til at problematikken afskrives</li>
-  </ul>
+  <div class="case-layout">
 
-  <h2>Hvorfor er det relevant for borgere?</h2>
-  <p>
-    Når en screening konkluderer «ingen væsentlig påvirkning», stopper den fulde VVM-proces ofte. Det betyder færre undersøgelser, kortere offentlighed og mindre mulighed for at få belyst grundvand, recipientforhold og sundhedsrisici. Derfor er det vigtigt at spørge: Hvilke data ligger til grund? Hvilke modelantagelser bruges? Er overskridelser reelt vurderet — eller regnet væk?
-  </p>
+    <div class="case-main">
 
-  <h2>Spørgsmål, der kan stilles til materialet</h2>
-  <ul>
-    <li>Er PFAS-målingerne og prøvetagningsforholdene tilstrækkeligt dokumenteret?</li>
-    <li>Hvilke antagelser bygger fortyndingsmodellen på — og er de verificeret lokalt?</li>
-    <li>Er der taget højde for usikkerhed, worst case og kumulative kilder?</li>
-    <li>Er konklusionen om screening (ingen VVM-pligt) proportional med den målte overskridelse?</li>
-  </ul>
+      <section class="analysis-block" id="pfas" aria-labelledby="pfas-heading">
+        <p class="section-label">1 · Hydrogeologi</p>
+        <h2 id="pfas-heading">PFAS-problematikken i det hydrogeologiske miljø</h2>
+        <p>
+          Beskyttelsen af grundvandsressourcen i Områder med Særlige Drikkevandsinteresser (OSD) er en absolut prioritet i dansk miljøret. Ved Sanderødgård Grusgrav udgør PFAS-forureningen en overhængende trussel mod vandkvaliteten, hvorfor præcis monitering og en konservativ skønsudøvelse er nødvendig for at sikre drikkevandssikkerheden. Boringer på lokaliteten har påvist koncentrationer, der deklasserer området som sikkert for råstofindvinding uden omfattende afværgeforanstaltninger.
+        </p>
+        <p>
+          Særligt målingerne fra boring B21 (bilag 7) dokumenterer en kritisk tilstand:
+        </p>
 
-  <p>
-    <a class="text-link" href="sagsarkiv.html">← Tilbage til sagsarkivet</a>
-  </p>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <caption>PFAS i boring B21</caption>
+            <thead>
+              <tr>
+                <th scope="col">Parameter</th>
+                <th scope="col">Målt værdi</th>
+                <th scope="col">Grænseværdi (sum af 4 PFAS)</th>
+                <th scope="col">Overskridelsesfaktor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sum af 4 PFAS</td>
+                <td>0,0553 µg/l</td>
+                <td>0,002 µg/l</td>
+                <td>~28 gange</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Den nuværende gravepraksis medfører en væsentlig hydrogeologisk risiko. Under indvindingen er der fare for, at gravefronten gennembryder PFAS-forurenede ler-lommer, hvilket skaber en direkte transportvej for miljøfremmede stoffer til det sekundære grundvandsmagasin og den dannede gravesø. En sådan gennembrydning kan medføre irreversible skader på vandmiljøet.
+        </p>
+        <div class="callout">
+          <strong>Manglende monitering</strong>
+          <p>
+            Projektet lider under en fundamental mangel på løbende kemisk monitering. Fraværet af systematisk overvågning i et sårbart OSD-område udgør en retssikkerhedsmæssig mangel i sagsbehandlingen, da myndighederne opererer på et ufuldstændigt vidensgrundlag. Denne manglende kontrol leder direkte til spørgsmålet om tilladelsens administrative gyldighed i lyset af den faktiske drift.
+          </p>
+        </div>
+      </section>
+
+      <section class="analysis-block" id="kontinuitet" aria-labelledby="kontinuitet-heading">
+        <p class="section-label">2 · Administrativ praksis</p>
+        <h2 id="kontinuitet-heading">Kontinuitetsbrud i indvindingen</h2>
+        <p>
+          Råstoflovens § 10, stk. 7 foreskriver, at en indvindingstilladelse bortfalder, hvis den ikke har været udnyttet i tre på hinanden følgende år. Bestemmelsens formål er at sikre, at ressourcer udnyttes aktivt, og at tilladelser ikke blokeres af passive rettighedshavere.
+        </p>
+        <p>
+          Baseret på de faktiske indberetninger for 2024 fremgår følgende data:
+        </p>
+        <ul>
+          <li><strong>Indvunden mængde:</strong> 5.108 ton sand, grus og sten.</li>
+          <li><strong>Omregnet volumen:</strong> 2.918,8 m³ (5.108 ton / 1,75 densitet).</li>
+          <li><strong>Udnyttelsesgrad:</strong> 6,4&nbsp;% af den årlige tilladte mængde på 45.000 m³.</li>
+        </ul>
+        <p>
+          Dette aktivitetsniveau ligger markant under Region Hovedstadens faste administrative praksis om en 10&nbsp;%-grænse for aktiv udnyttelse. Der foreligger således et juridisk kontinuitetsbrud. Da tilladelsen jf. § 10, stk. 7 de jure må betragtes som bortfaldet, er Regionens nuværende screening for en »fornyet tilladelse« behæftet med en væsentlig retlig mangel: der kan ikke fornyes en tilladelse, der er ophørt med at eksistere.
+        </p>
+        <p>
+          Dette medfører, at Blue Phoenix ikke kan nøjes med en simpel screeningsproces. Situationen kræver en fuld <em>de novo</em> miljøkonsekvensvurdering (VVM), hvor samtlige miljøparametre belyses på ny. Dette er særligt presserende i lyset af de skærpede krav til vandmiljøet, som defineret i retlig præcedens.
+        </p>
+      </section>
+
+      <section class="analysis-block" id="koppers" aria-labelledby="koppers-heading">
+        <p class="section-label">3 · Retlig præcedens</p>
+        <h2 id="koppers-heading">Koppers-afgørelsen som præcedens for vandkvalitet</h2>
+        <p>
+          Koppers-afgørelsen udgør en hjørnesten i dansk miljøret og er definerende for myndighedernes skønsudøvelse ved projekter, der påvirker vandområder. Miljø- og Fødevareklagenævnet har her fastlagt en principiel linje: Tilladelser må ikke meddeles, hvis der er risiko for forringelse af vandområders kemiske tilstand.
+        </p>
+        <p>
+          I sagsbehandlingen for Sanderødgård henvises der til en WSP-rapport, som estimerer en vandføringsreduktion i Gurre Å på blot 0,4–0,9 l/s. Fra et miljøjuridisk synspunkt er disse »små« tal irrelevante. Koppers-præcedensen afviser kategorisk teoretiske fortyndingsmodeller og blandingszoner til fordel for forsigtighedsprincippet. Enhver påviselig risiko for kemisk forringelse er i strid med vandrammedirektivets målsætninger.
+        </p>
+        <p>
+          Der påhviler derfor Blue Phoenix en tung bevisbyrde. Det skal godtgøres via konkrete, repræsentative målinger — ikke blot teoretiske modeller — at gravesøen ikke vil fungere som forureningskilde for Gurre Å. Kravet om vandmiljøbeskyttelse kompliceres yderligere af de modstridende vilkår, som projektet i øjeblikket er underlagt.
+        </p>
+      </section>
+
+      <section class="analysis-block" id="konflikt" aria-labelledby="konflikt-heading">
+        <p class="section-label">4 · Myndighedskonflikt</p>
+        <h2 id="konflikt-heading">Modstridende vilkår og kumulative risici</h2>
+        <p>
+          Den administrative styring af Sanderødgård Grusgrav udviser en alvorlig konflikt mellem kommunale og regionale vilkår, hvilket svækker den samlede miljøsikkerhed i et følsomt OSD-område.
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <caption>Konflikt mellem myndighedsvilkår</caption>
+            <thead>
+              <tr>
+                <th scope="col">Myndighed</th>
+                <th scope="col">Myndighedsområde</th>
+                <th scope="col">Konfliktpunkt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Helsingør Kommune</td>
+                <td>Miljøgodkendelse (genbrug)</td>
+                <td>Regulerer genbrugsaktivitet, hvor sprinkling af veje kan ske med potentielt forurenet overfladevand.</td>
+              </tr>
+              <tr>
+                <td>Region Hovedstaden</td>
+                <td>Råstoftilladelse (§ 10)</td>
+                <td>Krav om forebyggelse af grundvandsforurening, hvilket forudsætter anvendelse af rent vand, da den beskyttende jordoverflade er fjernet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Blue Phoenix hævder, at grusgraven og genbrugscenteret er »uafhængige og afgrænsede områder«. Denne påstand er hydrogeologisk og juridisk uholdbar i et OSD-område. Den vertikale og horisontale konnektivitet i magasinet betyder, at forurening fra genbrugsaktiviteten (f.eks. støvdæmpning med urent vand) direkte kan påvirke indvindingsområdet og gravesøen.
+        </p>
+        <p>
+          Sagsbehandlingen er desuden præmatur. Regionen anfører, at V1-kortlægningen (jordforurening) løbende vil blive afklaret under selve indvindingsprocessen. Retligt set er det umuligt at træffe en gyldig screeningsafgørelse om »ingen væsentlig påvirkning«, så længe forureningens fulde omfang ikke er kortlagt. Screeningsafgørelsen mangler dermed det nødvendige faktuelle grundlag for at kunne opretholdes.
+        </p>
+      </section>
+
+      <section class="analysis-block" id="konklusion" aria-labelledby="konklusion-heading">
+        <p class="section-label">Konklusion</p>
+        <h2 id="konklusion-heading">Samlet vurdering</h2>
+        <div class="highlight">
+          <p style="margin:0;">
+            Den samlede analyse viser, at sagsbehandlingen af Sanderødgård Grusgrav er juridisk mangelfuld. Kombinationen af en overskridelsesfaktor på 28 for PFAS, et dokumenteret kontinuitetsbrud (6,4&nbsp;% udnyttelse) og en præmatur screening før fuld V1-afkortlægning nødvendiggør en annullering af den nuværende proces. Der kræves en fuld VVM-redegørelse for at sikre overholdelse af råstoflovens § 3 og Koppers-afgørelsens krav om vandmiljøbeskyttelse.
+          </p>
+        </div>
+      </section>
+
+      <section class="analysis-block" id="downloads" aria-labelledby="downloads-heading">
+        <p class="section-label">Dokumentation</p>
+        <h2 id="downloads-heading">Officielle sagsakter til download</h2>
+        <p>
+          Herunder findes de originale dokumenter, som sagsanalysen bygger på. Filnavne er sat op uden æ, ø og å af hensyn til webserveren.
+        </p>
+        <div class="doc-list">
+          <a class="doc-item" href="assets/dokumenter/sanderoedgaard-forureningsundersoegelse-2021.pdf" target="_blank" rel="noopener">
+            <span class="doc-status">Download</span>
+            <span class="doc-title">NIRAS: Forureningsundersøgelse (2021)</span>
+            <span class="doc-meta">PDF · Sagsundersøgelse fase 1</span>
+          </a>
+          <a class="doc-item" href="assets/dokumenter/helsingoer-miljoegodkendelse-2016.pdf" target="_blank" rel="noopener">
+            <span class="doc-status">Download</span>
+            <span class="doc-title">Helsingør Kommune: Miljøgodkendelse (2016)</span>
+            <span class="doc-meta">PDF · Genbrugsanlæg Sanderødgård</span>
+          </a>
+          <div class="doc-item is-pending" role="status">
+            <span class="doc-status">Afventer / Kommer snart</span>
+            <span class="doc-title">Region Hovedstaden: VVM-screeningsafgørelse (23. april 2026)</span>
+            <span class="doc-meta">Upload til <code>assets/dokumenter/sanderoedgaard-screeningsafgoerelse-2026.pdf</code>, når dokumentet foreligger.</span>
+          </div>
+        </div>
+      </section>
+
+      <p>
+        <a class="text-link" href="sagsarkiv.html">← Tilbage til sagsarkivet</a>
+      </p>
+    </div>
+
+    <aside class="case-aside" aria-label="Sagsinfo">
+      <h2>Sagsinfo</h2>
+      <dl>
+        <dt>Lokalitet</dt>
+        <dd>Sanderødgård Grusgrav</dd>
+        <dt>Ansøger</dt>
+        <dd>Blue Phoenix</dd>
+        <dt>Myndighed (råstof)</dt>
+        <dd>Region Hovedstaden</dd>
+        <dt>Myndighed (tilsyn)</dt>
+        <dd>Helsingør Kommune</dd>
+        <dt>Status</dt>
+        <dd>Klagesag verserende</dd>
+      </dl>
+      <a class="btn btn-outline" href="#downloads">Gå til sagsakter →</a>
+    </aside>
+
+  </div>
+
 </main>
 
 <footer>© Vores Miljø</footer>
