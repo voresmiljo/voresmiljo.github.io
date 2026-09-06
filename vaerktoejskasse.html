@@ -37,8 +37,8 @@
   </nav>
 
   <section id="skabeloner" aria-labelledby="skabeloner-heading">
-    <p class="section-label">1 · Downloads</p>
-    <h2 id="skabeloner-heading">Skabeloner til download</h2>
+    <p class="section-label">1 · Skabeloner</p>
+    <h2 id="skabeloner-heading">Skabeloner til brug i miljøsager</h2>
     <p>
       Tre skabeloner understøtter den typiske rækkefølge i en miljøsag: indhentning af dokumentation, indsigelse i høring og formel klage.
     </p>
@@ -53,8 +53,8 @@
           </p>
         </div>
         <div>
-          <a class="btn btn-outline is-pending" href="assets/skabeloner/anmodning-om-aktindsigt.docx" aria-disabled="true">Hent skabelon (.docx)</a>
-          <p class="tool-meta">Lovbestemt svartid: normalt inden for 7 arbejdsdage. Skabelonen publiceres snart.</p>
+          <a class="btn btn-outline" href="#aktindsigt">Åbn skabelon →</a>
+          <p class="tool-meta">Lovbestemt svartid: normalt inden for 7 arbejdsdage.</p>
         </div>
       </article>
 
@@ -67,8 +67,8 @@
           </p>
         </div>
         <div>
-          <a class="btn btn-outline is-pending" href="assets/skabeloner/struktureret-hoeringssvar.docx" aria-disabled="true">Hent skabelon (.docx)</a>
-          <p class="tool-meta">Inkluderer vejledning i faglige indvendinger. Skabelonen publiceres snart.</p>
+          <a class="btn btn-outline is-pending" href="#hoeringssvar" aria-disabled="true">Kommer snart</a>
+          <p class="tool-meta">Inkluderer vejledning i faglige indvendinger.</p>
         </div>
       </article>
 
@@ -81,11 +81,81 @@
           </p>
         </div>
         <div>
-          <a class="btn btn-outline is-pending" href="assets/skabeloner/formelt-klageskrift.docx" aria-disabled="true">Hent skabelon (.docx)</a>
-          <p class="tool-meta">Strikt klagefrist: 4 uger fra offentliggørelse. Skabelonen publiceres snart.</p>
+          <a class="btn btn-outline is-pending" href="#klage" aria-disabled="true">Kommer snart</a>
+          <p class="tool-meta">Strikt klagefrist: 4 uger fra offentliggørelse.</p>
         </div>
       </article>
     </div>
+
+    <article class="tool-detail" id="aktindsigt" aria-labelledby="aktindsigt-heading">
+      <p class="section-label">Trin 1 · Detaljer</p>
+      <h2 id="aktindsigt-heading">Anmodning om aktindsigt</h2>
+      <p>
+        Første skridt i belysningen af en lokal miljøsag er at få adgang til myndighedernes fulde sagsakter. Mange afgørende dokumenter — herunder interne e-mails, ufiltrerede målerapporter og korrespondance mellem bygherre og myndighed — fremgår ikke altid af de offentligt tilgængelige høringsportaler.
+      </p>
+
+      <h3>Det juridiske grundlag</h3>
+      <ul>
+        <li>
+          <strong>Miljøoplysningsloven (lov om aktindsigt i miljøoplysninger):</strong> Giver offentligheden en særlig vidtgående ret til aktindsigt i alle oplysninger vedrørende miljøet, herunder stoffer (f.eks. PFAS, tungmetaller), støj, stråling samt administrative foranstaltninger og analyser. Retten til aktindsigt efter miljøoplysningsloven er bredere end efter den almindelige offentlighedslov.
+        </li>
+        <li>
+          <strong>Offentlighedsloven:</strong> Gælder generelt for anmodninger fra borgere, der ikke er direkte parter i sagen.
+        </li>
+        <li>
+          <strong>Forvaltningsloven (§ 19 om partsaktindsigt):</strong> Kan anvendes af borgere, der har status som parter i sagen (f.eks. direkte naboer eller grundejere inden for indvindings- eller lokalplanområdet). Parter har en endnu stærkere ret til at se sagens dokumenter.
+        </li>
+      </ul>
+
+      <h3>Lovbestemte tidsfrister</h3>
+      <p>
+        Efter offentlighedsloven skal en anmodning om aktindsigt behandles hurtigst muligt, og myndigheden skal som udgangspunkt have færdigbehandlet anmodningen inden for <strong>7 arbejdsdage</strong> efter modtagelsen. Hvis dette ikke er muligt, skal myndigheden skriftligt begrunde forsinkelsen og oplyse, hvornår afgørelsen kan forventes.
+      </p>
+
+      <h3>Tekstskabelon</h3>
+      <p>
+        Nedenstående tekst kan kopieres og udfyldes med sagens konkrete oplysninger. Parenteserne angiver, hvor der skal indsættes specifikke sagsoplysninger. For Sanderødgård-sagen er konkrete myndighedsoplysninger forberedt i skabelonen.
+      </p>
+
+      <div class="template-box">
+        <div class="template-box-header">
+          <p>Kopiér skabelonen til Word eller e-mail</p>
+          <button type="button" class="btn-copy" id="copy-aktindsigt" data-target="aktindsigt-template">Kopiér tekst</button>
+        </div>
+        <pre id="aktindsigt-template">Til: [Indsæt myndighed, f.eks.: Region Hovedstaden, Center for Regional Udvikling, Miljø (raastoffer@regionh.dk) ELLER Helsingør Kommune, Center for Teknik, Miljø og Klima (apr55@helsingor.dk)]
+
+Dato: [Indsæt dato]
+
+Vedrørende: Anmodning om aktindsigt i miljøoplysninger
+
+Undertegnede anmoder herved om aktindsigt i medfør af Lov om aktindsigt i miljøoplysninger (Miljøoplysningsloven) samt Offentlighedsloven.
+
+Såfremt undertegnede er at betragte som part i sagen (f.eks. som herboende nabo), anmodes der sekundært om partsaktindsigt i medfør af Forvaltningslovens bestemmelser.
+
+Sagen vedrører:
+* Lokalitet: [Indsæt lokalitet, f.eks. Sanderødgård Grusgrav, Hornbækvej 657, matr.nr. 1 og 4f, Bistrup By, Tikøb]
+* Myndighedens sagsnummer: [Indsæt sagsnummer, f.eks. sagsnr. 25020022 (Region Hovedstaden) eller sagsnr. 15/3786 (Helsingør Kommune)]
+
+Aktindsigten ønskes at omfatte samtlige sagens dokumenter, herunder (men ikke begrænset til):
+1. Al korrespondance (herunder e-mails, mødereferater og telefonnotater) mellem myndigheden og bygherre/rådgiver i perioden [Indsæt dato] til dato.
+2. Interne faglige vurderinger, notater og udkast udarbejdet af myndighedens egne sagsbehandlere eller specialister vedrørende [Indsæt emne, f.eks. grundvandsrisiko, PFAS-målinger eller støjberegninger].
+3. Samtlige rådata, ufiltrerede analyserapporter, laboratorieresultater og feltmålinger foretaget på lokaliteten.
+4. Eventuel korrespondance og udtalelser udvekslet mellem [f.eks. Region Hovedstaden og Helsingør Kommune] vedrørende sagens regulering og tilsyn.
+
+Det præciseres jf. miljøoplysningslovens principper, at offentlighedens interesse i at få oplysningerne udleveret skal vægtes tungt, og at eventuelle undtagelser af interne dokumenter skal begrænses mest muligt jf. det snævre undtagelsesprincip for miljøoplysninger.
+
+Anmodningen bedes besvaret hurtigst muligt. Der henvises til den lovbestemte frist i offentlighedsloven, hvorefter anmodninger som udgangspunkt skal være færdigbehandlet inden for 7 arbejdsdage. Såfremt dette mod forventning ikke kan lade sig gøre, bedes der fremsendt en skriftlig begrundelse samt en præcis dato for, hvornår aktindsigten vil blive udleveret.
+
+Dokumenterne bedes fremsendt elektronisk til nedenstående e-mailadresse.
+
+Med venlig hilsen,
+
+Navn: [Indsæt navn]
+Adresse: [Indsæt adresse]
+E-mail: [Indsæt e-mail]
+Telefonnummer: [Indsæt telefonnummer]</pre>
+      </div>
+    </article>
   </section>
 
   <section id="tjekliste" style="margin-top:4.5rem;" aria-labelledby="tjekliste-heading">
@@ -176,5 +246,32 @@
 </main>
 
 <footer>© Vores Miljø</footer>
+
+<script>
+  document.querySelectorAll('.btn-copy').forEach(function (btn) {
+    btn.addEventListener('click', async function () {
+      var target = document.getElementById(btn.getAttribute('data-target'));
+      if (!target) return;
+      var text = target.textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        var original = btn.textContent;
+        btn.textContent = 'Kopieret';
+        btn.classList.add('is-copied');
+        setTimeout(function () {
+          btn.textContent = original;
+          btn.classList.remove('is-copied');
+        }, 2000);
+      } catch (err) {
+        var range = document.createRange();
+        range.selectNodeContents(target);
+        var selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        btn.textContent = 'Markér og kopiér (Ctrl/Cmd+C)';
+      }
+    });
+  });
+</script>
 </body>
 </html>
