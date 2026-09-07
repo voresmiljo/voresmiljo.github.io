@@ -799,31 +799,31 @@ a.doc-item:hover {
 
 .tool-blocks {
   display: grid;
-  gap: 1.75rem;
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 
 .tool-block {
-  border: 1px solid rgba(74,103,65,0.2);
-  background: var(--light);
+  border: 2px solid rgba(74,103,65,0.35);
+  background: #ffffff;
+  padding: 1.75rem 1.5rem 2rem;
 }
 
-.tool-block .tool-card {
-  border: none;
-  border-top: 3px solid var(--stone);
-  margin: 0;
+.tool-block > h2 {
+  margin-top: 0.35rem;
 }
 
-.tool-block .tool-card .btn {
-  display: inline-block;
-  width: auto;
-  margin-top: 1rem;
+.tool-block .tool-meta {
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+  color: var(--moss);
 }
 
 .template-panel {
   display: block !important;
-  padding: 1.5rem 1.5rem 1.75rem;
-  border-top: 1px solid rgba(74,103,65,0.15);
+  padding: 1.25rem 0 0;
+  border-top: 1px solid rgba(74,103,65,0.2);
+  margin-top: 0.5rem;
   color: #111111;
   background: #ffffff;
 }

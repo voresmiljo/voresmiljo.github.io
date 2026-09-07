@@ -40,21 +40,17 @@
     <p class="section-label">1 · Skabeloner</p>
     <h2 id="skabeloner-heading">Skabeloner til brug i miljøsager</h2>
     <p>
-      Tre skabeloner understøtter den typiske rækkefølge i en miljøsag: indhentning af dokumentation, indsigelse i høring og formel klage. Vejledning og fuld tekst åbnes under hvert kort.
+      Tre skabeloner understøtter den typiske rækkefølge i en miljøsag: indhentning af dokumentation, indsigelse i høring og formel klage. Den fulde tekstskabelon står synligt i boksen under hver vejledning.
     </p>
 
     <div class="tool-blocks">
-      <div class="tool-block" id="aktindsigt">
-        <article class="tool-card">
-          <div>
-            <p class="section-label">Trin 1 · Indhent data</p>
-            <h3>Anmodning om aktindsigt</h3>
-            <p>Juridisk præcis formular baseret på miljøoplysningsloven og offentlighedsloven. Anvendes til at indhente ufiltrerede målerapporter, interne faglige vurderinger og korrespondance mellem bygherre og myndighed.</p>
-          </div>
-          <p class="tool-meta">Lovbestemt svartid: normalt inden for 7 arbejdsdage.</p>
-          <a class="btn btn-outline" href="#aktindsigt-skabelon">Gå til skabelon →</a>
-        </article>
-        <div class="template-panel" id="aktindsigt-skabelon">
+      <section class="tool-block" id="aktindsigt">
+        <p class="section-label">Trin 1 · Indhent data</p>
+        <h2>Anmodning om aktindsigt</h2>
+        <p>Juridisk præcis formular baseret på miljøoplysningsloven og offentlighedsloven. Anvendes til at indhente ufiltrerede målerapporter, interne faglige vurderinger og korrespondance mellem bygherre og myndighed.</p>
+        <p class="tool-meta">Lovbestemt svartid: normalt inden for 7 arbejdsdage.</p>
+
+        <div class="template-panel">
           <p>
 Første skridt i belysningen af en lokal miljøsag er at få adgang til myndighedernes fulde sagsakter. Mange afgørende dokumenter — herunder interne e-mails, ufiltrerede målerapporter og korrespondance mellem bygherre og myndighed — fremgår ikke altid af de offentligt tilgængelige høringsportaler.
 </p>
@@ -68,14 +64,16 @@ Første skridt i belysningen af en lokal miljøsag er at få adgang til myndighe
 <p>
 Efter offentlighedsloven skal en anmodning om aktindsigt behandles hurtigst muligt, og myndigheden skal som udgangspunkt have færdigbehandlet anmodningen inden for <strong>7 arbejdsdage</strong> efter modtagelsen. Hvis dette ikke er muligt, skal myndigheden skriftligt begrunde forsinkelsen og oplyse, hvornår afgørelsen kan forventes.
 </p>
-          <h3>Tekstskabelon</h3>
-          <p><strong>Kopiér teksten herunder</strong> og indsæt den i Word eller en e-mail. Udfyld felterne i [kantede parenteser].</p>
-          <div class="template-box">
-            <div class="template-box-header">
-              <p>Skabelon — synlig tekst</p>
-              <button type="button" class="btn-copy" data-target="aktindsigt-template">Kopiér tekst</button>
-            </div>
-            <textarea class="template-body" id="aktindsigt-template" readonly rows="18">Til: [Indsæt myndighed, f.eks.: Region Hovedstaden, Center for Regional Udvikling, Miljø (raastoffer@regionh.dk) ELLER Helsingør Kommune, Center for Teknik, Miljø og Klima (apr55@helsingor.dk)]
+
+          <h3>Tekstskabelon til kopi</h3>
+          <p>Markér teksten i boksen, eller tryk på knappen for at kopiere den.</p>
+
+          <p style="margin:1rem 0 0.75rem;">
+            <button type="button" class="btn btn-outline btn-copy" data-target="aktindsigt-template">Kopiér skabelontekst</button>
+          </p>
+
+          <label class="section-label" for="aktindsigt-template" style="display:block;margin-top:1rem;">Skabelontekst</label>
+          <textarea id="aktindsigt-template" class="template-body" readonly rows="22" style="display:block;width:100%;min-height:28rem;padding:1.25rem;border:2px solid #2C3E2D;background:#ffffff;color:#111111;-webkit-text-fill-color:#111111;font-size:16px;line-height:1.6;font-family:Georgia,serif;white-space:pre-wrap;box-sizing:border-box;">Til: [Indsæt myndighed, f.eks.: Region Hovedstaden, Center for Regional Udvikling, Miljø (raastoffer@regionh.dk) ELLER Helsingør Kommune, Center for Teknik, Miljø og Klima (apr55@helsingor.dk)]
 
 Dato: [Indsæt dato]
 
@@ -107,20 +105,15 @@ Navn: [Indsæt navn]
 Adresse: [Indsæt adresse]
 E-mail: [Indsæt e-mail]
 Telefonnummer: [Indsæt telefonnummer]</textarea>
-          </div>
         </div>
-      </div>
-      <div class="tool-block" id="hoeringssvar">
-        <article class="tool-card">
-          <div>
-            <p class="section-label">Trin 2 · Gør indsigelse</p>
-            <h3>Struktureret høringssvar</h3>
-            <p>Skabelon til indsigelse mod råstof- eller planprojekter. Opbygget systematisk efter faglige miljøtemaer som drikkevandsbeskyttelse, Natura 2000-korridorer, Bilag IV-arter samt lokal støjbelastning.</p>
-          </div>
-          <p class="tool-meta">Inkluderer vejledning i faglige indvendinger.</p>
-          <a class="btn btn-outline" href="#hoeringssvar-skabelon">Gå til skabelon →</a>
-        </article>
-        <div class="template-panel" id="hoeringssvar-skabelon">
+      </section>
+      <section class="tool-block" id="hoeringssvar">
+        <p class="section-label">Trin 2 · Gør indsigelse</p>
+        <h2>Struktureret høringssvar</h2>
+        <p>Skabelon til indsigelse mod råstof- eller planprojekter. Opbygget systematisk efter faglige miljøtemaer som drikkevandsbeskyttelse, Natura 2000-korridorer, Bilag IV-arter samt lokal støjbelastning.</p>
+        <p class="tool-meta">Inkluderer vejledning i faglige indvendinger.</p>
+
+        <div class="template-panel">
           <p>
 Offentlig deltagelse er en central og lovbestemt del af miljøvurderingsreglerne. Erfaringer viser, at et <strong>fagligt og juridisk funderet høringssvar har markant større chance for at blive tillagt vægt</strong> af myndighederne end en generel, følelsesbetonet protest.
 </p>
@@ -133,14 +126,16 @@ For at et høringssvar skal have maksimal gennemslagskraft, bør det opbygges sy
 <li><strong>Henvis til præcedens:</strong> Brug afgørelser fra Planklagenævnet og Miljø- og Fødevareklagenævnet til at vise, hvordan lignende sager er blevet afgjort.</li>
 <li><strong>Kræv kumulative vurderinger:</strong> Myndigheder glemmer ofte at vurdere den samlede (kumulative) belastning af støj, støv eller forurening fra flere forskellige virksomheder i samme område, hvilket er et direkte krav jf. bilag 6.</li>
 </ol>
-          <h3>Tekstskabelon</h3>
-          <p><strong>Kopiér teksten herunder</strong> og indsæt den i Word eller en e-mail. Udfyld felterne i [kantede parenteser].</p>
-          <div class="template-box">
-            <div class="template-box-header">
-              <p>Skabelon — synlig tekst</p>
-              <button type="button" class="btn-copy" data-target="hoeringssvar-template">Kopiér tekst</button>
-            </div>
-            <textarea class="template-body" id="hoeringssvar-template" readonly rows="18">Til: [Indsæt den ansvarlige myndighed, f.eks. Helsingør Kommune ELLER Region Hovedstaden]
+
+          <h3>Tekstskabelon til kopi</h3>
+          <p>Markér teksten i boksen, eller tryk på knappen for at kopiere den.</p>
+
+          <p style="margin:1rem 0 0.75rem;">
+            <button type="button" class="btn btn-outline btn-copy" data-target="hoeringssvar-template">Kopiér skabelontekst</button>
+          </p>
+
+          <label class="section-label" for="hoeringssvar-template" style="display:block;margin-top:1rem;">Skabelontekst</label>
+          <textarea id="hoeringssvar-template" class="template-body" readonly rows="22" style="display:block;width:100%;min-height:28rem;padding:1.25rem;border:2px solid #2C3E2D;background:#ffffff;color:#111111;-webkit-text-fill-color:#111111;font-size:16px;line-height:1.6;font-family:Georgia,serif;white-space:pre-wrap;box-sizing:border-box;">Til: [Indsæt den ansvarlige myndighed, f.eks. Helsingør Kommune ELLER Region Hovedstaden]
 E-mail: [Indsæt myndighedens e-mailadresse]
 
 Dato: [Indsæt dato]
@@ -186,20 +181,15 @@ Med venlig hilsen,
 Navn: [Indsæt navn]
 Adresse: [Indsæt adresse]
 E-mail: [Indsæt e-mail]</textarea>
-          </div>
         </div>
-      </div>
-      <div class="tool-block" id="klage">
-        <article class="tool-card">
-          <div>
-            <p class="section-label">Trin 3 · Retlig prøvning</p>
-            <h3>Formelt klageskrift</h3>
-            <p>Skabelon til indgivelser til Miljø- og Fødevareklagenævnet samt Planklagenævnet. Sikrer overholdelse af formelle krav, herunder anmodning om opsættende virkning og klageberettigelse.</p>
-          </div>
-          <p class="tool-meta">Strikt klagefrist: 4 uger fra offentliggørelse.</p>
-          <a class="btn btn-outline" href="#klage-skabelon">Gå til skabelon →</a>
-        </article>
-        <div class="template-panel" id="klage-skabelon">
+      </section>
+      <section class="tool-block" id="klage">
+        <p class="section-label">Trin 3 · Retlig prøvning</p>
+        <h2>Formelt klageskrift</h2>
+        <p>Skabelon til indgivelser til Miljø- og Fødevareklagenævnet samt Planklagenævnet. Sikrer overholdelse af formelle krav, herunder anmodning om opsættende virkning og klageberettigelse.</p>
+        <p class="tool-meta">Strikt klagefrist: 4 uger fra offentliggørelse.</p>
+
+        <div class="template-panel">
           <p>
 Hvis et høringssvar ikke har ført til de nødvendige ændringer, og myndigheden (regionen eller kommunen) har truffet en endelig afgørelse, kan afgørelsen påklages til de overordnede klagenævn. Klagesager behandles af enten <strong>Miljø- og Fødevareklagenævnet</strong> eller <strong>Planklagenævnet</strong>.
 </p>
@@ -218,14 +208,16 @@ Hvis et høringssvar ikke har ført til de nødvendige ændringer, og myndighede
 </ul>
 </li>
 </ul>
-          <h3>Tekstskabelon</h3>
-          <p><strong>Kopiér teksten herunder</strong> og indsæt den i Word eller en e-mail. Udfyld felterne i [kantede parenteser].</p>
-          <div class="template-box">
-            <div class="template-box-header">
-              <p>Skabelon — synlig tekst</p>
-              <button type="button" class="btn-copy" data-target="klage-template">Kopiér tekst</button>
-            </div>
-            <textarea class="template-body" id="klage-template" readonly rows="18">Til: Miljø- og Fødevareklagenævnet / Planklagenævnet
+
+          <h3>Tekstskabelon til kopi</h3>
+          <p>Markér teksten i boksen, eller tryk på knappen for at kopiere den.</p>
+
+          <p style="margin:1rem 0 0.75rem;">
+            <button type="button" class="btn btn-outline btn-copy" data-target="klage-template">Kopiér skabelontekst</button>
+          </p>
+
+          <label class="section-label" for="klage-template" style="display:block;margin-top:1rem;">Skabelontekst</label>
+          <textarea id="klage-template" class="template-body" readonly rows="22" style="display:block;width:100%;min-height:28rem;padding:1.25rem;border:2px solid #2C3E2D;background:#ffffff;color:#111111;-webkit-text-fill-color:#111111;font-size:16px;line-height:1.6;font-family:Georgia,serif;white-space:pre-wrap;box-sizing:border-box;">Til: Miljø- og Fødevareklagenævnet / Planklagenævnet
 (Indgives via Klageportalen på borger.dk eller virk.dk til den afgørende myndighed)
 
 Dato: [Indsæt dato]
@@ -282,9 +274,8 @@ Dato: [Indsæt dato]
 
 Bilagsliste:
 - [Indsæt evt. bilag, f.eks. kort over ejendomme, fotos af rydninger eller støjmålinger]</textarea>
-          </div>
         </div>
-      </div>
+      </section>
     </div>
   </section>
 
