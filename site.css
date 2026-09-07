@@ -965,6 +965,105 @@ a.doc-item:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Om & kontakt */
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.9fr);
+  gap: 2.75rem;
+  align-items: start;
+}
+
+.about-main h2:first-of-type { margin-top: 0; }
+
+.contact-panel {
+  background: #ffffff;
+  border: 2px solid rgba(74,103,65,0.25);
+  padding: 1.75rem 1.5rem 2rem;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.contact-panel h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  margin-bottom: 0.85rem;
+}
+
+.contact-panel > p {
+  font-size: 0.98rem;
+  max-width: none;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.contact-form label span {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--moss);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(74,103,65,0.3);
+  background: var(--light);
+  color: #111111;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--moss);
+  outline-offset: 1px;
+  background: #ffffff;
+}
+
+.contact-form small {
+  font-size: 0.85rem;
+  color: var(--moss);
+  line-height: 1.45;
+}
+
+.contact-note {
+  margin: 0.25rem 0 0;
+  padding: 1rem 1.1rem;
+  background: var(--cream);
+  border-left: 4px solid var(--stone);
+  font-size: 0.9rem;
+  color: var(--earth);
+  max-width: none;
+}
+
+.contact-submit {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 0.25rem;
+  background: var(--earth);
+  color: var(--sand);
+  border-color: var(--earth);
+}
+
+.contact-submit:hover {
+  background: var(--moss);
+  border-color: var(--moss);
+  color: #ffffff;
+}
+
 footer {
   background: var(--earth);
   color: rgba(232,224,208,0.5);
