@@ -883,10 +883,17 @@ a.doc-item:hover {
 }
 
 .fold-body {
-  display: block;
   padding: 1.35rem 1.25rem 1.75rem;
   color: #111111;
   background: #ffffff;
+}
+
+.fold:not([open]) > .fold-body {
+  display: none;
+}
+
+.fold[open] > .fold-body {
+  display: block;
 }
 
 .fold-body p,
@@ -902,9 +909,6 @@ a.doc-item:hover {
 }
 
 .template-panel {
-  display: block !important;
-  padding: 0;
-  margin-top: 0;
   color: #111111;
   background: #ffffff;
 }
