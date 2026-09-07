@@ -252,7 +252,7 @@ h3 {
 .cta-box p { color: rgba(232,224,208,0.75); }
 .cta-box a { color: var(--sand); font-weight: 600; }
 
-/* Vejviser: skalerbar fase-struktur */
+/* Processen: skalerbar fase-struktur */
 .phase-nav {
   display: flex;
   flex-wrap: wrap;
