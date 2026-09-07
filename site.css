@@ -986,7 +986,9 @@ footer {
   .criteria-grid,
   .card-grid.cols-3 { grid-template-columns: 1fr; }
   .case-layout,
-  .checklist-layout { grid-template-columns: 1fr; }
+  .checklist-layout,
+  .about-layout { grid-template-columns: 1fr; }
   .case-aside,
-  .guide-aside { position: static; }
+  .guide-aside,
+  .contact-panel { position: static; }
 }
