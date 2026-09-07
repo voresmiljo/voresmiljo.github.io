@@ -13,6 +13,8 @@ Siden er midlertidigt lukket for Google-søgeresultater (`noindex`), men kan til
 ## Sagsanalyser
 - [Sanderødgård Grusgrav](https://voresmiljo.dk/sag-sanderoedgaard.html): Analyse af screening/tilladelsesgrundlag, bl.a. grundvand, kontinuitet og retlig belysning
 - [Falkenberg Jorde](https://voresmiljo.dk/sag-falkenberg.html): Analyse af lokalplan/idrætsanlæg med fokus på natur, støj og procedure
+- [Koppers-sagen](https://voresmiljo.dk/sag-koppers.html): Principiel afgørelse om udledning til Nyborg Fjord, blandingszoner og krav til konkret vidensgrundlag
+- [Skærbækværket](https://voresmiljo.dk/sag-skaerbaekvaerket.html): Hjemvisning af udledningstilladelse til Kolding Fjord pga. mangelfuld screening, kumulation og alternativer
 
 ## Hvad platformen hjælper med
 - Forstå VVM-screening, miljøkonsekvensrapporter og høringsprocesser
