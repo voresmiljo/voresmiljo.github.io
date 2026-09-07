@@ -752,8 +752,11 @@ a.doc-item:hover {
 }
 
 .template-box .template-body,
-.template-box pre {
+.template-box pre,
+.template-box textarea.template-body {
   display: block !important;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0;
   padding: 1.35rem 1.4rem 1.6rem;
   white-space: pre-wrap;
@@ -764,11 +767,16 @@ a.doc-item:hover {
   line-height: 1.7;
   color: #111111 !important;
   background: #ffffff !important;
-  min-height: 10rem;
-  max-height: 32rem;
+  min-height: 16rem;
+  height: auto;
+  max-height: none;
   overflow: auto;
   visibility: visible !important;
   opacity: 1 !important;
+  border: 0;
+  border-radius: 0;
+  resize: vertical;
+  -webkit-text-fill-color: #111111;
 }
 
 .btn-copy {
@@ -806,47 +814,31 @@ a.doc-item:hover {
   margin: 0;
 }
 
-.tool-block .template-toggle {
+.tool-block .tool-card .btn {
   display: inline-block;
   width: auto;
   margin-top: 1rem;
-  background: var(--earth);
-  color: #E8E0D0;
-  border-color: var(--earth);
-}
-
-.tool-block .template-toggle:hover {
-  background: var(--moss);
-  border-color: var(--moss);
-  color: #fff;
 }
 
 .template-panel {
-  display: block;
+  display: block !important;
   padding: 1.5rem 1.5rem 1.75rem;
   border-top: 1px solid rgba(74,103,65,0.15);
-  color: #2C3E2D;
-  background: #fff;
-}
-
-.template-panel[hidden] {
-  display: none !important;
+  color: #111111;
+  background: #ffffff;
 }
 
 .template-panel h3,
 .template-panel p,
-.template-panel li {
-  color: #2C3E2D;
+.template-panel li,
+.template-panel strong {
+  color: #111111;
 }
 
 .template-panel p,
 .template-panel ul,
 .template-panel ol {
   max-width: none;
-}
-
-.tool-accordion {
-  display: none;
 }
 
 .checklist-accordion {
