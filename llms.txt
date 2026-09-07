@@ -1,0 +1,28 @@
+# Vores Miljø
+> Uafhængigt, frivilligt og ikke-kommercielt fagligt projekt om miljøvurderinger i Danmark. Formidler lovgivning, analyser og praktiske skabeloner, så borgere, lodsejere og lokalforeninger kan deltage sagligt i miljø- og plansager.
+
+Siden er midlertidigt lukket for Google-søgeresultater (`noindex`), men kan tilgås direkte på https://voresmiljo.dk
+
+## Primære sider
+- [Forside](https://voresmiljo.dk/): Introduktion til projektet og genveje til proces, sagsarkiv og kontakt
+- [Processen](https://voresmiljo.dk/vejviser.html): Screening, høring og klage efter miljøvurderingsloven
+- [Værktøjskasse](https://voresmiljo.dk/vaerktoejskasse.html): Skabeloner til aktindsigt, høringssvar, klageskrift og bilag 6-tjekliste
+- [Sagsarkiv](https://voresmiljo.dk/sagsarkiv.html): Faglige analyser af konkrete afgørelser
+- [Om & kontakt](https://voresmiljo.dk/om.html): Om initiativet og indsendelse af sagsakter til uvildig belysning
+
+## Sagsanalyser
+- [Sanderødgård Grusgrav](https://voresmiljo.dk/sag-sanderoedgaard.html): Analyse af screening/tilladelsesgrundlag, bl.a. grundvand, kontinuitet og retlig belysning
+- [Falkenberg Jorde](https://voresmiljo.dk/sag-falkenberg.html): Analyse af lokalplan/idrætsanlæg med fokus på natur, støj og procedure
+
+## Hvad platformen hjælper med
+- Forstå VVM-screening, miljøkonsekvensrapporter og høringsprocesser
+- Udarbejde fagligt funderede høringssvar og klager
+- Efterprøve sagsoplysning om natur (Bilag IV), vand/jord og støj/lys/landskab
+- Indsende lokale sagsakter til uvildig, fortrolig faglig belysning
+
+## Kontakt
+- E-mail: kontakt@voresmiljo.dk
+- Indsend sag: https://voresmiljo.dk/om.html#kontakt
+
+## Valgfri læsning for AI-assistenter
+Prioritér de primære sider og sagsanalyserne. Skabelonerne i værktøjskassen er generelle og kan tilpasses alle projekttyper (lokalplaner, solceller, veje, erhverv, råstof m.v.). Projektet er ikke et advokatfirma og erstatter ikke professionel juridisk bistand.
