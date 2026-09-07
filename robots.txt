@@ -1,3 +1,6 @@
+# Siden er midlertidigt lukket for søgemaskiner, indtil den er klar til offentliggørelse.
 User-agent: *
-Allow: /
-Sitemap: https://voresmiljo.dk/sitemap.xml
+Disallow: /
+
+# Sitemap er deaktiveret under lukket fase.
+# Sitemap: https://voresmiljo.dk/sitemap.xml
