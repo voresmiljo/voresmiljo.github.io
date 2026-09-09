@@ -67,7 +67,7 @@ nav {
 .menu a:hover,
 .menu a.active { color: var(--sand); }
 
-.hero-inner { align-self: end; max-width: 720px; }
+.hero-inner { align-self: end; max-width: 1100px; }
 
 .hero-label,
 .section-label {
@@ -99,9 +99,18 @@ nav {
 
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
   margin-top: 2.25rem;
+  width: 100%;
+}
+
+.hero-actions .btn {
+  flex: 1 1 0;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0.8rem 0.9rem;
+  font-size: 0.9rem;
 }
 
 .btn {
@@ -1095,4 +1104,11 @@ footer {
   .case-aside,
   .guide-aside,
   .contact-panel { position: static; }
+  .hero-actions {
+    gap: 0.5rem;
+  }
+  .hero-actions .btn {
+    padding: 0.7rem 0.55rem;
+    font-size: 0.8rem;
+  }
 }
