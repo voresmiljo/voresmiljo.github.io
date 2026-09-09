@@ -190,6 +190,10 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.card-grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
   display: block;
   background: var(--light);
@@ -1083,7 +1087,8 @@ footer {
   .cta-box { padding: 2rem; }
   .stat-grid,
   .criteria-grid,
-  .card-grid.cols-3 { grid-template-columns: 1fr; }
+  .card-grid.cols-3,
+  .card-grid.cols-2 { grid-template-columns: 1fr; }
   .case-layout,
   .checklist-layout,
   .about-layout { grid-template-columns: 1fr; }
