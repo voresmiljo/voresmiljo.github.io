@@ -67,7 +67,12 @@ nav {
 .menu a:hover,
 .menu a.active { color: var(--sand); }
 
-.hero-inner { align-self: end; max-width: 720px; }
+.hero-bottom {
+  align-self: end;
+  width: 100%;
+}
+
+.hero-inner { max-width: 720px; }
 
 .hero-label,
 .section-label {
