@@ -67,7 +67,7 @@ nav {
 .menu a:hover,
 .menu a.active { color: var(--sand); }
 
-.hero-inner { align-self: end; max-width: 1100px; }
+.hero-inner { align-self: end; max-width: 720px; }
 
 .hero-label,
 .section-label {
@@ -102,14 +102,15 @@ nav {
   flex-wrap: nowrap;
   gap: 0.75rem;
   margin-top: 2.25rem;
-  width: 100%;
+  width: max-content;
+  max-width: 100%;
 }
 
 .hero-actions .btn {
-  flex: 1 1 0;
+  flex: 0 0 auto;
   text-align: center;
   white-space: nowrap;
-  padding: 0.8rem 0.9rem;
+  padding: 0.8rem 1.15rem;
   font-size: 0.9rem;
 }
 
@@ -1105,10 +1106,8 @@ footer {
   .guide-aside,
   .contact-panel { position: static; }
   .hero-actions {
-    gap: 0.5rem;
-  }
-  .hero-actions .btn {
-    padding: 0.7rem 0.55rem;
-    font-size: 0.8rem;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.65rem;
   }
 }
