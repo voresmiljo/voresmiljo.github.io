@@ -921,6 +921,17 @@ a.doc-item:hover {
   color: #111111;
 }
 
+.fold-body .guide-aside,
+.fold-body .guide-aside p,
+.fold-body .guide-aside .guide-note {
+  color: rgba(232,224,208,0.85);
+}
+
+.fold-body .guide-aside h3,
+.fold-body .guide-aside .guide-note strong {
+  color: var(--sand);
+}
+
 .fold-body p,
 .fold-body ul,
 .fold-body ol {
