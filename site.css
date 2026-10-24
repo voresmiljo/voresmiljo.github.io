@@ -184,6 +184,13 @@ h3 {
   color: var(--earth);
 }
 
+.lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--moss);
+  margin-bottom: 1.5rem;
+}
+
 .text-link {
   display: inline-block;
   margin-top: 0.75rem;
@@ -379,6 +386,13 @@ h3 {
   margin: 0 0 0 1.1rem;
   max-width: none;
   font-size: 0.95rem;
+}
+
+.criteria-box p {
+  color: var(--earth);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .accordion {
