@@ -35,5 +35,5 @@
   - Bevar sidens eksisterende navigationsbjælke, header, footer og JSON-LD strukturerede data.
 
 ## 4. Git & Sikkerhed
-- Opret og arbejd altid på branches.
 - Lav fokuserede, beskrivende commits på dansk.
+- Sørg altid for, at ændringer pushes til `main`, så GitHub Pages (voresmiljo.dk) opdateres live med det samme, når arbejdet er udført.
