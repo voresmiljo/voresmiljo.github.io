@@ -5,8 +5,8 @@
   <!-- SEO/AI klar; noindex indtil officiel lancering -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Processen: Screening, høring og klage | Vores Miljø</title>
-  <meta name="description" content="Forstå miljøvurderingsprocessen trin for trin: VVM-screening, offentlig høring og klage til nævn — neutralt og fagligt forklaret.">
+  <title>Processen: Interaktivt Flowchart over Miljøvurderinger | Vores Miljø</title>
+  <meta name="description" content="Interaktivt flowchart over miljøvurderingsprocessen for konkrete projekter (VVM) og planer & programmer (SMV) efter miljøvurderingsloven. Klik på procestrin for lovgrundlag, frister og borgerråd.">
   <link rel="canonical" href="https://voresmiljo.dk/vejviser.html">
   <meta name="author" content="Vores Miljø">
   <meta name="theme-color" content="#2C3E2D">
@@ -14,11 +14,11 @@
   <meta property="og:locale" content="da_DK">
   <meta property="og:site_name" content="Vores Miljø">
   <meta property="og:url" content="https://voresmiljo.dk/vejviser.html">
-  <meta property="og:title" content="Processen: Screening, høring og klage | Vores Miljø">
-  <meta property="og:description" content="Forstå miljøvurderingsprocessen trin for trin: VVM-screening, offentlig høring og klage til nævn — neutralt og fagligt forklaret.">
+  <meta property="og:title" content="Processen: Interaktivt Flowchart over Miljøvurderinger | Vores Miljø">
+  <meta property="og:description" content="Interaktivt flowchart over miljøvurderingsprocessen for konkrete projekter (VVM) og planer & programmer (SMV). Lovgrundlag, frister og borgerinddragelse trin for trin.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Processen: Screening, høring og klage | Vores Miljø">
-  <meta name="twitter:description" content="Forstå miljøvurderingsprocessen trin for trin: VVM-screening, offentlig høring og klage til nævn — neutralt og fagligt forklaret.">
+  <meta name="twitter:title" content="Processen: Interaktivt Flowchart over Miljøvurderinger | Vores Miljø">
+  <meta name="twitter:description" content="Interaktivt flowchart over miljøvurderingsprocessen for konkrete projekter (VVM) og planer & programmer (SMV).">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,8 +42,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Processen: Screening, høring og klage | Vores Miljø",
-  "description": "Forstå miljøvurderingsprocessen trin for trin: VVM-screening, offentlig høring og klage til nævn — neutralt og fagligt forklaret.",
+  "name": "Processen: Interaktivt Flowchart over Miljøvurderinger | Vores Miljø",
+  "description": "Interaktiv procesguide over miljøvurdering og screening for konkrete projekter og planer jf. miljøvurderingsloven.",
   "url": "https://voresmiljo.dk/vejviser.html",
   "inLanguage": "da-DK",
   "isPartOf": {
@@ -54,7 +54,7 @@
 }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=proces4">
+  <link rel="stylesheet" href="site.css?v=proces5">
 </head>
 <body>
 
@@ -70,315 +70,761 @@
   <p class="hero-label">Processen</p>
   <h1>Miljøvurderingsprocessen</h1>
   <p class="hero-sub">
-    En overskuelig og trinvis gennemgang af de tre mest centrale faser i en miljøsag: screening, offentlig høring og klagemuligheder jf. miljøvurderingsloven.
+    Et interaktivt procesoverblik over miljøvurdering og screening for konkrete projekter (VVM) samt planer &amp; programmer (SMV) jf. miljøvurderingsloven.
   </p>
 </header>
 
 <main class="wrap">
 
-  <nav class="phase-nav" aria-label="Faser i miljøvurderingen">
-    <a href="#screening">1. Screening</a>
-    <a href="#afgraensning">2. Afgrænsning</a>
-    <a href="#miljoekonsekvensrapport" class="soon">3. Rapport</a>
-    <a href="#hoering">4. Høring</a>
-    <a href="#afgoerelse" class="soon">5. Afgørelse</a>
-    <a href="#klage">6. Klage</a>
-  </nav>
+  <!-- INTERAKTIVT FLOWCHART (STICKY CONTAINER) -->
+  <section class="flowchart-sticky-wrap" aria-label="Interaktiv procesoversigt">
+    
+    <!-- FANE-OMSKIFTER MELLEM DE TO SPOR -->
+    <div class="track-switcher">
+      <span class="track-switcher-label">Vælg spor:</span>
+      <button type="button" class="track-btn active" data-track="track-projekter" id="btn-track-projekter">
+        Konkrete projekter (VVM · § 5, nr. 6)
+      </button>
+      <button type="button" class="track-btn" data-track="track-planer" id="btn-track-planer">
+        Planer og programmer (SMV · § 2, stk. 1, nr. 1)
+      </button>
+    </div>
 
-  <!-- FASE 1: SCREENING -->
-  <article class="phase-section" id="screening">
+    <!-- SPOR 1: KONKRETE PROJEKTER (VVM) -->
+    <div class="flow-track active" id="track-projekter" role="tablist" aria-label="Procestrin for konkrete projekter">
+      <div class="flow-grid">
+        <button type="button" class="flow-node active" data-step="step-p-1" data-actor="myndighed" role="tab" aria-selected="true" id="node-p-1">
+          <div class="node-header">
+            <span class="node-step">Trin 1</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Ansøgning &amp; Screening</div>
+          <div class="node-meta"><strong>§ 21</strong> · Senest 90 dage</div>
+        </button>
 
-    <p class="section-label">Fase 1 · Screening</p>
-    <h2>Screening: Skal projektet miljøvurderes?</h2>
+        <button type="button" class="flow-node" data-step="step-p-2" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-p-2">
+          <div class="node-header">
+            <span class="node-step">Trin 2</span>
+            <span class="node-actor-badge">Høring</span>
+          </div>
+          <div class="node-title">Afgrænsning (Scoping)</div>
+          <div class="node-meta"><strong>§ 23</strong> · Min. 14 dg høring</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-p-3" data-actor="bygherre" role="tab" aria-selected="false" id="node-p-3">
+          <div class="node-header">
+            <span class="node-step">Trin 3</span>
+            <span class="node-actor-badge">Bygherre</span>
+          </div>
+          <div class="node-title">Miljøkonsekvensrapport</div>
+          <div class="node-meta"><strong>§ 20</strong> · Bilag 7 rapport</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-p-4" data-actor="myndighed" role="tab" aria-selected="false" id="node-p-4">
+          <div class="node-header">
+            <span class="node-step">Trin 4</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Myndighedsvurdering</div>
+          <div class="node-meta"><strong>§ 24</strong> · Udkast tilladelse</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-p-5" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-p-5">
+          <div class="node-header">
+            <span class="node-step">Trin 5</span>
+            <span class="node-actor-badge">Høring</span>
+          </div>
+          <div class="node-title">Offentlig Høring</div>
+          <div class="node-meta"><strong>§ 35</strong> · Min. 8 uger</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-p-6" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-p-6">
+          <div class="node-header">
+            <span class="node-step">Trin 6</span>
+            <span class="node-actor-badge">Klage</span>
+          </div>
+          <div class="node-title">Afgørelse &amp; Klage</div>
+          <div class="node-meta"><strong>§ 25/27</strong> · 4 uger klage</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- SPOR 2: PLANER OG PROGRAMMER (SMV) -->
+    <div class="flow-track" id="track-planer" role="tablist" aria-label="Procestrin for planer og programmer" aria-hidden="true">
+      <div class="flow-grid">
+        <button type="button" class="flow-node" data-step="step-pl-1" data-actor="myndighed" role="tab" aria-selected="false" id="node-pl-1">
+          <div class="node-header">
+            <span class="node-step">Trin 1</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Planudkast &amp; Screening</div>
+          <div class="node-meta"><strong>§ 8 / § 10</strong> · Bilag 3</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-pl-2" data-actor="myndighed" role="tab" aria-selected="false" id="node-pl-2">
+          <div class="node-header">
+            <span class="node-step">Trin 2</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Afgrænsning af rapport</div>
+          <div class="node-meta"><strong>§ 11</strong> · Myndighedshøring</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-pl-3" data-actor="myndighed" role="tab" aria-selected="false" id="node-pl-3">
+          <div class="node-header">
+            <span class="node-step">Trin 3</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Miljørapport (SMV)</div>
+          <div class="node-meta"><strong>§ 12</strong> · Bilag 4 rapport</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-pl-4" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-pl-4">
+          <div class="node-header">
+            <span class="node-step">Trin 4</span>
+            <span class="node-actor-badge">Høring</span>
+          </div>
+          <div class="node-title">Offentlig Planhøring</div>
+          <div class="node-meta"><strong>§ 32</strong> · Ca. 8 uger</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-pl-5" data-actor="myndighed" role="tab" aria-selected="false" id="node-pl-5">
+          <div class="node-header">
+            <span class="node-step">Trin 5</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Sammenfattende Redegørelse</div>
+          <div class="node-meta"><strong>§ 13, stk. 2</strong></div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-pl-6" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-pl-6">
+          <div class="node-header">
+            <span class="node-step">Trin 6</span>
+            <span class="node-actor-badge">Klage</span>
+          </div>
+          <div class="node-title">Planvedtagelse &amp; Klage</div>
+          <div class="node-meta"><strong>§ 34</strong> · 4 uger klage</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- TEGNFORKLARING SOM I LOVGIVNINGENS FLOWCHART -->
+    <div class="flow-legend">
+      <span class="legend-item"><span class="legend-dot myndighed"></span> Myndighed</span>
+      <span class="legend-item"><span class="legend-dot bygherre"></span> Bygherre</span>
+      <span class="legend-item"><span class="legend-dot hoering-klage"></span> Offentlig høring &amp; Klage</span>
+      <span style="margin-left:auto;font-style:italic;color:var(--moss);">Klik på et procestrin for at læse den faglige vejledning</span>
+    </div>
+
+  </section>
+
+  <!-- ========================================================
+       DETALJE-PANELER FOR SPOR 1: KONKRETE PROJEKTER (VVM)
+       ======================================================== -->
+
+  <!-- TRIN P-1: SCREENING -->
+  <article class="step-detail-card active" id="step-p-1" role="tabpanel" aria-labelledby="node-p-1">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Konkrete projekter · Trin 1</span>
+        <span class="step-badge">Miljøvurderingslovens § 19, § 21 &amp; § 22</span>
+      </div>
+      <h2>Trin 1: Ansøgning &amp; VVM-Screening</h2>
+      <p class="lead">Vurdering af, om et anlægsprojekt forventes at få væsentlig indvirkning på miljøet og derfor udløser VVM-pligt.</p>
+    </div>
+
     <p>
-      Screeningen er det første trin i en miljøsag. Her vurderer myndigheden, om et planlagt projekt risikerer at påvirke naturen, grundvandet eller lokalsamfundet så væsentligt, at der skal udarbejdes en fuld miljøvurdering med tilhørende miljøkonsekvensrapport.
+      Screeningen er den indledende fase for projekter opført på miljøvurderingslovens <strong>bilag 2</strong> (f.eks. råstofgrave, industrianlæg, solcelleparker, spildevandsanlæg m.v.). Bygherren indsender en anmeldelse på et standardiseret skema jf. § 19 og bilag 5. Myndigheden (kommunen, regionen eller Miljøstyrelsen) skal herefter afgøre, om projektet har en sådan karakter og placering, at det skal gennemgå en fuld miljøvurdering med tilhørende miljøkonsekvensrapport.
     </p>
 
-    <h3 style="margin-top:2.5rem;">De vigtigste deadlines</h3>
+    <h3 style="margin-top:2.5rem;">Lovbestemte tidsfrister for screeningen</h3>
     <div class="stat-grid">
       <div class="stat-box">
         <p class="stat-num">90 dage</p>
         <h3>Sagsbehandlingsfrist</h3>
-        <p>Myndigheden skal som udgangspunkt træffe screeningsafgørelsen senest 90 dage efter, at bygherren har indsendt alle oplysninger.</p>
+        <p>Myndigheden skal træffe screeningsafgørelsen hurtigst muligt og senest <strong>90 dage</strong> efter modtagelsen af alle nødvendige oplysninger (§ 22).</p>
       </div>
       <div class="stat-box">
         <p class="stat-num">3 år</p>
         <h3>Gyldighedsperiode</h3>
-        <p>En screeningsafgørelse bortfalder automatisk, hvis den ikke er udnyttet inden for 3 år, eller har været ubrugt i 3 år i træk.</p>
+        <p>En screeningsafgørelse bortfalder automatisk, hvis den ikke er udnyttet inden for 3 år, eller har været ubenyttet i 3 på hinanden følgende år.</p>
       </div>
       <div class="stat-box">
         <p class="stat-num">4 uger</p>
         <h3>Klagefrist</h3>
-        <p>Lokale foreninger og berørte borgere har præcis 4 uger til at klage over afgørelsen fra offentliggørelsesdatoen.</p>
+        <p>Offentligheden og berørte parter har <strong>4 uger</strong> til at påklage screeningsafgørelsen til Miljø- og Fødevareklagenævnet jf. § 36.</p>
       </div>
     </div>
 
-    <h3 style="margin-top:3rem;">Hvordan vurderer myndigheden sagen?</h3>
+    <h3 style="margin-top:3rem;">Hvordan vurderer myndigheden sagen? (Bilag 6)</h3>
     <p>
-      Myndighedens afgørelse skal altid baseres på tre overordnede områder jf. miljøvurderingslovens bilag 6:
+      Screeningsafgørelsen må ikke baseres på et løst skøn. Den skal altid tage udgangspunkt i de obligatoriske udvælgelseskriterier i lovens <strong>bilag 6</strong>:
     </p>
     <div class="criteria-grid">
       <div class="criteria-box">
-        <h3>Projektets karakter</h3>
+        <h3>1. Projektets karakteristika</h3>
         <ul>
-          <li>Projektets samlede dimensioner og design.</li>
-          <li><strong>Kumulation:</strong> Samspillet og den samlede effekt med andre eksisterende eller godkendte projekter i nærområdet.</li>
-          <li>Ressourceforbrug (jord, vand, natur) samt forurening og gener.</li>
+          <li>Projektets samlede dimensioner, kapacitet og udformning.</li>
+          <li><strong>Kumulation:</strong> Samlet effekt med andre eksisterende eller godkendte anlæg i området.</li>
+          <li>Forurening, emissioner, støj, støv, lugt og affaldsproduktion.</li>
         </ul>
       </div>
       <div class="criteria-box">
-        <h3>Projektets placering</h3>
+        <h3>2. Projektets placering</h3>
         <ul>
-          <li>Områdets bæreevne og sårbarhed.</li>
-          <li>Særligt fokus på beskyttet natur, Natura 2000 og områder med <strong>særlige drikkevandsinteresser (OSD)</strong>.</li>
-          <li>Hensyn til strengt beskyttede dyre- og plantearter (<strong>Bilag IV-arter</strong>).</li>
+          <li>Lokalområdets miljømæssige sårbarhed og bæreevne.</li>
+          <li>Områder med <strong>særlige drikkevandsinteresser (OSD)</strong> og boringsnære beskyttelsesområder (BNBO).</li>
+          <li>Beskyttet natur (§ 3), Natura 2000 og strengt beskyttede <strong>Bilag IV-arter</strong>.</li>
         </ul>
       </div>
       <div class="criteria-box">
-        <h3>Påvirkningens karakter</h3>
+        <h3>3. Påvirkningens art</h3>
         <ul>
-          <li>Hvor geografisk bredt rammer påvirkningen?</li>
-          <li>Sandsynligheden, varigheden og hyppigheden af generne.</li>
-          <li>Er påvirkningen <strong>reversibel</strong> (kan naturen genoprettes bagefter)?</li>
+          <li>Påvirkningens geografiske udstrækning og berørte befolkningstal.</li>
+          <li>Sandsynlighed, varighed, hyppighed og reversibilitet.</li>
+          <li>Kan skadelige virkninger reelt undgås ved bygherrens foreslåede afværgeforanstaltninger?</li>
         </ul>
       </div>
     </div>
 
-    <h3 style="margin-top:3rem;">Krav til afgørelsen</h3>
+    <h3 style="margin-top:3rem;">Spørgsmål og svar om screening</h3>
     <div class="accordion">
       <details>
         <summary>Hvad skal en screeningsafgørelse indeholde?</summary>
         <div class="accordion-content">
           <p>En screeningsafgørelse skal altid være begrundet med de konkrete hovedårsager under henvisning til kriterierne i bilag 6.</p>
-          <p>Afgørelsen skal desuden præcisere eventuelle særkender ved projektet eller de <strong>afværgeforanstaltninger</strong>, som bygherren har forpligtet sig til at gennemføre for at undgå væsentlige skadelige virkninger.</p>
+          <p>Hvis myndigheden vurderer, at der <em>ikke</em> skal laves miljøvurdering, skal afgørelsen præcisere eventuelle særkender eller de <strong>afværgeforanstaltninger</strong>, som bygherren har forpligtet sig til at gennemføre for at undgå væsentlige skadelige virkninger.</p>
         </div>
       </details>
       <details>
-        <summary>Hvem kan klage over screeningsafgørelsen?</summary>
+        <summary>Hvad er forskellen på Bilag 1 og Bilag 2 projekter?</summary>
         <div class="accordion-content">
-          <p>Afgørelser efter miljøvurderingsloven kan påklages til <strong>Miljø- og Fødevareklagenævnet</strong> for så vidt angår retlige spørgsmål.</p>
-          <p>Klageberettigede omfatter blandt andre den berørte offentlighed samt landsdækkende eller lokale foreninger, der har beskyttelse af natur og miljø som hovedformål (såfremt foreningen repræsenterer mindst 100 medlemmer eller har godkendte vedtægter).</p>
-          <p>Klagen skal indgives digitalt via Klageportalen mod et gebyr (900 kr. for private / 1.800 kr. for foreninger og virksomheder).</p>
+          <p>Projekter på <strong>bilag 1</strong> (f.eks. store motorveje, lufthavne, større raffinaderier) er <em>altid</em> obligatorisk VVM-pligtige jf. § 18 og springer derfor screeningstrinnet over.</p>
+          <p>Projekter på <strong>bilag 2</strong> er screeningspligtige jf. § 19, medmindre bygherren selv anmoder om en fuld miljøvurdering jf. § 19, stk. 4.</p>
         </div>
       </details>
     </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" disabled>← Første procestrin</button>
+      <button type="button" class="step-nav-btn" data-next="step-p-2">Næste trin: Afgrænsning (Scoping) →</button>
+    </div>
   </article>
 
-  <!-- FASE 2: AFGRÆNSNING (SCOPING) -->
-  <article class="phase-section" id="afgraensning">
-    <p class="section-label">Fase 2 · Afgrænsning (Scoping)</p>
-    <h2>Fase 2: Afgrænsningsfasen (Scoping)</h2>
-    <p class="lead">Fastlæggelse af miljøkonsekvensrapportens omfang, undersøgelsesmetoder og tidlig borgerinddragelse.</p>
+  <!-- TRIN P-2: AFGRÆNSNING (SCOPING) -->
+  <article class="step-detail-card" id="step-p-2" role="tabpanel" aria-labelledby="node-p-2">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Konkrete projekter · Trin 2</span>
+        <span class="step-badge">Miljøvurderingslovens § 23 &amp; § 35</span>
+      </div>
+      <h2>Trin 2: Afgrænsningsfasen (Scoping)</h2>
+      <p class="lead">Fastlæggelse af miljøkonsekvensrapportens omfang, undersøgelsesmetoder og tidlig borgerinddragelse.</p>
+    </div>
 
-    <h3 style="margin-top:2.5rem;">Hvad sker der i afgrænsningsfasen?</h3>
     <p>
-      Når det er fastslået, at et konkret projekt eller en plan er omfattet af krav om miljøvurdering (VVM), indledes afgrænsningsfasen (også kaldet <em>scoping</em>) jf. miljøvurderingslovens § 23 og § 11. Formålet med afgrænsningen er at fastsætte rammerne for, hvor omfattende og detaljerede de oplysninger og undersøgelser skal være, som bygherren skal fremlægge i den efterfølgende miljøkonsekvensrapport.
+      Når det er fastslået, at et projekt kræver en fuld miljøvurdering (enten via screening eller direkte via bilag 1), indledes afgrænsningsfasen (også kaldet <em>scoping</em>) jf. miljøvurderingslovens § 23. Formålet med afgrænsningen er at fastlægge rammerne for, hvor omfattende og detaljerede de oplysninger og undersøgelser skal være, som bygherren skal levere i miljøkonsekvensrapporten.
     </p>
 
     <h3 style="margin-top:2.5rem;">Procestrin og lovbestemte frister</h3>
     <div class="stat-grid">
       <div class="stat-box">
         <p class="stat-num">≥ 14 dage</p>
-        <h3>Høringsfrist</h3>
+        <h3>Offentlig høringsfrist</h3>
         <p>For offentligheden skal myndigheden fastsætte en passende høringsfrist på <strong>mindst 14 dage</strong> jf. miljøvurderingslovens § 35, stk. 5.</p>
       </div>
       <div class="stat-box">
         <p class="stat-num">Høring</p>
-        <h3>Offentlig inddragelse</h3>
-        <p>Myndigheden skal sende afgrænsningen af miljøkonsekvensrapportens indhold i høring hos offentligheden og berørte myndigheder jf. § 35, stk. 3, nr. 2.</p>
+        <h3>Tidlig inddragelse</h3>
+        <p>Myndigheden skal sende afgrænsningen af rapportens indhold i høring hos offentligheden og berørte myndigheder jf. § 35, stk. 3, nr. 2.</p>
       </div>
       <div class="stat-box">
         <p class="stat-num">Bindende</p>
         <h3>Afgrænsningsudtalelse</h3>
-        <p>På baggrund af høringen udarbejder myndigheden en formel udtalelse jf. § 23. Bygherren <em>skal</em> lægge denne udtalelse til grund ved udarbejdelsen af miljøkonsekvensrapporten jf. § 20, stk. 3.</p>
+        <p>På baggrund af høringen udsteder myndigheden en formel udtalelse jf. § 23, som bygherren <em>skal</em> lægge til grund for rapporten jf. § 20, stk. 3.</p>
       </div>
     </div>
 
     <h3 style="margin-top:3rem;">Hvad bør du holde øje med som borger?</h3>
     <p>
-      Afgrænsningsfasen er borgerens vigtigste mulighed for at påvirke, <em>hvad</em> myndigheden og bygherren overhovedet skal undersøge. Hvis en specifik miljøgene eller naturinteresse ikke skrives ind i afgrænsningen, bliver den sjældent belyst i miljørapporten:
+      Afgrænsningsfasen er borgerens og lokalforeningens absolut bedste chance for at påvirke, <em>hvad</em> der overhovedet skal undersøges. Hvis en specifik gene eller naturinteresse ikke skrives ind i afgrænsningsudtalelsen, bliver den sjældent undersøgt i rapporten:
     </p>
     <div class="criteria-grid">
       <div class="criteria-box">
         <h3>Det brede miljøbegreb (§ 1, stk. 2)</h3>
-        <p>Tjek, at afgrænsningen omfatter alle relevante miljøfaktorer i lokalområdet — herunder støj, støv, tung trafik, grundvand/OSD, fredede arter (Bilag IV) samt samlede (kumulative) effekter sammen med nabovirksomheder.</p>
+        <p>Tjek, at afgrænsningen omfatter alle relevante lokale forhold: støj, støv, vibrationer, tung trafik, grundvand/OSD, lysmaster, Bilag IV-arter samt samlede (kumulative) effekter sammen med nabovirksomheder.</p>
       </div>
       <div class="criteria-box">
-        <h3>Faktiske og sæsondækkende undersøgelser</h3>
-        <p>Påpeg, hvis der er behov for faktiske feltundersøgelser (f.eks. forårs- og sommerregistrering af dyrearter eller konkret grundvandsmonitering) frem for teoretiske skrivebordsdata.</p>
+        <h3>Faktiske og sæsondækkende målinger</h3>
+        <p>Kræv, at der gennemføres fysiske kontrolmålinger og sæsondækkende feltundersøgelser (f.eks. padder, flagermus, fugle på de rette årstider) frem for teoretiske skrivebordsberegninger.</p>
       </div>
       <div class="criteria-box">
         <h3>Belysning af rimelige alternativer</h3>
-        <p>Påpeg, hvis der findes alternative placeringer, udformninger eller teknologivalg, som bør undersøges og sammenlignes i miljørapporten jf. § 20, stk. 2, nr. 4.</p>
+        <p>Kræv, at bygherren pålægges at undersøge og sammenligne rimelige alternativer for placering, udformning eller afværgeforanstaltninger jf. § 20, stk. 2, nr. 4.</p>
       </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-p-1">← Forrige trin: Screening</button>
+      <button type="button" class="step-nav-btn" data-next="step-p-3">Næste trin: Miljøkonsekvensrapport →</button>
     </div>
   </article>
-  <article class="phase-section" id="miljoekonsekvensrapport" hidden></article>
 
-  <!-- FASE 4: HØRING -->
-  <article class="phase-section" id="hoering">
+  <!-- TRIN P-3: MILJØKONSEKVENSRAPPORT -->
+  <article class="step-detail-card" id="step-p-3" role="tabpanel" aria-labelledby="node-p-3">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Konkrete projekter · Trin 3</span>
+        <span class="step-badge">Miljøvurderingslovens § 20 &amp; bilag 7</span>
+      </div>
+      <h2>Trin 3: Udarbejdelse af Miljøkonsekvensrapport (VVM)</h2>
+      <p class="lead">Bygherrens faglige og tekniske hoveddokumentation af projektets forventede miljøpåvirkninger.</p>
+    </div>
 
-    <p class="section-label">Fase 4 · Høring</p>
-    <h2>Høringsfasen: Offentlighedens stemme i miljøsager</h2>
     <p>
-      Høringsfasen sikrer, at berørte borgere, myndigheder og organisationer inddrages tidligt i beslutningsprocessen. Formålet er at belyse alle relevante miljøforhold, så afgørelser træffes på et fuldstændigt og fagligt solidt grundlag.
+      I dette trin er det <strong>bygherren</strong> (og dennes miljøtekniske rådgivere), der udarbejder selve miljøkonsekvensrapporten. Rapporten skal baseres på myndighedens afgrænsningsudtalelse (§ 20, stk. 3) og skal identificere, beskrive og vurdere projektets væsentlige direkte og indirekte virkninger på miljøet jf. bilag 7.
     </p>
 
-    <h3 style="margin-top:2.5rem;">Tre centrale punkter</h3>
-    <div class="stat-grid">
-      <div class="stat-box">
-        <p class="stat-num">Frister</p>
-        <h3>Lovbestemte tidsrammer</h3>
-        <p>Høringsfrister varierer efter sagstype. Eksempelvis har regionsrådets forslag til råstofplaner en lovbestemt høringsfrist på <strong>8 uger</strong>, mens konkrete miljøkonsekvensrapporter ligeledes sendes i offentlig høring.</p>
+    <h3 style="margin-top:2.5rem;">Hvad skal en miljøkonsekvensrapport indeholde? (Bilag 7)</h3>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>1. Projektbeskrivelse &amp; Nul-alternativ</h3>
+        <p>Beskrivelse af det fysiske projekt, anlægs- og driftsfase samt "0-alternativet": Den forventede udvikling i lokalområdets miljø, hvis projektet <em>ikke</em> gennemføres.</p>
       </div>
-      <div class="stat-box">
-        <p class="stat-num">Adgang</p>
-        <h3>Aktindsigt og gennemsigtighed</h3>
-        <p>Offentligheden skal have adgang til alle væsentlige rapporter, herunder miljøkonsekvensrapporter og tilhørende bilag, tidligt i processen.</p>
+      <div class="criteria-box">
+        <h3>2. Miljøpåvirkninger &amp; Kumulation</h3>
+        <p>Kortlægning af påvirkninger på befolkning, sundhed, natur (Bilag IV), jord, vandmiljø, luft, klima og kulturarv — herunder samspillet med andre godkendte projekter.</p>
       </div>
-      <div class="stat-box">
-        <p class="stat-num">Vægt</p>
-        <h3>Saglige indvendinger</h3>
-        <p>Indlæg, der påpeger konkrete faglige eller retlige mangler i myndighedernes datagrundlag, tillægges væsentlig større vægt end generelle protester.</p>
+      <div class="criteria-box">
+        <h3>3. Afværgeforanstaltninger &amp; Resumé</h3>
+        <p>Konkrete foranstaltninger til at undgå eller reducere gener, et forslag til overvågningsprogram samt et <strong>letforståeligt, ikke-teknisk resumé</strong> målrettet offentligheden.</p>
       </div>
     </div>
 
-    <h3 style="margin-top:3rem;">Hvad kan offentligheden udtale sig om?</h3>
+    <h3 style="margin-top:3rem;">Borgerråd til granskning af rapporten</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">Resumé</p>
+        <h3>Læs det ikke-tekniske resumé først</h3>
+        <p>Loven kræver, at rapporten indeholder et ikke-teknisk resumé. Tjek, om konklusionerne i resuméet stemmer overens med data i de tunge fagrapporter.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Scoping</p>
+        <h3>Blev afgrænsningen fulgt?</h3>
+        <p>Efterprøv, om bygherren reelt har besvaret alle de undersøgelseskrav og faglige mangler, som myndigheden stillede i sin afgrænsningsudtalelse (§ 20, stk. 3).</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Modeller</p>
+        <h3>Gransk forudsætningerne</h3>
+        <p>Undersøg de forudsætninger, der ligger til grund for støjberegninger, spredningsmodeller og trafiktal — f.eks. om der er regnet med gennemsnit frem for spidsbelastninger.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-p-2">← Forrige trin: Afgrænsning</button>
+      <button type="button" class="step-nav-btn" data-next="step-p-4">Næste trin: Myndighedsvurdering →</button>
+    </div>
+  </article>
+
+  <!-- TRIN P-4: MYNDIGHEDSVURDERING -->
+  <article class="step-detail-card" id="step-p-4" role="tabpanel" aria-labelledby="node-p-4">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Konkrete projekter · Trin 4</span>
+        <span class="step-badge">Miljøvurderingslovens § 24 &amp; § 25</span>
+      </div>
+      <h2>Trin 4: Myndighedens Gennemgang &amp; Udkast til Afgørelse</h2>
+      <p class="lead">Myndighedens uvildige kvalitetssikring, begrundede konklusion og udarbejdelse af udkast til VVM-tilladelse.</p>
+    </div>
+
     <p>
-      Under en høring kan der indsendes bemærkninger til alle dele af projektets potentielle miljøpåvirkning jf. miljøvurderingslovens § 1, stk. 2:
+      Når bygherren afleverer miljøkonsekvensrapporten, må myndigheden ikke blot ukritisk overtage bygherrens konklusioner. Efter § 24 skal myndigheden sikre sig, at rapporten opfylder lovens krav og bygger på den fornødne faglige ekspertise. Myndigheden udarbejder herefter sin egen <strong>selvstændige vurdering (begrundede konklusion)</strong> og udformer et udkast til afgørelse om tilladelse efter § 25.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Hvad sker der i trin 4?</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">Kvalitet</p>
+        <h3>Faglig efterprøvning</h3>
+        <p>Myndigheden kontrollerer, at rapportens målinger, datagrundlag og modeller er fyldestgørende. Hvis der er faglige mangler, kan myndigheden kræve supplerende oplysninger (§ 24, stk. 2).</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Konklusion</p>
+        <h3>Begrundet konklusion</h3>
+        <p>Myndigheden sammenfatter sin egen selvstændige faglige vurdering af projektets væsentlige miljøpåvirkninger (§ 24, stk. 1).</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Vilkår</p>
+        <h3>Udkast til tilladelse (§ 25)</h3>
+        <p>Myndigheden formulerer et formelt udkast til VVM-tilladelse, der fastsætter bindende vilkår og afværgeforanstaltninger for både anlægs- og driftsfasen.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem;">Vigtigt for borgere og naboer: Tjek tilladelsens vilkår</h3>
+    <p>
+      Udkastet til VVM-tilladelse indeholder de konkrete vilkår, som bygherren skal overholde under anlæg og drift. Det er afgørende at kontrollere:
+    </p>
+    <ul>
+      <li><strong>Målbare grænseværdier:</strong> Er vilkårene konkrete og målbare (f.eks. decibelgrænser på specifikke tidspunkter, milligram udledning pr. liter), eller er de vage hensigtserklæringer?</li>
+      <li><strong>Moniteringsprogrammer:</strong> Forpligtes bygherren til uvildige kontrolmålinger for egen regning, som løbende indrapporteres til tilsynsmyndigheden?</li>
+      <li><strong>Tilsyn og sanktioner:</strong> Er det klart defineret, hvilken myndighed der fører tilsyn, og hvad der sker ved vilkårsoverskridelser?</li>
+    </ul>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-p-3">← Forrige trin: Miljørapport</button>
+      <button type="button" class="step-nav-btn" data-next="step-p-5">Næste trin: Offentlig Høring →</button>
+    </div>
+  </article>
+
+  <!-- TRIN P-5: OFFENTLIG HØRING -->
+  <article class="step-detail-card" id="step-p-5" role="tabpanel" aria-labelledby="node-p-5">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Konkrete projekter · Trin 5</span>
+        <span class="step-badge">Miljøvurderingslovens § 35</span>
+      </div>
+      <h2>Trin 5: Offentlig Høring over Miljørapport og Tilladelsesudkast</h2>
+      <p class="lead">Offentlighedens formelle mulighed for at indsende høringssvar og indsigelser mod projektet og det faglige grundlag.</p>
+    </div>
+
+    <p>
+      Når miljøkonsekvensrapporten og udkastet til VVM-tilladelse foreligger, igangsættes den store offentlige høring jf. § 35. Myndigheden offentliggør det samlede materiale: bygherrens ansøgning, miljøkonsekvensrapporten, myndighedens begrundede konklusion samt udkastet til afgørelse om tilladelse efter § 25.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Centrale elementer i høringen</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">≥ 8 uger</p>
+        <h3>Høringsfrist</h3>
+        <p>Loven fastsætter en absolut minimumsfrist på 30 dage, men for større projekter er fristen i praksis som standard <strong>mindst 8 uger</strong> (§ 35, stk. 3).</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Aktindsigt</p>
+        <h3>Fuld dokumentadgang</h3>
+        <p>Offentligheden har ret til adgang til alle underliggende fagrapporter, interne notater og måledata under miljøoplysningsloven.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Høringsnotat</p>
+        <h3>Myndighedens pligt</h3>
+        <p>Myndigheden har pligt til at gennemgå og forholde sig sagligt til samtlige indkomne høringssvar i et samlet høringsnotat før endelig afgørelse.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem;">Hvad kan offentligheden udtale sig om? (§ 1, stk. 2)</h3>
+    <p>
+      Under høringen kan der gøres indsigelse mod alle dele af projektet under <strong>det brede miljøbegreb</strong>:
     </p>
     <div class="criteria-grid">
       <div class="criteria-box">
-        <h3>Natur &amp; biodiversitet</h3>
+        <h3>Mennesker &amp; Lokalsamfund</h3>
         <ul>
-          <li>Påvirkning af nærliggende § 3-beskyttet natur og internationale naturbeskyttelsesområder (Natura 2000).</li>
-          <li>Trusler mod beskyttede dyre- og plantearter, herunder de strengt beskyttede <strong>Bilag IV-arter</strong>.</li>
+          <li>Støj, vibrationer, lugt og støv fra anlægsarbejde og fremtidig drift.</li>
+          <li>Tung trafik gennem boligområder, skoleveje og trafiksikkerhed.</li>
+          <li>Spildlys, lysmaster og visuel landskabelig dominans.</li>
         </ul>
       </div>
       <div class="criteria-box">
-        <h3>Vandmiljø &amp; grundvand</h3>
+        <h3>Natur &amp; Biodiversitet</h3>
         <ul>
-          <li>Risiko for forringelse af overfladevand (vandløb, åer og kystvande).</li>
-          <li>Påvirkninger af områder med <strong>særlige drikkevandsinteresser (OSD)</strong> og risiko for forurening af grundvandsmagasiner.</li>
+          <li>Påvirkning af § 3-beskyttede vandhuller, overdrev, hegn og skovbryn.</li>
+          <li>Forstyrrelse af yngle- og rasteområder for strengt beskyttede <strong>Bilag IV-arter</strong>.</li>
+          <li>Påvirkning af internationale Natura 2000-fugle- og habitatområder.</li>
         </ul>
       </div>
       <div class="criteria-box">
-        <h3>Mennesker &amp; lokalsamfund</h3>
+        <h3>Vandmiljø &amp; Grundvand</h3>
         <ul>
-          <li>Gener fra ekstern støj og vibrationer, der overskrider Miljøstyrelsens vejledende grænseværdier.</li>
-          <li>Luftforurening, støvgener fra anlægsarbejde og tung trafik gennem lokalområdet.</li>
+          <li>Risiko for nedsivning til <strong>områder med særlige drikkevandsinteresser (OSD)</strong>.</li>
+          <li>Forureningsstoffer som PFAS, pesticider, tungmetaller og olie.</li>
+          <li>Forringelse af tilstanden i recipienter (vandløb, søer, fjorde).</li>
         </ul>
       </div>
     </div>
 
-    <h3 style="margin-top:3rem;">Høringsprocessen</h3>
-    <div class="accordion">
-      <details>
-        <summary>Hvornår skal der gennemføres en høring?</summary>
-        <div class="accordion-content">
-          <p>Myndigheden skal sikre, at berørte parter informeres tidligt i beslutningsprocessen, og senest så snart oplysningerne med rimelighed kan gives.</p>
-          <p>Der gennemføres høringer på flere stadier, herunder ved afgrænsningen af miljøkonsekvensrapportens indhold (idéfasen) og efter fremlæggelsen af den endelige miljøkonsekvensrapport.</p>
-        </div>
-      </details>
-      <details>
-        <summary>Hvordan indsendes et høringssvar?</summary>
-        <div class="accordion-content">
-          <p>Høringssvar skal indgives skriftligt til den ansvarlige myndighed (typisk kommunalbestyrelsen eller regionsrådet) inden for den fastsatte tidsfrist.</p>
-          <p>Høringssvaret bør indeholde konkrete henvisninger til projektmaterialets mangler og foreslå specifikke afværgeforanstaltninger.</p>
-          <p>Myndigheden har pligt til at inddrage og behandle de indkomne høringssvar i den endelige afgørelse.</p>
-        </div>
-      </details>
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-p-4">← Forrige trin: Myndighedsvurdering</button>
+      <button type="button" class="step-nav-btn" data-next="step-p-6">Næste trin: Endelig Afgørelse &amp; Klage →</button>
     </div>
   </article>
 
-  <article class="phase-section" id="afgoerelse" hidden></article>
+  <!-- TRIN P-6: AFGØRELSE & KLAGE -->
+  <article class="step-detail-card" id="step-p-6" role="tabpanel" aria-labelledby="node-p-6">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Konkrete projekter · Trin 6</span>
+        <span class="step-badge">Miljøvurderingslovens § 25, § 27 &amp; §§ 48-54</span>
+      </div>
+      <h2>Trin 6: Endelig Afgørelse &amp; Klagemuligheder</h2>
+      <p class="lead">Myndighedens endelige tilladelse eller afslag — og borgernes retlige klageadgang til Klagenævnet.</p>
+    </div>
 
-  <!-- FASE 6: KLAGE -->
-  <article class="phase-section" id="klage">
-
-    <p class="section-label">Fase 6 · Klage</p>
-    <h2>Klagemuligheder: Retssikkerhed i miljøsager</h2>
     <p>
-      Hvis en screeningsafgørelse eller en endelig tilladelse vurderes at være i strid med lovgivningen eller baseret på et mangelfuldt grundlag, kan afgørelsen påklages til <strong>Miljø- og Fødevareklagenævnet</strong>.
+      Efter at have behandlet de indkomne høringssvar træffer myndigheden endelig afgørelse om enten at <strong>meddele tilladelse</strong> til projektet på fastsatte vilkår (§ 27, stk. 1-3) eller <strong>afslå ansøgningen</strong> (§ 27, stk. 4). Afgørelsen offentliggøres jf. § 37 sammen med det samlede beslutningsgrundlag og høringsnotatet.
     </p>
 
-    <h3 style="margin-top:2.5rem;">Tre elementer i en klagesag</h3>
+    <h3 style="margin-top:2.5rem;">Betingelser for at klage over afgørelsen</h3>
     <div class="stat-grid">
       <div class="stat-box">
         <p class="stat-num">4 uger</p>
-        <h3>Strikte tidsrammer</h3>
-        <p>Klagefristen er altid <strong>4 uger</strong> fra den dag, hvor afgørelsen er meddelt eller offentliggjort. Hvis fristen overskrides, afvises klagen automatisk.</p>
+        <h3>Absolut klagefrist</h3>
+        <p>Klagefristen er præcis <strong>4 uger</strong> fra den dato, afgørelsen er offentliggjort. Overskridelse af fristen med blot én dag medfører automatisk afvisning.</p>
       </div>
       <div class="stat-box">
-        <p class="stat-num">Digitalt</p>
+        <p class="stat-num">MitID</p>
         <h3>Klageportalen</h3>
-        <p>Klagen skal indgives digitalt via Klageportalen på borger.dk eller virk.dk ved anvendelse af MitID.</p>
+        <p>Klagen skal oprettes og indsendes digitalt via Klageportalen på borger.dk eller virk.dk stilet til Miljø- og Fødevareklagenævnet.</p>
       </div>
       <div class="stat-box">
-        <p class="stat-num">Standstill</p>
-        <h3>Opsættende virkning</h3>
-        <p>En rettidig klage har som udgangspunkt <strong>opsættende virkning</strong>, hvilket betyder, at bygherren ikke må udnytte tilladelsen, før klagesagen er afgjort.</p>
+        <p class="stat-num">Gebyr</p>
+        <h3>Klagegebyr</h3>
+        <p>Gebyret udgør <strong>900 kr.</strong> for private og <strong>1.800 kr.</strong> for foreninger/virksomheder. Gebyret tilbagebetales, hvis der opnås helt eller delvist medhold.</p>
       </div>
     </div>
 
-    <h3 style="margin-top:3rem;">Hvem kan indgive en klage?</h3>
-    <p>
-      Miljøvurderingsloven og råstofloven definerer, hvem der er klageberettiget i en sag:
-    </p>
+    <h3 style="margin-top:3rem;">Hvem kan klage? (Locus Standi)</h3>
     <div class="criteria-grid">
       <div class="criteria-box">
-        <h3>Borgere med retlig interesse</h3>
-        <ul>
-          <li>Enhver person eller husstand, der har en individuel, væsentlig og direkte interesse i sagens udfald (f.eks. naboer til et projektområde).</li>
-        </ul>
-      </div>
-      <div class="criteria-box">
-        <h3>Landsdækkende foreninger</h3>
-        <ul>
-          <li>Landsdækkende foreninger og organisationer, der som hovedformål har beskyttelse af natur og miljø eller varetager rekreative interesser.</li>
-          <li>Foreningen skal have vedtægter, der dokumenterer formålet, og repræsentere mindst 100 medlemmer.</li>
-        </ul>
+        <h3>Borgere med væsentlig interesse</h3>
+        <p>Naboer, lodsejere og herboende borgere, der berøres direkte og individuelt af projektets påvirkninger (støj, forurening, udsigt, trafik m.v.).</p>
       </div>
       <div class="criteria-box">
         <h3>Lokale foreninger</h3>
-        <ul>
-          <li>Lokale foreninger og organisationer, som har en væsentlig lokal interesse i afgørelsen (f.eks. lokale grundejerforeninger eller DN-lokalafdelinger).</li>
-        </ul>
+        <p>Grundejerforeninger, beboerforeninger eller lokale naturforeninger, der har en væsentlig lokal interesse i afgørelsens udfald.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Landsdækkende organisationer</h3>
+        <p>Foreninger og organisationer, der som hovedformål har beskyttelse af natur og miljø, og som repræsenterer mindst 100 medlemmer.</p>
       </div>
     </div>
 
-    <h3 style="margin-top:3rem;">Klagebehandling og juridisk praksis</h3>
+    <h3 style="margin-top:3rem;">Spørgsmål og svar om klagesager</h3>
     <div class="accordion">
       <details>
-        <summary>Hvilke typer afgørelser kan påklages?</summary>
+        <summary>Hvad prøver Miljø- og Fødevareklagenævnet?</summary>
         <div class="accordion-content">
-          <p><strong>Screeningsafgørelser (§ 21):</strong> Myndighedens beslutning om, at et projekt ikke kræver en fuld miljøvurdering, kan påklages for så vidt angår retlige spørgsmål.</p>
-          <p><strong>VVM-tilladelser (§ 25):</strong> Den endelige godkendelse af et projekt og de dertil knyttede miljømæssige vilkår kan påklages fuldt ud.</p>
-          <p><strong>Tilsynsafgørelser (§ 46):</strong> Tilsynsmyndighedens påbud eller mangel på samme kan påklages.</p>
+          <p>Klagenævnet prøver <strong>retlige spørgsmål</strong>. Det vil sige, om myndigheden har overholdt lovens krav: om sagsoplysningen er fyldestgørende (officialprincippet), om der er lavet kumulative vurderinger, om habitatdirektivets regler for Bilag IV-arter er overholdt, og om partshøringsreglerne er respekteret.</p>
+          <p>Nævnet efterprøver derimod ikke det rene politiske eller lokalplanmæssige skøn, såfremt lovens rammer er overholdt.</p>
         </div>
       </details>
       <details>
-        <summary>Hvad koster det at klage?</summary>
+        <summary>Har en klage opsættende virkning?</summary>
         <div class="accordion-content">
-          <p>For privatpersoner udgør gebyret <strong>900 kr.</strong></p>
-          <p>For virksomheder, organisationer og offentlige myndigheder udgør gebyret <strong>1.800 kr.</strong></p>
-          <p>Gebyret tilbagebetales fuldt ud, såfremt klager får helt eller delvist medhold i sagen.</p>
-        </div>
-      </details>
-      <details>
-        <summary>Hvordan forholder nævnet sig til principiel praksis?</summary>
-        <div class="accordion-content">
-          <p>Miljø- og Fødevareklagenævnet er bundet af sine egne principielle afgørelser og EU-Domstolens praksis.</p>
-          <p>Eksempelvis slår <strong>Koppers-afgørelsen</strong> fast, at der ikke må meddeles tilladelser, som risikerer at føre til en forringelse af et vandområdes tilstand, og underkender teoretiske fortyndingsmodeller uden konkrete, repræsentative målinger.</p>
+          <p>Efter miljøvurderingsloven har en klage over en tilladelse som udgangspunkt <strong>ikke automatisk opsættende virkning</strong>. Klageren bør derfor i klageskriftet eksplicit anmode Klagenævnet om at tillægge klagen opsættende virkning, hvis byggeriet ellers igangsættes og forvolder uoprettelig skade på natur eller miljø.</p>
         </div>
       </details>
     </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-p-5">← Forrige trin: Offentlig Høring</button>
+      <button type="button" class="step-nav-btn" disabled>Sidste procestrin (Afsluttet)</button>
+    </div>
   </article>
 
+  <!-- ========================================================
+       DETALJE-PANELER FOR SPOR 2: PLANER OG PROGRAMMER (SMV)
+       ======================================================== -->
+
+  <!-- TRIN PL-1: PLANUDKAST & SCREENING -->
+  <article class="step-detail-card" id="step-pl-1" role="tabpanel" aria-labelledby="node-pl-1">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planer &amp; Programmer · Trin 1</span>
+        <span class="step-badge">Miljøvurderingslovens § 8, § 10 &amp; bilag 3</span>
+      </div>
+      <h2>Trin 1: Planudkast &amp; SMV-Screening</h2>
+      <p class="lead">Vurdering af, om lokalplaner, kommuneplantillæg eller sektorplaner kræver en strategisk miljøvurdering (SMV).</p>
+    </div>
+
+    <p>
+      Når en kommune eller region udarbejder en plan (f.eks. en lokalplan, et kommuneplantillæg eller en råstofplan) jf. § 2, stk. 1, nr. 1, skal planen vurderes efter miljøvurderingslovens regler for planer og programmer.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Obligatorisk miljøvurdering vs. screening</h3>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>Obligatorisk SMV (§ 8, stk. 1)</h3>
+        <p>Planer, der fastlægger rammerne for fremtidige anlægstilladelser til projekter omfattet af lovens bilag 1 eller 2, eller som kan påvirke et Natura 2000-område væsentligt, er altid obligatorisk miljøvurderingspligtige.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Screeningspligtige planer (§ 8, stk. 2)</h3>
+        <p>Mindre lokalplaner for små områder på lokalt plan eller mindre ændringer i eksisterende planer skal screenes jf. § 10 efter kriterierne i lovens <strong>bilag 3</strong>.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Høring af berørte myndigheder</h3>
+        <p>Før der træffes screeningsafgørelse, har planmyndigheden pligt til at høre berørte miljømyndigheder jf. § 32, stk. 3, nr. 1.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem;">Afgørelse om ikke-miljøvurdering (§ 33)</h3>
+    <p>
+      Hvis kommunen vurderer, at lokalplanen ikke vil medføre væsentlig miljøpåvirkning, offentliggøres en <strong>screeningsafgørelse</strong> jf. § 33. Denne afgørelse kan påklages til <strong>Planklagenævnet</strong> inden for en frist på <strong>4 uger</strong> for så vidt angår retlige mangler (f.eks. mangelfuld sagsoplysning eller tilsidesættelse af bilag 3-kriterierne).
+    </p>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" disabled>← Første procestrin</button>
+      <button type="button" class="step-nav-btn" data-next="step-pl-2">Næste trin: Afgrænsning af miljørapport →</button>
+    </div>
+  </article>
+
+  <!-- TRIN PL-2: AFGRÆNSNING AF MILJØRAPPORT -->
+  <article class="step-detail-card" id="step-pl-2" role="tabpanel" aria-labelledby="node-pl-2">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planer &amp; Programmer · Trin 2</span>
+        <span class="step-badge">Miljøvurderingslovens § 11 &amp; § 32</span>
+      </div>
+      <h2>Trin 2: Afgrænsning af Miljørapportens Indhold</h2>
+      <p class="lead">Fastlæggelse af, hvilke miljøtemaer og alternativer der skal undersøges i planens miljørapport.</p>
+    </div>
+
+    <p>
+      Hvis planen er miljøvurderingspligtig, fastlægger planmyndigheden omfanget og detaljeringsgraden af de oplysninger, der skal indgå i miljørapporten jf. § 11. Formålet er at sikre, at rapporten fokuserer på de reelt væsentlige miljøproblemer frem for unødvendige detaljer.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Høring af berørte myndigheder (§ 32, stk. 3, nr. 2)</h3>
+    <p>
+      Ved afgrænsningen skal planmyndigheden høre berørte myndigheder (f.eks. nabokommuner, Miljøstyrelsen, Kystdirektoratet eller Styrelsen for Patientsikkerhed), så relevante miljøhensyn fanges i tide, før rapporten forfattes.
+    </p>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-pl-1">← Forrige trin: Plan-screening</button>
+      <button type="button" class="step-nav-btn" data-next="step-pl-3">Næste trin: Miljørapport (SMV) →</button>
+    </div>
+  </article>
+
+  <!-- TRIN PL-3: MILJØRAPPORT (SMV) -->
+  <article class="step-detail-card" id="step-pl-3" role="tabpanel" aria-labelledby="node-pl-3">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planer &amp; Programmer · Trin 3</span>
+        <span class="step-badge">Miljøvurderingslovens § 12 &amp; bilag 4</span>
+      </div>
+      <h2>Trin 3: Udarbejdelse af Miljørapport</h2>
+      <p class="lead">Planmyndighedens faglige rapport, der dokumenterer planens forventede miljøpåvirkninger og rimelige alternativer.</p>
+    </div>
+
+    <p>
+      Planmyndigheden udarbejder miljørapporten jf. § 12. Rapporten ledsager planforslaget og skal i overensstemmelse med lovens <strong>bilag 4</strong> belyse de sandsynlige væsentlige virkninger på miljøet, herunder:
+    </p>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>1. Nuværende miljøtilstand</h3>
+        <p>Beskrivelse af den relevante miljøtilstand i planområdet og dens sandsynlige udvikling uden gennemførelse af planen ("0-alternativet").</p>
+      </div>
+      <div class="criteria-box">
+        <h3>2. Rimelige alternativer</h3>
+        <p>Identifikation og evaluering af rimelige alternativer til planforslaget under hensyn til planens formål og geografiske anvendelsesområde.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>3. Overvågningsprogram</h3>
+        <p>Forslag til foranstaltninger til overvågning af de væsentlige miljøvirkninger med henblik på at identificere uforudsete negative virkninger.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-pl-2">← Forrige trin: Afgrænsning</button>
+      <button type="button" class="step-nav-btn" data-next="step-pl-4">Næste trin: Offentlig Planhøring →</button>
+    </div>
+  </article>
+
+  <!-- TRIN PL-4: OFFENTLIG PLANHØRING -->
+  <article class="step-detail-card" id="step-pl-4" role="tabpanel" aria-labelledby="node-pl-4">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planer &amp; Programmer · Trin 4</span>
+        <span class="step-badge">Miljøvurderingslovens § 32</span>
+      </div>
+      <h2>Trin 4: Offentlig Høring over Planforslag og Miljørapport</h2>
+      <p class="lead">Samtidig offentliggørelse og høring af planforslaget og miljørapporten hos borgere og berørte myndigheder.</p>
+    </div>
+
+    <p>
+      Planforslaget og den ledsagende miljørapport offentliggøres samtidig jf. § 32, stk. 4. Myndigheden fastsætter en passende høringsfrist (typisk <strong>8 uger</strong> ved lokalplaner og kommuneplantillæg efter planloven), hvor offentligheden og berørte organisationer kan fremsætte bemærkninger og indsigelser.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Hvad kan borgerne gøre?</h3>
+    <p>
+      Borgere og lokalforeninger kan indsende skriftlige høringssvar, der både adresserer selve lokalplanens bestemmelser og de miljøfaglige forudsætninger i miljørapporten. Myndigheden har pligt til at inddrage bemærkningerne forud for planens endelige vedtagelse.
+    </p>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-pl-3">← Forrige trin: Miljørapport</button>
+      <button type="button" class="step-nav-btn" data-next="step-pl-5">Næste trin: Sammenfattende Redegørelse →</button>
+    </div>
+  </article>
+
+  <!-- TRIN PL-5: SAMMENFATTENDE REDEGØRELSE -->
+  <article class="step-detail-card" id="step-pl-5" role="tabpanel" aria-labelledby="node-pl-5">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planer &amp; Programmer · Trin 5</span>
+        <span class="step-badge">Miljøvurderingslovens § 13, stk. 2</span>
+      </div>
+      <h2>Trin 5: Den Sammenfattende Redegørelse</h2>
+      <p class="lead">Myndighedens lovpligtige redegørelse for, hvordan miljørapporten og borgernes høringssvar er indarbejdet i den endelige plan.</p>
+    </div>
+
+    <p>
+      Inden planen endeligt vedtages, skal planmyndigheden udarbejde en formel <strong>sammenfattende redegørelse</strong> jf. § 13, stk. 2. Redegørelsen skal dokumentere:
+    </p>
+    <ul>
+      <li>Hvordan miljøhensyn er integreret i planen eller programmet.</li>
+      <li>Hvordan miljørapporten og de indkomne udtalelser og høringssvar fra offentligheden og myndighederne er taget i betragtning.</li>
+      <li>Hvorfor den vedtagne plan er valgt frem for de øvrige rimelige alternativer, der blev undersøgt.</li>
+      <li>Hvordan overvågningen af planens miljøvirkninger skal gennemføres i praksis.</li>
+    </ul>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-pl-4">← Forrige trin: Planhøring</button>
+      <button type="button" class="step-nav-btn" data-next="step-pl-6">Næste trin: Planvedtagelse &amp; Klage →</button>
+    </div>
+  </article>
+
+  <!-- TRIN PL-6: ENDELIG PLANVEDTAGELSE & KLAGE -->
+  <article class="step-detail-card" id="step-pl-6" role="tabpanel" aria-labelledby="node-pl-6">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planer &amp; Programmer · Trin 6</span>
+        <span class="step-badge">Miljøvurderingslovens § 34 &amp; Planloven</span>
+      </div>
+      <h2>Trin 6: Endelig Planvedtagelse &amp; Klage</h2>
+      <p class="lead">Byrådets eller regionsrådets endelige vedtagelse, offentliggørelse og 4 ugers klageadgang til Planklagenævnet.</p>
+    </div>
+
+    <p>
+      Planen vedtages endeligt af den kompetente myndighed (f.eks. kommunalbestyrelsen) og offentliggøres sammen med den sammenfattende redegørelse jf. § 34.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Klagemuligheder til Planklagenævnet</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">4 uger</p>
+        <h3>Klagefrist</h3>
+        <p>Klagen skal indgives via Klageportalen senest <strong>4 uger</strong> fra den dag, den endelige plan og redegørelse er offentliggjort.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Retlige fejl</p>
+        <h3>Hvad kan påklages?</h3>
+        <p>Planklagenævnet efterprøver retlige spørgsmål — herunder om miljøvurderingslovens procedurer, sagsoplysningen eller høringsreglerne er overtrådt.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Ugyldighed</p>
+        <h3>Konsekvens ved fejl</h3>
+        <p>Væsentlige retlige mangler i miljøvurderingen eller i den sammenfattende redegørelse medfører som hovedregel, at lokalplanen kendes <strong>ugyldig</strong>.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-pl-5">← Forrige trin: Sammenfattende Redegørelse</button>
+      <button type="button" class="step-nav-btn" disabled>Sidste procestrin (Afsluttet)</button>
+    </div>
+  </article>
+
+  <!-- CTA BOKS -->
   <div class="cta-box">
     <h2>Sagsarkiv</h2>
     <p>
-      Analyser af konkrete afgørelser findes i sagsarkivet.
+      Analyser af konkrete afgørelser og principielle klagenævnssager findes i sagsarkivet.
     </p>
     <p style="margin-bottom:0;">
       <a href="sagsarkiv.html">Gå til sagsarkivet →</a>
@@ -388,5 +834,131 @@
 </main>
 
 <footer>© Vores Miljø</footer>
+
+<!-- INTERAKTIV JAVASCRIPT-MOTOR FOR FLOWCHART OG DETALJEKORT -->
+<script>
+(function() {
+  var trackBtns = document.querySelectorAll('.track-btn');
+  var flowTracks = document.querySelectorAll('.flow-track');
+  var detailCards = document.querySelectorAll('.step-detail-card');
+  var stickyWrap = document.querySelector('.flowchart-sticky-wrap');
+
+  // Aktivér et specifikt procestrin
+  function activateStep(stepId, shouldScroll) {
+    var targetCard = document.getElementById(stepId);
+    if (!targetCard) return;
+
+    // Skjul alle kort og vis det valgte
+    detailCards.forEach(function(card) {
+      card.classList.remove('active');
+    });
+    targetCard.classList.add('active');
+
+    // Opdater aktive noder i flowchartet
+    document.querySelectorAll('.flow-node').forEach(function(node) {
+      var isTarget = node.getAttribute('data-step') === stepId;
+      node.classList.toggle('active', isTarget);
+      node.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+    });
+
+    // Hvis brugeren scroller ned eller klikker navigation, scroll blødt til toppen af detaljekortet
+    if (shouldScroll) {
+      var yOffset = stickyWrap ? (stickyWrap.offsetHeight + 20) : 100;
+      var cardTop = targetCard.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({
+        top: Math.max(0, cardTop),
+        behavior: 'smooth'
+      });
+    }
+
+    // Opdater URL hash uden at hoppe
+    if (history.replaceState) {
+      history.replaceState(null, '', '#' + stepId);
+    }
+  }
+
+  // Skift mellem de to spor (Projekter vs Planer)
+  function switchTrack(trackId) {
+    trackBtns.forEach(function(btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-track') === trackId);
+    });
+
+    flowTracks.forEach(function(track) {
+      var isActive = track.id === trackId;
+      track.classList.toggle('active', isActive);
+      track.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+    });
+
+    // Vælg det første trin i det valgte spor
+    var activeTrack = document.getElementById(trackId);
+    if (activeTrack) {
+      var firstNode = activeTrack.querySelector('.flow-node');
+      if (firstNode) {
+        var firstStep = firstNode.getAttribute('data-step');
+        activateStep(firstStep, false);
+      }
+    }
+  }
+
+  // Lyt på klik på spor-knapper
+  trackBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var trackId = this.getAttribute('data-track');
+      switchTrack(trackId);
+    });
+  });
+
+  // Lyt på klik på alle flowchart noder
+  document.querySelectorAll('.flow-node').forEach(function(node) {
+    node.addEventListener('click', function() {
+      var stepId = this.getAttribute('data-step');
+      activateStep(stepId, true);
+    });
+  });
+
+  // Lyt på Forrige / Næste knapper inde i detaljekortene
+  document.querySelectorAll('.step-nav-btn[data-next]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var nextStep = this.getAttribute('data-next');
+      activateStep(nextStep, true);
+    });
+  });
+
+  document.querySelectorAll('.step-nav-btn[data-prev]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var prevStep = this.getAttribute('data-prev');
+      activateStep(prevStep, true);
+    });
+  });
+
+  // Understøt direkte links og bogmærker (f.eks. #screening, #hoering, #klage)
+  var hash = window.location.hash.replace('#', '');
+  if (hash) {
+    var hashMapping = {
+      'screening': 'step-p-1',
+      'afgraensning': 'step-p-2',
+      'miljoekonsekvensrapport': 'step-p-3',
+      'rapport': 'step-p-3',
+      'hoering': 'step-p-5',
+      'afgoerelse': 'step-p-6',
+      'klage': 'step-p-6',
+      'plan-screening': 'step-pl-1',
+      'plan-hoering': 'step-pl-4'
+    };
+    var targetStep = hashMapping[hash] || hash;
+    var targetElement = document.getElementById(targetStep);
+    if (targetElement) {
+      // Find hvilket spor elementet tilhører
+      if (targetStep.indexOf('step-pl') === 0) {
+        switchTrack('track-planer');
+      } else {
+        switchTrack('track-projekter');
+      }
+      activateStep(targetStep, true);
+    }
+  }
+})();
+</script>
+
 </body>
 </html>
