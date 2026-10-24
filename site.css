@@ -201,6 +201,10 @@ h3 {
   margin-top: 2rem;
 }
 
+.card-grid:first-child {
+  margin-top: 0;
+}
+
 .card-grid.cols-3 {
   grid-template-columns: repeat(3, 1fr);
 }
