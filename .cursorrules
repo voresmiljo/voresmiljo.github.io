@@ -1,0 +1,39 @@
+# Vores Miljø (voresmiljo.dk) — Cursor Rules
+
+## 1. Projekt- og Teknologistak
+- **Type:** 100 % statisk website (ren HTML5, CSS og vanilla JavaScript).
+- **Hosting:** GitHub Pages via domænet `voresmiljo.dk` (`CNAME`).
+- **Dependencies / Build:** INGEN npm, node_modules, bundlers eller build-steps.
+- **CSS-frameworks:** **BRUG IKKE TAILWIND CSS** eller andre CSS-biblioteker.
+- **Sprog:** Dansk (`lang="da"`), professionel, saglig og miljøfaglig tone.
+
+## 2. Designsystem & Styling
+- **Hovedstylesheet:** Alt fælles design styles via `site.css`.
+- **Farvepalette:**
+  - `--earth: #2C3E2D` (primær mørkegrøn tekst, hero/footer-baggrunde)
+  - `--moss: #4A6741` (mellemgrøn, links, sektionsetiketter)
+  - `--stone: #8B9E7F` (lys mos-sten, rammer, subtile elementer)
+  - `--sand: #E8E0D0` (varm sand, kontrasttekst på mørk baggrund)
+  - `--cream: #F4F0E8` (lys sand-creme, highlight- og sektionsbaggrunde `.alt`)
+  - `--light: #FAFAF7` (brækket hvid, standard sidebaggrund)
+  - Hvid accent: `#ffffff` (`.card-white`, tekstfelter til kopiering)
+- **Typografi:**
+  - Overskrifter: `'Playfair Display', serif`
+  - Brødtekst: `'Source Serif 4', Georgia, serif`
+  - Lovtekster/skabeloner: `Georgia, serif`
+- **Genanvendte klasser:**
+  - Layout: `.wrap` (max 1100px), `.wrap-narrow` (max 760px), `section.alt`
+  - Etiketter: `.hero-label`, `.section-label`
+  - Knapper: `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-outline`, `.btn-copy`
+  - Kort & gitter: `.card-grid`, `.card-grid.cols-2`, `.card`, `.card.boxed`, `.card-white`
+  - Harmonika & skabeloner: `.fold-list`, `details.fold`, `.template-panel`
+
+## 3. Integration af indhold fra NotebookLM
+- Når brugeren indsætter indhold eller tekster fra NotebookLM:
+  - Formater altid i ren, semantisk HTML (`<h2>`, `<h3>`, `<p>`, `<ul>`, `<li>`, `<strong>`).
+  - Anvend eksisterende klasser fra `site.css` i stedet for at opfinde inline styles eller framework-klasser.
+  - Bevar sidens eksisterende navigationsbjælke, header, footer og JSON-LD strukturerede data.
+
+## 4. Git & Sikkerhed
+- Opret og arbejd altid på branches.
+- Lav fokuserede, beskrivende commits på dansk.
