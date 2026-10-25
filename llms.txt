@@ -1,7 +1,7 @@
 # Vores Miljø
 > Uafhængigt, frivilligt og ikke-kommercielt fagligt projekt om miljøvurderinger i Danmark. Formidler lovgivning, analyser og praktiske skabeloner, så borgere, lodsejere og lokalforeninger kan deltage sagligt i miljø- og plansager.
 
-Siden er midlertidigt lukket for Google-søgeresultater (`noindex`), men kan tilgås direkte på https://voresmiljo.dk
+Tilgængelig direkte på https://voresmiljo.dk
 
 ## Primære sider
 - [Forside](https://voresmiljo.dk/): Introduktion til projektet og genveje til proces, sagsarkiv og kontakt

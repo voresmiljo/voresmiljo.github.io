@@ -1,47 +1,7 @@
-# Vores Miljø — midlertidig crawl-politik
-#
-# Direkte adgang er åben: https://voresmiljo.dk
-# Google/Bing m.fl.: blokeret, indtil siden officielt åbnes for søgning.
-# Udvalgte AI-crawlers: må hente indhold (sider har stadig noindex i HTML).
-# Sitemap aktiveres først ved lancering.
-
-User-agent: Googlebot
-Disallow: /
-
-User-agent: Googlebot-Image
-Disallow: /
-
-User-agent: Bingbot
-Disallow: /
-
-User-agent: DuckDuckBot
-Disallow: /
-
-User-agent: Slurp
-Disallow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
+# Vores Miljø (voresmiljo.dk) — Crawl-politik
+# Siden er åben for søgemaskiner og AI-tjenester.
 
 User-agent: *
-Disallow: /
+Allow: /
 
-# Sitemap: https://voresmiljo.dk/sitemap.xml  (aktiveres ved lancering)
+Sitemap: https://voresmiljo.dk/sitemap.xml
