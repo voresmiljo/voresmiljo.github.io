@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#2C3E2D"/>
+  <!-- Stylized leaf pair in Vores Miljø brand colors -->
+  <path d="M20 46 C18 30, 26 18, 44 15 C46 31, 38 43, 20 46 Z" fill="#8B9E7F"/>
+  <path d="M44 46 C46 32, 40 22, 24 18 C22 32, 28 44, 44 46 Z" fill="#E8E0D0" opacity="0.92"/>
+  <path d="M20 46 Q32 33 44 15" stroke="#2C3E2D" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M44 46 Q34 34 24 18" stroke="#2C3E2D" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>
