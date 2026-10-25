@@ -54,7 +54,7 @@
 }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=proces5">
+  <link rel="stylesheet" href="site.css?v=proces6">
 </head>
 <body>
 
@@ -87,6 +87,9 @@
       </button>
       <button type="button" class="track-btn" data-track="track-planer" id="btn-track-planer">
         Planer og programmer (Afsnit II, § 8 - 14)
+      </button>
+      <button type="button" class="track-btn track-btn-diagram" id="btn-toggle-diagram" aria-expanded="false" aria-controls="diagram-viewer-panel">
+        🗺️ Se fuldt procesdiagram
       </button>
     </div>
 
@@ -216,6 +219,37 @@
       <span style="margin-left:auto;font-style:italic;color:var(--moss);">Klik på et procestrin for at læse den faglige vejledning</span>
     </div>
 
+  </section>
+
+  <!-- DET OFFICIELLE FLOWCHART / PROCESDIAGRAM (KAN ÅBNES/LUKKES) -->
+  <section class="flowchart-diagram-section" id="diagram-viewer-panel" hidden>
+    <div class="diagram-card">
+      <div class="diagram-card-header">
+        <div>
+          <p class="section-label" style="margin-bottom:0.35rem;">Officielt procesdiagram</p>
+          <h2 style="font-size:1.4rem;margin-bottom:0.35rem;">Flowchart for miljøvurdering og screening efter miljøvurderingsloven</h2>
+          <p style="margin-bottom:0;font-size:0.95rem;">
+            Samlet overblik over procesforløbet for både planer &amp; programmer og konkrete projekter med lovhenvisninger, tidsfrister og myndighedsroller.
+          </p>
+        </div>
+        <div class="diagram-header-actions">
+          <a href="assets/billeder/miljoevurdering-flowchart.png" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.85rem;padding:0.5rem 0.95rem;">
+            Åbn fuld opløsning ↗
+          </a>
+          <button type="button" class="btn btn-outline" id="btn-close-diagram" style="font-size:0.85rem;padding:0.5rem 0.95rem;">
+            Luk diagram ✕
+          </button>
+        </div>
+      </div>
+      <div class="diagram-card-body">
+        <a href="assets/billeder/miljoevurdering-flowchart.png" target="_blank" rel="noopener" class="diagram-img-link" title="Klik på diagrammet for at åbne det i fuld størrelse i en ny fane">
+          <img src="assets/billeder/miljoevurdering-flowchart.png" alt="Officielt flowchart over miljøvurdering og screening af planer og konkrete projekter efter miljøvurderingsloven" class="diagram-img" loading="lazy">
+        </a>
+        <p class="diagram-caption">
+          Klik på diagrammet eller benyt knappen ovenfor for at åbne billedet i fuld størrelse i en ny fane.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- ========================================================
@@ -822,12 +856,13 @@
 
   <!-- CTA BOKS -->
   <div class="cta-box">
-    <h2>Sagsarkiv</h2>
+    <h2>Sagsarkiv og Procesoverblik</h2>
     <p>
-      Analyser af konkrete afgørelser og principielle klagenævnssager findes i sagsarkivet.
+      Analyser af konkrete afgørelser og principielle klagenævnssager findes i sagsarkivet. Du kan også til enhver tid åbne det fulde officielle flowchart for hele processen.
     </p>
     <p style="margin-bottom:0;">
-      <a href="sagsarkiv.html">Gå til sagsarkivet →</a>
+      <a href="sagsarkiv.html">Gå til sagsarkivet →</a> &nbsp;·&nbsp;
+      <a href="#diagram" id="cta-open-diagram">Se officielt procesdiagram ↑</a>
     </p>
   </div>
 
@@ -931,9 +966,64 @@
     });
   });
 
-  // Understøt direkte links og bogmærker (f.eks. #screening, #hoering, #klage)
+  // Håndter åbning/lukning af det officielle procesdiagram
+  var toggleDiagramBtn = document.getElementById('btn-toggle-diagram');
+  var closeDiagramBtn = document.getElementById('btn-close-diagram');
+  var diagramPanel = document.getElementById('diagram-viewer-panel');
+  var ctaOpenDiagram = document.getElementById('cta-open-diagram');
+
+  function toggleDiagram(shouldOpen) {
+    if (!diagramPanel) return;
+    var isHidden = diagramPanel.hasAttribute('hidden');
+    var targetOpen = (typeof shouldOpen === 'boolean') ? shouldOpen : isHidden;
+
+    if (targetOpen) {
+      diagramPanel.removeAttribute('hidden');
+      if (toggleDiagramBtn) {
+        toggleDiagramBtn.classList.add('active');
+        toggleDiagramBtn.setAttribute('aria-expanded', 'true');
+        toggleDiagramBtn.innerHTML = '✕ Skjul procesdiagram';
+      }
+      var yOffset = stickyWrap ? (stickyWrap.offsetHeight + 15) : 80;
+      var panelTop = diagramPanel.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({
+        top: Math.max(0, panelTop),
+        behavior: 'smooth'
+      });
+    } else {
+      diagramPanel.setAttribute('hidden', '');
+      if (toggleDiagramBtn) {
+        toggleDiagramBtn.classList.remove('active');
+        toggleDiagramBtn.setAttribute('aria-expanded', 'false');
+        toggleDiagramBtn.innerHTML = '🗺️ Se fuldt procesdiagram';
+      }
+    }
+  }
+
+  if (toggleDiagramBtn) {
+    toggleDiagramBtn.addEventListener('click', function() {
+      toggleDiagram();
+    });
+  }
+
+  if (closeDiagramBtn) {
+    closeDiagramBtn.addEventListener('click', function() {
+      toggleDiagram(false);
+    });
+  }
+
+  if (ctaOpenDiagram) {
+    ctaOpenDiagram.addEventListener('click', function(e) {
+      e.preventDefault();
+      toggleDiagram(true);
+    });
+  }
+
+  // Understøt direkte links og bogmærker (f.eks. #screening, #hoering, #klage, #diagram)
   var hash = window.location.hash.replace('#', '');
-  if (hash) {
+  if (hash === 'diagram' || hash === 'flowchart' || hash === 'procesdiagram') {
+    toggleDiagram(true);
+  } else if (hash) {
     var hashMapping = {
       'screening': 'step-p-1',
       'afgraensning': 'step-p-2',

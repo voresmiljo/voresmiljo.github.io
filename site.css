@@ -512,6 +512,91 @@ h3 {
 .legend-dot.bygherre { background: #C8B99D; }
 .legend-dot.hoering-klage { background: var(--moss); }
 
+.track-btn-diagram {
+  margin-left: auto;
+  border-color: var(--moss);
+  background: var(--light);
+}
+
+.track-btn-diagram:hover {
+  background: var(--earth);
+  color: var(--sand);
+  border-color: var(--earth);
+}
+
+.track-btn-diagram.active {
+  background: var(--earth);
+  color: var(--sand);
+}
+
+/* Diagram Viewer Panel */
+.flowchart-diagram-section {
+  margin-bottom: 2.5rem;
+  animation: diagramSlideDown 0.25s ease-out;
+}
+
+@keyframes diagramSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.diagram-card {
+  background: #ffffff;
+  border: 2px solid rgba(74, 103, 65, 0.3);
+  border-top: 4px solid var(--earth);
+  padding: 1.5rem 2rem 2rem;
+  box-shadow: 0 4px 20px rgba(44, 62, 45, 0.08);
+}
+
+.diagram-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(74, 103, 65, 0.2);
+  flex-wrap: wrap;
+}
+
+.diagram-header-actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.diagram-card-body {
+  position: relative;
+}
+
+.diagram-img-link {
+  display: block;
+  cursor: zoom-in;
+  overflow: hidden;
+  border: 1px solid rgba(74, 103, 65, 0.25);
+  background: #ffffff;
+}
+
+.diagram-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.diagram-img-link:hover .diagram-img {
+  transform: scale(1.01);
+}
+
+.diagram-caption {
+  font-size: 0.85rem;
+  color: var(--moss);
+  margin: 0.75rem 0 0;
+  text-align: center;
+  font-style: italic;
+}
+
 /* Detaljekort */
 .step-detail-card {
   display: none;
@@ -1444,5 +1529,17 @@ footer {
   }
   .flow-node.active::after {
     display: none;
+  }
+  .track-btn-diagram {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .diagram-card {
+    padding: 1rem;
+  }
+  .diagram-card-header {
+    flex-direction: column;
+    gap: 0.85rem;
   }
 }
