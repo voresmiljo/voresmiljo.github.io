@@ -33,6 +33,7 @@
   - Formater altid i ren, semantisk HTML (`<h2>`, `<h3>`, `<p>`, `<ul>`, `<li>`, `<strong>`).
   - Anvend eksisterende klasser fra `site.css` i stedet for at opfinde inline styles eller framework-klasser.
   - Bevar sidens eksisterende navigationsbjælke, header, footer og JSON-LD strukturerede data.
+  - **Sagsanalyser (`sag-*.html`):** Inkluder ALDRIG et afsnit om »Dokumentation« / sagsakter til download. Ansøgere og private projektejere skal altid anonymiseres (brug det neutrale »ansøger«).
 
 ## 4. Git & Sikkerhed
 - Lav fokuserede, beskrivende commits på dansk.
