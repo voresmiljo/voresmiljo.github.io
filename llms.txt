@@ -7,7 +7,7 @@ Tilgængelig direkte på https://voresmiljo.dk
 - [Forside](https://voresmiljo.dk/): Introduktion til projektet og genveje til proces, sagsarkiv og kontakt
 - [Processen](https://voresmiljo.dk/vejviser.html): Screening, høring og klage efter miljøvurderingsloven
 - [Sagsarkiv](https://voresmiljo.dk/sagsarkiv.html): Faglige analyser af konkrete afgørelser
-- [Om & kontakt](https://voresmiljo.dk/om.html): Om initiativet og indsendelse af sagsakter til uvildig belysning
+- [Miljøfaglig rådgivning](https://voresmiljo.dk/om.html): Uvildig rådgivning, sagsbelysning og kontakt
 
 ## Sagsanalyser
 - [Sanderødgård Grusgrav](https://voresmiljo.dk/sag-sanderoedgaard.html): Analyse af screening/tilladelsesgrundlag, bl.a. grundvand, kontinuitet og retlig belysning
