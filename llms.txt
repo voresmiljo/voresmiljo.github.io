@@ -6,6 +6,7 @@ Tilgængelig direkte på https://voresmiljo.dk
 ## Primære sider
 - [Forside](https://voresmiljo.dk/): Introduktion til projektet og genveje til proces, sagsarkiv og kontakt
 - [Processen](https://voresmiljo.dk/vejviser.html): Screening, høring og klage efter miljøvurderingsloven
+- [Sagsprocesser](https://voresmiljo.dk/processer.html): Vejvisere for miljøvurderinger, lokalplaner og råstoftilladelser
 - [Sagsarkiv](https://voresmiljo.dk/sagsarkiv.html): Faglige analyser af konkrete afgørelser
 - [Miljøfaglig rådgivning](https://voresmiljo.dk/om.html): Uvildig rådgivning, sagsbelysning og kontakt
 
