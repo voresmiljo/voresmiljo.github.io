@@ -5,7 +5,10 @@ Tilgængelig direkte på https://voresmiljo.dk
 
 ## Primære sider
 - [Forside](https://voresmiljo.dk/): Introduktion til projektet og genveje til proces, sagsarkiv og kontakt
-- [Processen](https://voresmiljo.dk/vejviser.html): Screening, høring og klage efter miljøvurderingsloven
+- [Miljøvurderingsprocessen](https://voresmiljo.dk/miljoevurderingsprocessen.html): Trin-for-trin guide til miljøvurderinger (VVM & SMV)
+- [Planprocesser](https://voresmiljo.dk/planprocesser.html): Guide til lokalplaner og Planloven
+- [Råstofprocesser](https://voresmiljo.dk/raastofprocesser.html): Guide til råstoftilladelser og Råstofloven
+- [VVM Flowchart](https://voresmiljo.dk/vejviser.html): Interaktivt flowchart og procesdiagram for miljøvurderingsloven
 - [Sagsarkiv](https://voresmiljo.dk/sagsarkiv.html): Faglige analyser af konkrete afgørelser
 - [Miljøfaglig rådgivning](https://voresmiljo.dk/om.html): Uvildig rådgivning, sagsbelysning og kontakt
 

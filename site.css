@@ -696,6 +696,127 @@ h3 {
   border-color: rgba(74, 103, 65, 0.25);
 }
 
+/* Proces-tidslinje og trin-kort (miljoevurderingsprocessen, planprocesser, raastofprocesser) */
+.process-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.step-card {
+  background: #ffffff;
+  border: 1px solid var(--sand);
+  border-left: 5px solid var(--moss);
+  border-radius: 6px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 2px 6px rgba(44, 62, 45, 0.05);
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.65rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.step-number {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--moss);
+}
+
+.step-badge {
+  background: var(--cream);
+  border: 1px solid var(--sand);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--earth);
+}
+
+.step-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: var(--earth);
+}
+
+.step-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--earth);
+}
+
+.step-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Målgruppe gitter (Forside: Hvem rådgiver vi?) */
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.audience-card {
+  background: var(--cream);
+  border: 1px solid var(--sand);
+  border-top: 3px solid var(--moss);
+  padding: 1.4rem 1.35rem;
+  border-radius: 4px;
+}
+
+.audience-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--earth);
+}
+
+.audience-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: var(--earth);
+}
+
+.callout-warning,
+.callout.callout-warning {
+  background: #FFF9ED;
+  border-left: 4px solid #C4973B;
+  padding: 1.25rem 1.4rem;
+  margin: 1.75rem 0;
+  color: var(--earth);
+  border-radius: 2px;
+}
+
+.process-nav-box {
+  background-color: var(--cream);
+  border: 1px solid var(--sand);
+  padding: 1.75rem;
+  margin-top: 2.5rem;
+  border-radius: 6px;
+}
+
+.process-nav-box h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.process-nav-links {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
 .phase-section {
   margin-bottom: 5rem;
   padding-bottom: 3rem;

@@ -6,6 +6,21 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://voresmiljo.dk/miljoevurderingsprocessen.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://voresmiljo.dk/planprocesser.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://voresmiljo.dk/raastofprocesser.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://voresmiljo.dk/vejviser.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
