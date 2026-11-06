@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Vores Miljø</title>
-  <meta name="description" content="Trin-for-trin guide til råstofindvinding jf. råstofloven. Råstofplanlægning, tilladelser, grundvand og automatisk opsættende virkning ved klage.">
+  <title>Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Interaktivt Flowchart | Vores Miljø</title>
+  <meta name="description" content="Interaktivt flowchart over råstofprocessen jf. råstofloven. Trin-for-trin guide til regionale råstofplaner, indvindingstilladelser, OSD-beskyttelse, kontinuitetsbrud og automatisk opsættende virkning.">
   <link rel="canonical" href="https://voresmiljo.dk/raastofprocesser.html">
   <meta name="author" content="Vores Miljø">
   <meta name="theme-color" content="#2C3E2D">
@@ -13,11 +13,11 @@
   <meta property="og:locale" content="da_DK">
   <meta property="og:site_name" content="Vores Miljø">
   <meta property="og:url" content="https://voresmiljo.dk/raastofprocesser.html">
-  <meta property="og:title" content="Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Vores Miljø">
-  <meta property="og:description" content="Trin-for-trin guide til råstofindvinding jf. råstofloven. Råstofplanlægning, tilladelser, grundvand og automatisk opsættende virkning ved klage.">
+  <meta property="og:title" content="Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Interaktivt Flowchart | Vores Miljø">
+  <meta property="og:description" content="Interaktivt flowchart over råstofprocessen jf. råstofloven. Trin-for-trin guide til råstofplaner, tilladelser, OSD og automatisk opsættende virkning.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Vores Miljø">
-  <meta name="twitter:description" content="Trin-for-trin guide til råstofindvinding jf. råstofloven. Råstofplanlægning, tilladelser, grundvand og automatisk opsættende virkning.">
+  <meta name="twitter:title" content="Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Interaktivt Flowchart | Vores Miljø">
+  <meta name="twitter:description" content="Interaktivt flowchart over råstofprocessen jf. råstofloven. Råstofplaner, tilladelser, grundvand og automatisk opsættende virkning.">
 
   <script type="application/ld+json">
 {
@@ -42,8 +42,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Vores Miljø",
-  "description": "Trin-for-trin guide til råstofindvinding jf. råstofloven. Råstofplanlægning, tilladelser, grundvand og automatisk opsættende virkning.",
+  "name": "Råstofprocesser &amp; Indvindingstilladelser (Råstofloven) — Interaktivt Flowchart | Vores Miljø",
+  "description": "Interaktivt flowchart over råstofprocessen jf. råstofloven. Råstofplaner, tilladelser, grundvand og automatisk opsættende virkning.",
   "url": "https://voresmiljo.dk/raastofprocesser.html",
   "inLanguage": "da-DK",
   "isPartOf": {
@@ -59,7 +59,7 @@
   <link rel="shortcut icon" href="favicon.ico?v=2">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=btn-contrast-1">
+  <link rel="stylesheet" href="site.css?v=flow-raastof-1">
 </head>
 <body>
 
@@ -75,13 +75,13 @@
       <a href="planprocesser.html">Planprocesser</a>
       <a href="raastofprocesser.html" class="active">Råstofprocesser</a>
       <a href="sagsarkiv.html">Sagsarkiv</a>
-      <a href="om.html">Miljøfaglig rådgivning</a>
+      <a href="om.html">Kontakt</a>
     </div>
   </nav>
   <p class="hero-label">Råstofloven</p>
   <h1>Råstofprocesser &amp; Indvindingstilladelser (Råstofloven)</h1>
   <p class="hero-sub">
-    Erhvervsmæssig indvinding af sand, grus og sten reguleres af råstofloven. Se råstofprocessens fire faser, grundvandsregler og den automatiske opsættende virkning ved klage.
+    Et interaktivt procesoverblik over råstofindvinding på landjorden jf. råstofloven — fra regionale råstofplaner og One-Stop-Shop ansøgninger til grundvandsvilkår, kontinuitetsbrud og automatisk opsættende virkning.
   </p>
 </header>
 
@@ -93,89 +93,389 @@
     <span>Råstofprocesser</span>
   </nav>
 
-  <section class="analysis-block" style="margin-top:0;">
-    <p class="section-label">Overblik</p>
-    <h2>Råstofprocessen trin-for-trin</h2>
-    <p class="lead">
-      Råstofloven regulerer erhvervsmæssig indvinding af grus, sand, sten og ler, og forpligter myndigheden til en samlet interesseafvejning (§ 3) mellem råstoffer og miljø/grundvand.
+  <!-- INTERAKTIVT FLOWCHART (STICKY CONTAINER) -->
+  <section class="flowchart-sticky-wrap" aria-label="Interaktiv procesoversigt for råstofprocessen">
+    
+    <div class="track-switcher">
+      <span class="track-switcher-label">Procesforløb:</span>
+      <button type="button" class="track-btn active" style="pointer-events:none;">
+        🚜 Råstofprocessen (Råstofloven §§ 1–35)
+      </button>
+    </div>
+
+    <div class="flow-track active" role="tablist" aria-label="Procestrin for råstofindvinding">
+      <div class="flow-grid">
+        <button type="button" class="flow-node active" data-step="step-raastof-1" data-actor="myndighed" role="tab" aria-selected="true" id="node-raastof-1">
+          <div class="node-header">
+            <span class="node-step">Trin 1</span>
+            <span class="node-actor-badge">Regionen</span>
+          </div>
+          <div class="node-title">Regional Råstofplan</div>
+          <div class="node-meta"><strong>§ 5 a</strong> · 12-årig plan / 8 uger</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-raastof-2" data-actor="bygherre" role="tab" aria-selected="false" id="node-raastof-2">
+          <div class="node-header">
+            <span class="node-step">Trin 2</span>
+            <span class="node-actor-badge">Ansøger</span>
+          </div>
+          <div class="node-title">Ansøgning om Indvinding</div>
+          <div class="node-meta"><strong>§ 7 / § 8</strong> · Samlet ordning</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-raastof-3" data-actor="myndighed" role="tab" aria-selected="false" id="node-raastof-3">
+          <div class="node-header">
+            <span class="node-step">Trin 3</span>
+            <span class="node-actor-badge">Høring</span>
+          </div>
+          <div class="node-title">Høring &amp; Interesseafvejning</div>
+          <div class="node-meta"><strong>§ 3 / § 10 a</strong> · Min. 4 uger</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-raastof-4" data-actor="myndighed" role="tab" aria-selected="false" id="node-raastof-4">
+          <div class="node-header">
+            <span class="node-step">Trin 4</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Vilkår, OSD &amp; Sikkerhed</div>
+          <div class="node-meta"><strong>§ 10</strong> · Drift &amp; efterbehandling</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-raastof-5" data-actor="myndighed" role="tab" aria-selected="false" id="node-raastof-5">
+          <div class="node-header">
+            <span class="node-step">Trin 5</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Afgørelse &amp; Kontinuitet</div>
+          <div class="node-meta"><strong>§ 10, stk. 7</strong> · 3 års bortfald</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-raastof-6" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-raastof-6">
+          <div class="node-header">
+            <span class="node-step">Trin 6</span>
+            <span class="node-actor-badge">Opsættende virkning</span>
+          </div>
+          <div class="node-title">Klage til Klagenævnet</div>
+          <div class="node-meta"><strong>§ 16, stk. 8</strong> · Automatisk standsning</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- TEGNFORKLARING -->
+    <div class="flow-legend">
+      <span class="legend-item"><span class="legend-dot myndighed"></span> Regionsråd / Tilsynsmyndighed</span>
+      <span class="legend-item"><span class="legend-dot bygherre"></span> Indvinder / Råstofvirksomhed</span>
+      <span class="legend-item"><span class="legend-dot hoering-klage"></span> Klage med opsættende virkning</span>
+      <span style="margin-left:auto;font-style:italic;color:var(--moss);">Klik på et procestrin for at læse den faglige vejledning</span>
+    </div>
+
+  </section>
+
+  <!-- ========================================================
+       DETALJE-PANELER FOR RÅSTOFPROCESSEN
+       ======================================================== -->
+
+  <!-- TRIN 1: REGIONAL RÅSTOFPLAN -->
+  <article class="step-detail-card active" id="step-raastof-1" role="tabpanel" aria-labelledby="node-raastof-1">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Råstofprocesser · Trin 1</span>
+        <span class="step-badge">Råstoflovens § 5 a &amp; § 6 a</span>
+      </div>
+      <h2>Trin 1: Den Regionale Råstofplanlægning</h2>
+      <p class="lead">Kortlægning af råstofressourcer, udlæg af graveområder og 8 ugers offentlig høring af råstofplanforslaget.</p>
+    </div>
+
+    <p>
+      Erhvervsmæssig indvinding af sand, grus, sten, ler og kalk på landjorden styres overordnet af <strong>regionsrådet</strong>. Regionsrådet udarbejder hvert 4. år en 12-årig <strong>råstofplan</strong>, der fastlægger, hvor der i fremtiden må indvindes råstoffer (graveområder) og hvor der skal sikres råstoffer til senere brug (interesseområder) jf. § 5 a.
     </p>
 
-    <div class="process-timeline">
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 1 · Regionens Råstofplan (§ 5 a / § 6 a)</span>
-          <span class="step-badge">12-årig plan / 8 ugers høring</span>
-        </div>
-        <h3>Kortlægning og udlæg af graveområder</h3>
-        <p>
-          Regionsrådet kortlægger råstoffer og udarbejder en 12-årig råstofplan. Planforslaget udsendes i 8 ugers offentlig høring for borgere og kommuner.
-        </p>
+    <h3 style="margin-top:2.5rem;">Fakta om den regionale råstofplan</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">12 år</p>
+        <h3>Tidshorisont</h3>
+        <p>Råstofplanen dækker en 12-årig periode og revideres eller genovervejes af regionsrådet hvert fjerde år jf. § 5 a, stk. 2.</p>
       </div>
-
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 2 · Indvindingstilladelse (§ 7 / § 8)</span>
-          <span class="step-badge">Samlet tilladelsesordning</span>
-        </div>
-        <h3>Ansøgning om erhvervsmæssig indvinding</h3>
-        <p>
-          Indvinding kræver skriftlig tilladelse fra regionsrådet. Ansøgningen gælder jf. § 8 automatisk efter naturbeskyttelseslovens § 3 m.v. Tilladelse gives som udgangspunkt for op til 10 år.
-        </p>
+      <div class="stat-box">
+        <p class="stat-num">≥ 8 uger</p>
+        <h3>Offentlig høring (§ 6 a)</h3>
+        <p>Forslaget til råstofplan skal offentliggøres med en lovbestemt høringsfrist på <strong>mindst 8 uger</strong> for borgere og kommuner.</p>
       </div>
-
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 3 · Vilkår, Grundvand &amp; Kontinuitet (§ 10)</span>
-          <span class="step-badge">Kommunal høring: Min. 4 uger (§ 10 a)</span>
-        </div>
-        <h3>Drift- og efterbehandlingsvilkår</h3>
-        <p>
-          Tilladelsen fastsætter bindende vilkår om støj, grundvandsbeskyttelse og efterbehandling.
-        </p>
-        <p>
-          <strong>Kontinuitetskrav (§ 10, stk. 7):</strong> Tilladelsen bortfalder automatisk, hvis indvindingen udebliver i 3 på hinanden følgende år.
-        </p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 4 · Klage med Opsættende Virkning (§ 13 / § 16)</span>
-          <span class="step-badge">Automatisk opsættende virkning (§ 16, stk. 8)</span>
-        </div>
-        <h3>Klage til Miljø- og Fødevareklagenævnet</h3>
-        <p>
-          Afgørelser om indvindingstilladelser kan påklages inden for 4 uger af berørte naboer, kommuner og miljøforeninger jf. § 15.
-        </p>
-        <p>
-          <strong>Afgørende forskel:</strong> Rettidig klage over en konkret indvindingstilladelse har <strong>automatisk opsættende virkning</strong> jf. § 16, stk. 8 (gravearbejdet må ikke påbegyndes).
-        </p>
+      <div class="stat-box">
+        <p class="stat-num">Bindende</p>
+        <h3>Ramme for tilladelser</h3>
+        <p>Regionen kan som udgangspunkt kun meddele indvindingstilladelse inden for de godkendte graveområder i råstofplanen.</p>
       </div>
     </div>
 
+    <h3 style="margin-top:3rem;">Hvad bør naboer og lokalforeninger gøre ved råstofplanen?</h3>
+    <p>
+      Det er langt lettere at forhindre etablering eller udvidelse af en grusgrav <em>under råstofplanlægningen</em> end når den konkrete ansøgning indsendes. Gør indsigelse mod udlæg af nye graveområder med fokus på:
+    </p>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>Drikkevand &amp; OSD</h3>
+        <p>Påpeg, hvis det planlagte graveområde overlapper med Områder med Særlige Drikkevandsinteresser (OSD), indvindingsoplande til almene vandværker eller sårbare grundvandsmagasiner.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Tung trafik &amp; Vejnet</h3>
+        <p>Dokumentér, hvis det lokale vejnet ikke er dimensioneret til massiv tung lastbiltrafik, eller hvis transportruterne passerer tæt forbi skoler, cykelstier og tæt boligbebyggelse.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Natur &amp; Fredede arter</h3>
+        <p>Kortlæg forekomst af § 3-beskyttede vandhuller, overdrev, skovbryn eller levesteder for strengt beskyttede Bilag IV-arter i og omkring graveområdet.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" disabled>← Første procestrin</button>
+      <button type="button" class="step-nav-btn" data-next="step-raastof-2">Næste trin: Ansøgning om Indvinding →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 2: ANSØGNING OM INDVINDING -->
+  <article class="step-detail-card" id="step-raastof-2" role="tabpanel" aria-labelledby="node-raastof-2">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Råstofprocesser · Trin 2</span>
+        <span class="step-badge">Råstoflovens § 7 &amp; § 8</span>
+      </div>
+      <h2>Trin 2: Ansøgning om Erhvervsmæssig Indvinding</h2>
+      <p class="lead">Bygherrens ansøgning til regionsrådet under den samlede One-Stop-Shop tilladelsesordning.</p>
+    </div>
+
+    <p>
+      Erhvervsmæssig indvinding af råstoffer på landjorden kræver forudgående skriftlig tilladelse fra regionsrådet jf. <strong>råstoflovens § 7, stk. 1</strong>. Tilladelsen gives normalt for en tidsbegrænset periode på op til 10 år ad gangen.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">One-Stop-Shop princippet (§ 8)</h3>
+    <p>
+      Efter råstoflovens § 8 fungerer ansøgningen om råstoftilladelse som en <strong>samlet ansøgning</strong> for en række andre lovregimer:
+    </p>
+    <ul>
+      <li><strong>Naturbeskyttelseslovens § 3:</strong> Dispensation ved indgreb i beskyttede søer, moser, heder og overdrev.</li>
+      <li><strong>Naturbeskyttelseslovens bygge- og beskyttelseslinjer:</strong> Skovbyggelinjer, fortidsmindebeskyttelseslinjer og åbeskyttelseslinjer (§§ 16–19).</li>
+      <li><strong>Skovloven &amp; Museumsloven:</strong> Rydning af fredskovspligtigt areal eller jordarbejder i nærheden af fortidsminder.</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Vigtigt:</strong> Selvom råstoftilladelsen samler flere dispensationer hos regionen, kræver projektet stadig en selvstændig <strong>VVM-screening</strong> jf. miljøvurderingsloven samt eventuelle spildevandstilladelser eller miljøgodkendelser til sorteringsanlæg fra kommunen.
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-raastof-1">← Forrige trin: Regional Råstofplan</button>
+      <button type="button" class="step-nav-btn" data-next="step-raastof-3">Næste trin: Høring &amp; Afvejning →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 3: HØRING & AFVEJNING -->
+  <article class="step-detail-card" id="step-raastof-3" role="tabpanel" aria-labelledby="node-raastof-3">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Råstofprocesser · Trin 3</span>
+        <span class="step-badge">Råstoflovens § 3 &amp; § 10 a</span>
+      </div>
+      <h2>Trin 3: Myndighedshøring &amp; Lovpligtig Interesseafvejning</h2>
+      <p class="lead">Kommunal høring, nabounderretning og den ufravigelige afvejning af råstoffer over for miljø og drikkevand.</p>
+    </div>
+
+    <p>
+      Inden regionsrådet træffer afgørelse om en indvindingstilladelse, skal ansøgningen sendes i høring hos <strong>kommunalbestyrelsen</strong> i den berørte kommune med en frist på <strong>mindst 4 uger</strong> jf. råstoflovens § 10 a. Samtidig orienteres berørte naboer.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Den lovpligtige interesseafvejning (§ 3)</h3>
+    <p>
+      Råstoflovens <strong>§ 3</strong> er lovens centrale materielle bestemmelse. Regionsrådet er forpligtet til at foretage en konkret og samlet afvejning mellem to modsatrettede hensyn:
+    </p>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>Erhvervsmæssige hensyn</h3>
+        <p>Samfundets forsyningsmæssige behov for sand, grus og sten til bygge- og anlægssektoren samt råstofressourcens kvalitet.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Miljø- &amp; Naturhensyn</h3>
+        <p>Vandforsyningsinteresser (drikkevand), naturbeskyttelse, geologiske bevaringsværdier, landskabelige hensyn og kulturarv.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Nabo- &amp; Lokalsamfund</h3>
+        <p>Gener for de omkringboende i form af støj, støv, vibrationer, ændrede grundvandsforhold og tung transport på lokalveje.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-raastof-2">← Forrige trin: Ansøgning</button>
+      <button type="button" class="step-nav-btn" data-next="step-raastof-4">Næste trin: Vilkår, OSD &amp; Sikkerhed →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 4: VILKÅR, GRUNDVAND & SIKKERHED -->
+  <article class="step-detail-card" id="step-raastof-4" role="tabpanel" aria-labelledby="node-raastof-4">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Råstofprocesser · Trin 4</span>
+        <span class="step-badge">Råstoflovens § 10</span>
+      </div>
+      <h2>Trin 4: Bindende Vilkår, Grundvand &amp; Efterbehandling</h2>
+      <p class="lead">Fastsættelse af krav til driftsfase, drikkevandsbeskyttelse, økonomisk sikkerhedsstillelse og reetablering.</p>
+    </div>
+
+    <p>
+      En råstoftilladelse skal i medfør af § 10 altid ledsages af detaljerede, bindende vilkår, som indvinderen skal overholde under strafansvar.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Hvilke vilkår stilles der jf. § 10?</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">Gravedybde</p>
+        <h3>Grundvandsbeskyttelse</h3>
+        <p>Fastsættelse af maksimal gravedybde og krav om en uforstyrret lermembran/sikkerhedszone over grundvandsspejlet (særligt i OSD-områder).</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Miljøgrænser</p>
+        <h3>Støj- &amp; støvvold</h3>
+        <p>Krav om etablering af støjvolde, begrænsning af driftstider (typisk kl. 07–17 på hverdage) og overholdelse af Miljøstyrelsens støjgrænser.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Sikkerhed</p>
+        <h3>Efterbehandlingsplan</h3>
+        <p>Godkendt plan for reetablering (landbrug, natur eller rekreativ sø) samt krav om <strong>bankgaranti</strong> før indvindingen må påbegyndes (§ 10, stk. 4).</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem;">Koppers-præcedensen ved råstofindvinding</h3>
     <div class="callout-warning">
-      <strong>Afgørende retsvirkning:</strong> En rettidig klage over en indvindingstilladelse har <strong>automatisk opsættende virkning</strong> (§ 16, stk. 8). Det betyder, at bygherre/indvinder ikke må påbegynde råstofgravningen, før Miljø- og Fødevareklagenævnet har truffet afgørelse i klagesagen.
+      <strong>Skærpet krav til vidensgrundlag:</strong> Ligesom fastslået i Koppers-afgørelsen må myndigheder ikke basere tilladelser i sårbare grundvands- eller vandområder på teoretiske modelskøn. Der kræves konkrete boringer og repræsentative målinger for miljøfarlige stoffer (f.eks. PFAS), hvis der er risiko for nedsivning til drikkevandsmagasiner.
     </div>
 
-    <!-- GENVEJE TIL ØVRIGE PROCESSER -->
-    <div class="process-nav-box">
-      <h3>Gå til de øvrige sagsprocesser</h3>
-      <p>Vælg en proces for at se trin-for-trin guide, paragraffer og klagefrister:</p>
-      <div class="process-nav-links">
-        <a href="miljoevurderingsprocessen.html" class="btn btn-outline">🌿 Miljøvurderingsprocessen (VVM/SMV)</a>
-        <a href="planprocesser.html" class="btn btn-outline">🏛️ Lokalplanprocessen (Planloven)</a>
-        <a href="sag-sanderoedgaard.html" class="btn btn-outline">📂 Se case: Sanderødgård Grusgrav</a>
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-raastof-3">← Forrige trin: Høring &amp; Afvejning</button>
+      <button type="button" class="step-nav-btn" data-next="step-raastof-5">Næste trin: Afgørelse &amp; Kontinuitet →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 5: AFGØRELSE & KONTINUITETSKRAV -->
+  <article class="step-detail-card" id="step-raastof-5" role="tabpanel" aria-labelledby="node-raastof-5">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Råstofprocesser · Trin 5</span>
+        <span class="step-badge">Råstoflovens § 10, stk. 7 &amp; § 12</span>
+      </div>
+      <h2>Trin 5: Afgørelse &amp; Automatisk Bortfald ved Kontinuitetsbrud</h2>
+      <p class="lead">Meddelelse af tilladelse, offentliggørelse og lovens ufravigelige 3-års kontinuitetskrav.</p>
+    </div>
+
+    <p>
+      Når regionsrådet har færdigbehandlet sagen, træffes der skriftlig afgørelse om meddelelse af tilladelse eller afslag jf. § 12. Afgørelsen offentliggøres digitalt og sendes direkte til ansøgeren, kommunen og de parter, der har udtalt sig under høringen.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Kontinuitetskravet: Automatisk bortfald (§ 10, stk. 7)</h3>
+    <p>
+      En af råstoflovens mest markante forvaltningsretlige bestemmelser findes i <strong>§ 10, stk. 7</strong>:
+    </p>
+    <div class="callout-warning">
+      <strong>Råstoflovens § 10, stk. 7:</strong> En tilladelse bortfalder automatisk (de jure), hvis den ikke har været udnyttet i 3 på hinanden følgende år.
+    </div>
+    <p>
+      Formålet med bestemmelsen er at forhindre, at råstofvirksomheder »hamstrer« tilladelser eller blokerer arealer uden reel aktivitet:
+    </p>
+    <ul>
+      <li><strong>Faktisk udnyttelse:</strong> Det er ikke tilstrækkeligt at køre en enkelt gravemaskine frem og tilbage. Regionsrådenes faste administrative praksis kræver en reel og kontinuerlig udnyttelse (ofte sat til en minimumsgrænse på ca. 10 % af den årligt godkendte mængde).</li>
+      <li><strong>Konsekvens:</strong> Hvis tilladelsen er bortfaldet ved kontinuitetsbrud, kan regionen ikke blot »forny« den. Sagen skal behandles forfra som en helt ny ansøgning med fornyet fuld miljøvurdering og nabohøring.</li>
+    </ul>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-raastof-4">← Forrige trin: Vilkår &amp; OSD</button>
+      <button type="button" class="step-nav-btn" data-next="step-raastof-6">Næste trin: Klage &amp; Opsættende Virkning →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 6: KLAGE MED AUTOMATISK OPSÆTTENDE VIRKNING -->
+  <article class="step-detail-card" id="step-raastof-6" role="tabpanel" aria-labelledby="node-raastof-6">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Råstofprocesser · Trin 6</span>
+        <span class="step-badge">Råstoflovens § 13, § 15 &amp; § 16, stk. 8</span>
+      </div>
+      <h2>Trin 6: Klage til Miljø- og Fødevareklagenævnet</h2>
+      <p class="lead">Borgernes stærkeste retssikkerhed: Automatisk opsættende virkning ved rettidig klage.</p>
+    </div>
+
+    <p>
+      Afgørelser om indvindingstilladelser truffet af regionsrådet kan påklages til <strong>Miljø- og Fødevareklagenævnet</strong> jf. råstoflovens § 13.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Særlige retsregler for råstofklager</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">§ 16, stk. 8</p>
+        <h3>Automatisk opsættende virkning!</h3>
+        <p>En rettidig klage over en tilladelse til råstofindvinding har <strong>automatisk opsættende virkning</strong>. Bygherren må IKKE påbegynde råstofgravningen, mens sagen behandles i nævnet.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">4 uger</p>
+        <h3>Klagefrist (§ 14)</h3>
+        <p>Klagen skal indgives via Klageportalen inden for <strong>4 uger</strong> fra den dag, afgørelsen er offentliggjort.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">§ 15</p>
+        <h3>Klageberettigede</h3>
+        <p>Enhver med individuel, væsentlig interesse (herunder naboer), berørte kommuner samt miljø- og naturforeninger med mindst 100 medlemmer.</p>
       </div>
     </div>
-  </section>
+
+    <h3 style="margin-top:3rem;">Hvad kan Miljø- og Fødevareklagenævnet prøve?</h3>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>Retlige mangler</h3>
+        <ul>
+          <li>Er den lovpligtige interesseafvejning i § 3 foretaget forsvarligt?</li>
+          <li>Er der sket kontinuitetsbrud jf. § 10, stk. 7?</li>
+          <li>Er VVM-screening og miljøvurderingskravene overholdt?</li>
+          <li>Er reglerne for beskyttet natur (§ 3) og Bilag IV-arter respekteret?</li>
+        </ul>
+      </div>
+      <div class="criteria-box">
+        <h3>Skønsmæssige vilkår</h3>
+        <ul>
+          <li>Nævnet kan prøve rimeligheden af de fastsatte vilkår for driftstider, støj, støv og efterbehandling.</li>
+          <li>Nævnet kan skærpe vilkårene eller kræve forhøjet økonomisk sikkerhedsstillelse.</li>
+        </ul>
+      </div>
+      <div class="criteria-box">
+        <h3>Udfald af klagen</h3>
+        <ul>
+          <li><strong>Ophævelse &amp; Hjemvisning:</strong> Regionens tilladelse underkendes, og gravearbejdet stoppes permanent eller sendes til fornyet sagsbehandling.</li>
+          <li><strong>Stadfæstelse:</strong> Tilladelsen opretholdes, eventuelt med skærpede vilkår.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-raastof-5">← Forrige trin: Afgørelse &amp; Kontinuitet</button>
+      <button type="button" class="step-nav-btn" disabled>Sidste procestrin (Afsluttet)</button>
+    </div>
+  </article>
+
+  <!-- GENVEJE TIL ØVRIGE PROCESSER -->
+  <div class="process-nav-box" style="margin-top:2.5rem;margin-bottom:2rem;">
+    <h3>Gå til de øvrige sagsprocesser</h3>
+    <p>Vælg en proces for at se det fulde interaktive flowchart, paragraffer og klagefrister:</p>
+    <div class="process-nav-links">
+      <a href="miljoevurderingsprocessen.html" class="btn btn-outline">🌿 Miljøvurderingsprocessen (VVM/SMV)</a>
+      <a href="planprocesser.html" class="btn btn-outline">🏛️ Lokalplanprocessen (Planloven)</a>
+      <a href="sag-sanderoedgaard.html" class="btn btn-outline">📂 Se case: Sanderødgård Grusgrav</a>
+    </div>
+  </div>
 
   <!-- CTA BOKS -->
   <div class="cta-box">
-    <h2>Har du brug for rådgivning?</h2>
+    <h2>Har du brug for rådgivning om en råstofsag?</h2>
     <p>
-      Står du over for en udvidelse af en grusgrav i dit lokalområde, eller har du brug for faglig vurdering af grundvandsrisici og kontinuitetsbrud?
+      Står du over for en udvidelse af en grusgrav i dit lokalområde, eller har du brug for faglig vurdering af grundvandsrisici, PFAS, kontinuitetsbrud eller udarbejdelse af klageskrift?
     </p>
     <p style="margin-bottom:0;">
-      <a href="om.html#kontakt">Få miljøfaglig rådgivning →</a> &nbsp;·&nbsp;
+      <a href="om.html#kontakt">Få uvildig rådgivning →</a> &nbsp;·&nbsp;
       <a href="sag-sanderoedgaard.html">Læs analysen af Sanderødgård-sagen →</a>
     </p>
   </div>
@@ -183,5 +483,81 @@
 </main>
 
 <footer>© Vores Miljø</footer>
+
+<!-- INTERAKTIV JAVASCRIPT-MOTOR FOR RÅSTOFPROCESSEN FLOWCHART -->
+<script>
+(function() {
+  var flowNodes = document.querySelectorAll('.flow-node');
+  var detailCards = document.querySelectorAll('.step-detail-card');
+  var stickyWrap = document.querySelector('.flowchart-sticky-wrap');
+
+  function activateStep(stepId, shouldScroll) {
+    var targetCard = document.getElementById(stepId);
+    if (!targetCard) return;
+
+    detailCards.forEach(function(card) {
+      card.classList.remove('active');
+    });
+    targetCard.classList.add('active');
+
+    flowNodes.forEach(function(node) {
+      var isTarget = node.getAttribute('data-step') === stepId;
+      node.classList.toggle('active', isTarget);
+      node.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+    });
+
+    if (shouldScroll) {
+      var yOffset = stickyWrap ? (stickyWrap.offsetHeight + 20) : 100;
+      var cardTop = targetCard.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({
+        top: Math.max(0, cardTop),
+        behavior: 'smooth'
+      });
+    }
+
+    if (history.replaceState) {
+      history.replaceState(null, '', '#' + stepId);
+    }
+  }
+
+  flowNodes.forEach(function(node) {
+    node.addEventListener('click', function() {
+      var stepId = this.getAttribute('data-step');
+      activateStep(stepId, true);
+    });
+  });
+
+  document.querySelectorAll('.step-nav-btn[data-next]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var nextStep = this.getAttribute('data-next');
+      activateStep(nextStep, true);
+    });
+  });
+
+  document.querySelectorAll('.step-nav-btn[data-prev]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var prevStep = this.getAttribute('data-prev');
+      activateStep(prevStep, true);
+    });
+  });
+
+  var hash = window.location.hash.replace('#', '');
+  if (hash) {
+    var hashMapping = {
+      'plan': 'step-raastof-1',
+      'ansoegning': 'step-raastof-2',
+      'hoering': 'step-raastof-3',
+      'vilkaar': 'step-raastof-4',
+      'afgoerelse': 'step-raastof-5',
+      'klage': 'step-raastof-6'
+    };
+    var targetStep = hashMapping[hash] || hash;
+    if (document.getElementById(targetStep)) {
+      activateStep(targetStep, true);
+    }
+  }
+})();
+</script>
+
 </body>
 </html>

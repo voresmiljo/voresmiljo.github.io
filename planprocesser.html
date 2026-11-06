@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planprocesser &amp; Lokalplaner (Planloven) — Vores Miljø</title>
-  <meta name="description" content="Trin-for-trin guide til lokalplanprocessen jf. planloven. Offentlighedsfaser, indsigelser, miljøscreening og klageret til Planklagenævnet.">
+  <title>Planprocesser &amp; Lokalplaner (Planloven) — Interaktivt Flowchart | Vores Miljø</title>
+  <meta name="description" content="Interaktivt flowchart over lokalplanprocessen jf. planloven. Trin-for-trin guide til lokalplanforslag, offentlig høring, SMV-screening, veto og klageret til Planklagenævnet.">
   <link rel="canonical" href="https://voresmiljo.dk/planprocesser.html">
   <meta name="author" content="Vores Miljø">
   <meta name="theme-color" content="#2C3E2D">
@@ -13,11 +13,11 @@
   <meta property="og:locale" content="da_DK">
   <meta property="og:site_name" content="Vores Miljø">
   <meta property="og:url" content="https://voresmiljo.dk/planprocesser.html">
-  <meta property="og:title" content="Planprocesser &amp; Lokalplaner (Planloven) — Vores Miljø">
-  <meta property="og:description" content="Trin-for-trin guide til lokalplanprocessen jf. planloven. Offentlighedsfaser, indsigelser, miljøscreening og klageret til Planklagenævnet.">
+  <meta property="og:title" content="Planprocesser &amp; Lokalplaner (Planloven) — Interaktivt Flowchart | Vores Miljø">
+  <meta property="og:description" content="Interaktivt flowchart over lokalplanprocessen jf. planloven. Trin-for-trin guide til lokalplanforslag, høringsfrister, veto og klageret til Planklagenævnet.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Planprocesser &amp; Lokalplaner (Planloven) — Vores Miljø">
-  <meta name="twitter:description" content="Trin-for-trin guide til lokalplanprocessen jf. planloven. Offentlighedsfaser, indsigelser og klageret.">
+  <meta name="twitter:title" content="Planprocesser &amp; Lokalplaner (Planloven) — Interaktivt Flowchart | Vores Miljø">
+  <meta name="twitter:description" content="Interaktivt flowchart over lokalplanprocessen jf. planloven. Trin-for-trin guide til lokalplanforslag, høringsfrister og klageret.">
 
   <script type="application/ld+json">
 {
@@ -42,8 +42,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Planprocesser &amp; Lokalplaner (Planloven) — Vores Miljø",
-  "description": "Trin-for-trin guide til lokalplanprocessen jf. planloven. Offentlighedsfaser, indsigelser og klageret til Planklagenævnet.",
+  "name": "Planprocesser &amp; Lokalplaner (Planloven) — Interaktivt Flowchart | Vores Miljø",
+  "description": "Interaktivt flowchart over lokalplanprocessen jf. planloven. Offentlighedsfaser, indsigelser, veto og klageret til Planklagenævnet.",
   "url": "https://voresmiljo.dk/planprocesser.html",
   "inLanguage": "da-DK",
   "isPartOf": {
@@ -59,7 +59,7 @@
   <link rel="shortcut icon" href="favicon.ico?v=2">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=btn-contrast-1">
+  <link rel="stylesheet" href="site.css?v=flow-plan-1">
 </head>
 <body>
 
@@ -75,13 +75,13 @@
       <a href="planprocesser.html" class="active">Planprocesser</a>
       <a href="raastofprocesser.html">Råstofprocesser</a>
       <a href="sagsarkiv.html">Sagsarkiv</a>
-      <a href="om.html">Miljøfaglig rådgivning</a>
+      <a href="om.html">Kontakt</a>
     </div>
   </nav>
   <p class="hero-label">Planloven</p>
   <h1>Planprocesser &amp; Lokalplaner (Planloven)</h1>
   <p class="hero-sub">
-    Lokalplanen fastlægger de juridisk bindende rammer for bebyggelse og anvendelse. Forstå lokalplanprocessens fire faser, hvornår du kan gøre indsigelse, og hvad der kan påklages.
+    Et interaktivt procesoverblik over lokalplanprocessens seks faser jf. planloven — fra den indledende lokalplanpligt til offentlig høring, statslig vetoret og klage til Planklagenævnet.
   </p>
 </header>
 
@@ -93,95 +93,487 @@
     <span>Planprocesser</span>
   </nav>
 
-  <section class="analysis-block" style="margin-top:0;">
-    <p class="section-label">Overblik</p>
-    <h2>Lokalplanprocessen trin-for-trin</h2>
-    <p class="lead">
-      Planloven regulerer kommunernes planlægning og sikrer, at samfundsmæssige, miljømæssige og private interesser afvejes med offentlig inddragelse.
+  <!-- INTERAKTIVT FLOWCHART (STICKY CONTAINER) -->
+  <section class="flowchart-sticky-wrap" aria-label="Interaktiv procesoversigt for lokalplanprocessen">
+    
+    <div class="track-switcher">
+      <span class="track-switcher-label">Procesforløb:</span>
+      <button type="button" class="track-btn active" style="pointer-events:none;">
+        🏛️ Lokalplanprocessen (Planloven §§ 13–60)
+      </button>
+    </div>
+
+    <div class="flow-track active" role="tablist" aria-label="Procestrin for lokalplanprocessen">
+      <div class="flow-grid">
+        <button type="button" class="flow-node active" data-step="step-plan-1" data-actor="myndighed" role="tab" aria-selected="true" id="node-plan-1">
+          <div class="node-header">
+            <span class="node-step">Trin 1</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Igangsætning &amp; Lokalplanpligt</div>
+          <div class="node-meta"><strong>§ 13, stk. 2</strong> · Forbud § 14</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-plan-2" data-actor="myndighed" role="tab" aria-selected="false" id="node-plan-2">
+          <div class="node-header">
+            <span class="node-step">Trin 2</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Lokalplanforslag &amp; Screening</div>
+          <div class="node-meta"><strong>§§ 15–16</strong> · SMV-screening</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-plan-3" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-plan-3">
+          <div class="node-header">
+            <span class="node-step">Trin 3</span>
+            <span class="node-actor-badge">Høring</span>
+          </div>
+          <div class="node-title">Offentlig Høring &amp; Naboer</div>
+          <div class="node-meta"><strong>§ 24</strong> · Min. 8 uger (§ 26)</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-plan-4" data-actor="myndighed" role="tab" aria-selected="false" id="node-plan-4">
+          <div class="node-header">
+            <span class="node-step">Trin 4</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Indsigelser &amp; Statsligt Veto</div>
+          <div class="node-meta"><strong>§§ 27–29 a</strong> · Min. 4 ugers karens</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-plan-5" data-actor="myndighed" role="tab" aria-selected="false" id="node-plan-5">
+          <div class="node-header">
+            <span class="node-step">Trin 5</span>
+            <span class="node-actor-badge">Myndighed</span>
+          </div>
+          <div class="node-title">Endelig Vedtagelse</div>
+          <div class="node-meta"><strong>§ 27 / § 30</strong> · Retsvirkning</div>
+        </button>
+
+        <button type="button" class="flow-node" data-step="step-plan-6" data-actor="hoering-klage" role="tab" aria-selected="false" id="node-plan-6">
+          <div class="node-header">
+            <span class="node-step">Trin 6</span>
+            <span class="node-actor-badge">Klage</span>
+          </div>
+          <div class="node-title">Planklagenævnet</div>
+          <div class="node-meta"><strong>§ 58 / § 60</strong> · 4 uger klage</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- TEGNFORKLARING -->
+    <div class="flow-legend">
+      <span class="legend-item"><span class="legend-dot myndighed"></span> Kommunalbestyrelse / Myndighed</span>
+      <span class="legend-item"><span class="legend-dot hoering-klage"></span> Offentlig høring &amp; Klagenævn</span>
+      <span style="margin-left:auto;font-style:italic;color:var(--moss);">Klik på et procestrin for at læse den faglige vejledning</span>
+    </div>
+
+  </section>
+
+  <!-- ========================================================
+       DETALJE-PANELER FOR LOKALPLANPROCESSEN
+       ======================================================== -->
+
+  <!-- TRIN 1: IGANGSÆTNING & LOKALPLANPLIGT -->
+  <article class="step-detail-card active" id="step-plan-1" role="tabpanel" aria-labelledby="node-plan-1">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planprocesser · Trin 1</span>
+        <span class="step-badge">Planlovens § 13, stk. 2 &amp; § 14</span>
+      </div>
+      <h2>Trin 1: Startredegørelse &amp; Lokalplanpligt</h2>
+      <p class="lead">Vurdering af planbehovet, politisk igangsætning og kommunens adgang til at nedlægge midlertidigt forbud.</p>
+    </div>
+
+    <p>
+      Lokalplanprocessen starter typisk ved, at en bygherre eller grundejer ønsker at realisere et projekt, eller at kommunen selv ønsker at byudvikle et område. Efter planlovens <strong>§ 13, stk. 2</strong> har kommunalbestyrelsen en ufravigelig pligt til at udarbejde en lokalplan før gennemførelse af større udstykninger eller bygge- og anlægsarbejder, herunder nedrivninger, som vil ændre det bestående miljø væsentligt.
     </p>
 
-    <div class="process-timeline">
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 1 · Igangsætning &amp; Lokalplanpligt (§ 13, stk. 2)</span>
-          <span class="step-badge">Midlertidigt forbud: § 14 (op til 1 år)</span>
-        </div>
-        <h3>Planbehov og forudgående offentlighed</h3>
-        <p>
-          Ved større bygge- eller anlægsarbejder har kommunen pligt til at udarbejde en lokalplan (§ 13, stk. 2). Kommunen kan nedlægge midlertidigt forbud jf. § 14 mod at foregribe planen.
-        </p>
+    <h3 style="margin-top:2.5rem;">Centrale værktøjer i fase 1</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">§ 13, stk. 2</p>
+        <h3>Lokalplanpligt</h3>
+        <p>Større projekter må ikke igangsættes på en byggetilladelse alene. Der skal tilvejebringes en lokalplan med offentlighedsfase.</p>
       </div>
-
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 2 · Udarbejdelse af Lokalplanforslag (§ 15 / § 16)</span>
-          <span class="step-badge">Miljøscreening (SMV)</span>
-        </div>
-        <h3>Lokalplanens indhold og miljøscreening</h3>
-        <p>
-          Kommunen udarbejder planforslaget med bestemmelser om anvendelse, bebyggelsesprocent, støjafskærmning m.v. Planforslaget ledsages af en redegørelse og en SMV-miljøscreening jf. miljøvurderingsloven.
-        </p>
+      <div class="stat-box">
+        <p class="stat-num">Op til 1 år</p>
+        <h3>Midlertidigt forbud (§ 14)</h3>
+        <p>Kommunen kan nedlægge forbud mod byggeri eller ændret anvendelse i op til 1 år for at forhindre, at en kommende lokalplan foregribes.</p>
       </div>
-
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 3 · Offentlig Høring &amp; Naboorientering (§ 24 / § 26)</span>
-          <span class="step-badge">Høringsfrist: Normalt min. 8 uger (§ 24, stk. 3)</span>
-        </div>
-        <h3>Offentlighedens indsigelsesret</h3>
-        <p>
-          Lokalplanforslaget offentliggøres digitalt. Høringsfristen er normalt mindst 8 uger (min. 4 eller 2 uger ved mindre ændringer). Naboer underrettes direkte jf. § 26.
-        </p>
-        <p>
-          <strong>Klagefokus:</strong> Indsend skriftlige indsigelser inden for høringsfristen for at få dine argumenter journaliseret og behandlet politisk.
-        </p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-header">
-          <span class="step-number">Trin 4 · Endelig Vedtagelse &amp; Klage (§ 27 / § 58)</span>
-          <span class="step-badge">Klagefrist: 4 uger (§ 60)</span>
-        </div>
-        <h3>Politisk vedtagelse og Planklagenævnet</h3>
-        <p>
-          Byrådet behandler indsigelser og vedtager planen endeligt. Ved rettidige indsigelser kan endelig vedtagelse tidligst ske 4 uger efter høringsfristens udløb.
-        </p>
-        <p>
-          <strong>Klage:</strong> Vedtagne lokalplaner kan påklages for <em>retlige spørgsmål</em> (formalitet, officialprincip, handicap- og miljøkrav) til Planklagenævnet inden 4 uger jf. § 58, stk. 1, nr. 3.
-        </p>
+      <div class="stat-box">
+        <p class="stat-num">Kommuneplan</p>
+        <h3>Rammeoverensstemmelse</h3>
+        <p>Lokalplanen skal være i overensstemmelse med kommuneplanens rammer (§ 13, stk. 1). Hvis ikke, kræves et kommuneplantillæg.</p>
       </div>
     </div>
 
+    <h3 style="margin-top:3rem;">Hvad bør borgere og naboer holde øje med?</h3>
+    <p>
+      I denne indledende fase udarbejder kommunen ofte en <em>startredegørelse</em> eller en <em>princippolitisk godkendelse</em>. Det er her, grundstenene til projektets tæthed, etagehøjde og vejadgang lægges:
+    </p>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>Omgåelse af lokalplanpligt</h3>
+        <p>Vær opmærksom på, om kommunen forsøger at tillade et større projekt via dispensationer frem for en egentlig lokalplan jf. § 13, stk. 2. En sådan fremgangsmåde kan underkendes af Planklagenævnet.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Forudgående høring</h3>
+        <p>Hvis projektet forudsætter et kommuneplantillæg med væsentlige ændringer i områdets anvendelse, skal kommunen gennemføre en forudgående offentlighedsfase før planforslaget udarbejdes.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Kommuneplanens rammer</h3>
+        <p>Tjek, om byggeriet overskrider kommuneplanens rammer for bygningshøjde, bebyggelsesprocent eller friarealer, hvilket udløser krav om kommuneplantillæg.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" disabled>← Første procestrin</button>
+      <button type="button" class="step-nav-btn" data-next="step-plan-2">Næste trin: Lokalplanforslag &amp; Screening →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 2: LOKALPLANFORSLAG & SCREENING -->
+  <article class="step-detail-card" id="step-plan-2" role="tabpanel" aria-labelledby="node-plan-2">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planprocesser · Trin 2</span>
+        <span class="step-badge">Planlovens §§ 15–16 &amp; Miljøvurderingslovens § 8 / § 10</span>
+      </div>
+      <h2>Trin 2: Lokalplanforslag &amp; SMV-Screening</h2>
+      <p class="lead">Udarbejdelse af lokalplanens juridisk bindende bestemmelser, redegørelse og miljøvurdering/screening.</p>
+    </div>
+
+    <p>
+      Kommunens forvaltning udarbejder det konkrete lokalplanforslag. Forslaget består af to adskilte dele: selve <strong>planbestemmelserne</strong> (der bliver juridisk bindende for grundejerne) og en <strong>redegørelse</strong>, der forklarer planens formål og baggrund jf. § 16.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Hvad regulerer lokalplanforslaget?</h3>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>1. Anvendelse &amp; Omfang (§ 15, stk. 2)</h3>
+        <p>Fastlægger præcist, hvad området må bruges til (bolig, erhverv, rekreativt), bygningshøjder, facadematerialer, vejudlæg og bebyggelsesprocent.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>2. Miljøkrav &amp; Støj (§ 15 a &amp; § 15 b)</h3>
+        <p>Loven forbyder udlæg af støjfølsom anvendelse (f.eks. boliger), medmindre planen fastsætter bindende vilkår om støjafskærmning, der sikrer Miljøstyrelsens grænseværdier.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>3. Miljøscreening (SMV)</h3>
+        <p>Lokalplanen skal screenes efter miljøvurderingslovens bilag 3. Hvis planen kan have væsentlig indvirkning på miljøet, skal der udarbejdes en fuld miljørapport.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem;">Faldgruber ved udskydelse af undersøgelser</h3>
     <div class="callout-warning">
-      <strong>Klageafgrænsning:</strong> Planklagenævnet behandler ikke politiske eller skønsmæssige klager (f.eks. om et byggeri er pænt eller upassende), men udelukkende <strong>retlige spørgsmål</strong> om lovlighed, formalia, forvaltningsret og miljøvurderingskrav.
+      <strong>Klagenævnspraksis om Bilag IV-arter (PON nr. 25):</strong> Kommunen må som udgangspunkt ikke udskyde undersøgelser af fredede arter (f.eks. flagermus eller padder) til nedrivnings- eller fældningstidspunktet. Hvis det er sandsynligt, at planen berører levesteder for Bilag IV-arter, skal arternes økologiske funktionalitet undersøges på planstadiet.
     </div>
 
-    <!-- GENVEJE TIL ØVRIGE PROCESSER -->
-    <div class="process-nav-box">
-      <h3>Gå til de øvrige sagsprocesser</h3>
-      <p>Vælg en proces for at se trin-for-trin guide, paragraffer og klagefrister:</p>
-      <div class="process-nav-links">
-        <a href="miljoevurderingsprocessen.html" class="btn btn-outline">🌿 Miljøvurderingsprocessen (VVM/SMV)</a>
-        <a href="raastofprocesser.html" class="btn btn-outline">🚜 Råstoftilladelsen (Råstofloven)</a>
-        <a href="sagsarkiv.html" class="btn btn-outline">📂 Se sagsanalyser af lokalplaner</a>
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-plan-1">← Forrige trin: Igangsætning</button>
+      <button type="button" class="step-nav-btn" data-next="step-plan-3">Næste trin: Offentlig Høring →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 3: OFFENTLIG HØRING & NABOER -->
+  <article class="step-detail-card" id="step-plan-3" role="tabpanel" aria-labelledby="node-plan-3">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planprocesser · Trin 3</span>
+        <span class="step-badge">Planlovens § 24 &amp; § 26</span>
+      </div>
+      <h2>Trin 3: Offentlig Høring &amp; Naboorientering</h2>
+      <p class="lead">Offentlighedens formelle mulighed for at indsende høringssvar og indsigelser mod lokalplanforslaget.</p>
+    </div>
+
+    <p>
+      Når byrådet har godkendt lokalplanforslaget til offentliggørelse, sendes planen i offentlig høring. Forslaget offentliggøres på det nationale planregister <strong>Plandata.dk</strong> og på kommunens hjemmeside. Samtidig skal kommunen jf. <strong>§ 26</strong> give skriftlig underretning til berørte naboer, grundejere og lokale foreninger.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Lovbestemte høringsfrister</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">≥ 8 uger</p>
+        <h3>Hovedregel (§ 24, stk. 3)</h3>
+        <p>Høringsfristen skal normalt være <strong>mindst 8 uger</strong>, så borgere og organisationer har reel mulighed for at sætte sig ind i materialet.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">4 / 2 uger</p>
+        <h3>Forkortet frist</h3>
+        <p>Fristen kan fastsættes til mindst 4 uger for mindre lokalplaner, eller 2 uger for helt underordnede ændringer, der ikke berører væsentlige interesser.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">§ 26</p>
+        <h3>Direkte nabobreve</h3>
+        <p>Manglende individuel underretning af direkte naboer og berørte parter udgør en væsentlig forvaltningsretlig mangel, der kan gøre planen ugyldig.</p>
       </div>
     </div>
-  </section>
+
+    <h3 style="margin-top:3rem;">Gode råd til det faglige høringssvar</h3>
+    <p>
+      For at et høringssvar tillægges reel vægt i den politiske behandling, bør det fokusere på retlige og faglige kendsgerninger:
+    </p>
+    <ul>
+      <li><strong>Officialprincippet:</strong> Påpeg, hvis kommunens vurderinger bygger på teoretiske modelskøn frem for faktiske målinger af støj, trafik eller natur.</li>
+      <li><strong>Strid med kommuneplanen:</strong> Undersøg, om lokalplanen strider mod overordnede mål om grønne kiler, bevaringsværdier eller rammer.</li>
+      <li><strong>Nabogener &amp; servitutter:</strong> Gør opmærksom på privatretlige servitutter, oversigtsforhold og konkrete skygge- og indbliksgener.</li>
+    </ul>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-plan-2">← Forrige trin: Planforslag</button>
+      <button type="button" class="step-nav-btn" data-next="step-plan-4">Næste trin: Indsigelser &amp; Veto →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 4: INDSIGELSER & STATSLIGT VETO -->
+  <article class="step-detail-card" id="step-plan-4" role="tabpanel" aria-labelledby="node-plan-4">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planprocesser · Trin 4</span>
+        <span class="step-badge">Planlovens §§ 27–29 a</span>
+      </div>
+      <h2>Trin 4: Indsigelsesbehandling &amp; Statsligt Veto</h2>
+      <p class="lead">Forvaltningens hvidbog, politisk genovervejelse og statslige myndigheders indsigelsesret med vetovirkning.</p>
+    </div>
+
+    <p>
+      Efter høringsfristens udløb samler kommunen alle indkomne høringssvar i en såkaldt <em>hvidbog</em> eller et <em>indsigelsesnotat</em>. Hvis der er modtaget rettidige indsigelser, må kommunalbestyrelsen <strong>tidligst vedtage lokalplanen endeligt 4 uger efter høringsfristens udløb</strong> jf. § 27, stk. 1.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Statslig indsigelsesret med vetovirkning (§§ 28–29 a)</h3>
+    <p>
+      Kommunens planmonopol er ikke ubegrænset. Visse overordnede myndigheder kan nedlægge formel indsigelse, som har <strong>blokerende virkning</strong>:
+    </p>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>Statslig vetoret (§ 29)</h3>
+        <p>En statslig myndighed (f.eks. Miljøstyrelsen, Kystdirektoratet eller Vejdirektoratet) <em>skal</em> nedlægge indsigelse, hvis planen er i strid med nationale interesser (fx kystnærhed, natur eller råstoffer). Lokalplanen må herefter ikke vedtages, før der er opnået enighed.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Regional indsigelse (§ 29 a)</h3>
+        <p>Regionsrådet kan nedlægge indsigelse mod et lokalplanforslag, hvis det strider mod den regionale udviklingsstrategi eller råstofplanlægningen.</p>
+      </div>
+      <div class="criteria-box">
+        <h3>Nabokommuners indsigelse (§ 29 b)</h3>
+        <p>En nabokommune kan nedlægge indsigelse, hvis planen har væsentlig betydning for nabokommunens udvikling eller medfører væsentlige nabogener.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-plan-3">← Forrige trin: Offentlig Høring</button>
+      <button type="button" class="step-nav-btn" data-next="step-plan-5">Næste trin: Endelig Vedtagelse →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 5: ENDELIG VEDTAGELSE -->
+  <article class="step-detail-card" id="step-plan-5" role="tabpanel" aria-labelledby="node-plan-5">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planprocesser · Trin 5</span>
+        <span class="step-badge">Planlovens § 27, stk. 2 &amp; § 30</span>
+      </div>
+      <h2>Trin 5: Endelig Vedtagelse &amp; Retsvirkninger</h2>
+      <p class="lead">Byrådets endelige politiske vedtagelse, offentliggørelse på Plandata.dk og lokalplanens bindende virkning.</p>
+    </div>
+
+    <p>
+      Kommunalbestyrelsen behandler forvaltningens indsigelsesnotat og træffer endelig beslutning om at vedtage lokalplanen – enten uændret eller med ændringer på baggrund af høringssvarene. Hvis der foretages så væsentlige ændringer, at der reelt er tale om et nyt planforslag, skal planen sendes i fornyet høring jf. § 27, stk. 2.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Hvilke retsvirkninger har den vedtagne lokalplan? (§ 18)</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">Handletvang?</p>
+        <h3>Ingen handlepligt</h3>
+        <p>En lokalplan forpligter som udgangspunkt ikke grundejere til at bygge. Eksisterende lovlig brug kan fortsætte uændret.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">§ 18</p>
+        <h3>Fremtidig bindende virkning</h3>
+        <p>Når planen er offentliggjort jf. § 30, må der ikke retligt eller faktisk etableres forhold, der strider mod planens bestemmelser.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Plandata.dk</p>
+        <h3>Offentliggørelse</h3>
+        <p>Lokalplanens retsvirkninger indtræder på datoen for dens offentlige bekendtgørelse på det digitale planregister.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-plan-4">← Forrige trin: Indsigelsesbehandling</button>
+      <button type="button" class="step-nav-btn" data-next="step-plan-6">Næste trin: Planklagenævnet →</button>
+    </div>
+  </article>
+
+  <!-- TRIN 6: PLANKLAGENÆVNET -->
+  <article class="step-detail-card" id="step-plan-6" role="tabpanel" aria-labelledby="node-plan-6">
+    <div class="step-detail-header">
+      <div class="step-detail-meta">
+        <span class="step-tag">Planprocesser · Trin 6</span>
+        <span class="step-badge">Planlovens § 58, stk. 1, nr. 3 &amp; § 60</span>
+      </div>
+      <h2>Trin 6: Klage til Planklagenævnet</h2>
+      <p class="lead">Borgernes og foreningernes adgang til at få efterprøvet lokalplanens lovlighed ved Planklagenævnet.</p>
+    </div>
+
+    <p>
+      En endeligt vedtaget lokalplan kan påklages til <strong>Planklagenævnet</strong>. Det er dog en helt afgørende forudsætning at forstå, hvad nævnet har kompetence til at tage stilling til: Nævnet efterprøver udelukkende <strong>retlige spørgsmål</strong> jf. § 58, stk. 1, nr. 3.
+    </p>
+
+    <h3 style="margin-top:2.5rem;">Betingelser og regler for klagen</h3>
+    <div class="stat-grid">
+      <div class="stat-box">
+        <p class="stat-num">4 uger</p>
+        <h3>Klagefrist (§ 60)</h3>
+        <p>Klagen skal være indgivet senest <strong>4 uger</strong> fra den dag, lokalplanens endelige vedtagelse er offentliggjort på Plandata.dk.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">Klageportalen</p>
+        <h3>Digital indgivelse</h3>
+        <p>Klagen skal oprettes digitalt via Klageportalen på borger.dk eller virk.dk med MitID stilet til Planklagenævnet.</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-num">900 / 1.800 kr.</p>
+        <h3>Klagegebyr</h3>
+        <p>900 kr. for privatpersoner og 1.800 kr. for virksomheder/foreninger. Gebyret tilbagebetales, hvis der opnås helt eller delvist medhold.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3rem;">Hvad er et »retligt spørgsmål«?</h3>
+    <div class="criteria-grid">
+      <div class="criteria-box">
+        <h3>Hvad Planklagenævnet prøver</h3>
+        <ul>
+          <li>Er procedurereglerne og høringsfristerne overholdt?</li>
+          <li>Er naboer blevet behørigt underrettet jf. § 26?</li>
+          <li>Er officialprincippet (undersøgelsespligten) overholdt?</li>
+          <li>Er der foretaget lovlig SMV-miljøscreening jf. miljøvurderingsloven?</li>
+          <li>Er reglerne for Bilag IV-arter overholdt?</li>
+          <li>Er planens bestemmelser tilstrækkeligt præcise jf. § 15?</li>
+        </ul>
+      </div>
+      <div class="criteria-box">
+        <h3>Hvad nævnet IKKE prøver (Skøn)</h3>
+        <ul>
+          <li>Om byggeriet er pænt eller skæmmer udsigten.</li>
+          <li>Om det er hensigtsmæssigt at placere boliger frem for grønne områder.</li>
+          <li>Om lokalplanen forringer værdien af naboejendommen.</li>
+          <li>Kommunens rent politiske prioriteringer.</li>
+        </ul>
+      </div>
+      <div class="criteria-box">
+        <h3>Konsekvens ved medhold</h3>
+        <p>Hvis Planklagenævnet finder væsentlige retlige mangler, kendes lokalplanen <strong>ugyldig</strong> eller ophæves helt eller delvist. Byggetilladelser udstedt på baggrund af en ugyldig lokalplan mister deres retsgrundlag.</p>
+      </div>
+    </div>
+
+    <div class="step-nav-bar">
+      <button type="button" class="step-nav-btn" data-prev="step-plan-5">← Forrige trin: Endelig Vedtagelse</button>
+      <button type="button" class="step-nav-btn" disabled>Sidste procestrin (Afsluttet)</button>
+    </div>
+  </article>
+
+  <!-- GENVEJE TIL ØVRIGE PROCESSER -->
+  <div class="process-nav-box" style="margin-top:2.5rem;margin-bottom:2rem;">
+    <h3>Gå til de øvrige sagsprocesser</h3>
+    <p>Vælg en proces for at se det fulde interaktive flowchart, paragraffer og klagefrister:</p>
+    <div class="process-nav-links">
+      <a href="miljoevurderingsprocessen.html" class="btn btn-outline">🌿 Miljøvurderingsprocessen (VVM/SMV)</a>
+      <a href="raastofprocesser.html" class="btn btn-outline">🚜 Råstoftilladelsen (Råstofloven)</a>
+      <a href="sagsarkiv.html" class="btn btn-outline">📂 Se sagsanalyser af lokalplaner</a>
+    </div>
+  </div>
 
   <!-- CTA BOKS -->
   <div class="cta-box">
-    <h2>Har du brug for rådgivning?</h2>
+    <h2>Har du brug for rådgivning om en lokalplan?</h2>
     <p>
-      Berører en lokalplan dit nærområde, eller har du brug for hjælp til et fagligt høringssvar eller en klage til Planklagenævnet?
+      Berører en lokalplan dit nærområde, eller har du brug for uafhængig faglig bistand til et veldokumenteret høringssvar eller en klage til Planklagenævnet?
     </p>
     <p style="margin-bottom:0;">
-      <a href="om.html#kontakt">Få miljøfaglig rådgivning →</a> &nbsp;·&nbsp;
-      <a href="sagsarkiv.html">Se sagsanalyser (fx Falkenberg eller Sommariva) →</a>
+      <a href="om.html#kontakt">Få uvildig rådgivning →</a> &nbsp;·&nbsp;
+      <a href="sagsarkiv.html">Se sagsanalyser (fx Falkenberg Jorde eller Sommariva) →</a>
     </p>
   </div>
 
 </main>
 
 <footer>© Vores Miljø</footer>
+
+<!-- INTERAKTIV JAVASCRIPT-MOTOR FOR PLANPROCESSER FLOWCHART -->
+<script>
+(function() {
+  var flowNodes = document.querySelectorAll('.flow-node');
+  var detailCards = document.querySelectorAll('.step-detail-card');
+  var stickyWrap = document.querySelector('.flowchart-sticky-wrap');
+
+  function activateStep(stepId, shouldScroll) {
+    var targetCard = document.getElementById(stepId);
+    if (!targetCard) return;
+
+    detailCards.forEach(function(card) {
+      card.classList.remove('active');
+    });
+    targetCard.classList.add('active');
+
+    flowNodes.forEach(function(node) {
+      var isTarget = node.getAttribute('data-step') === stepId;
+      node.classList.toggle('active', isTarget);
+      node.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+    });
+
+    if (shouldScroll) {
+      var yOffset = stickyWrap ? (stickyWrap.offsetHeight + 20) : 100;
+      var cardTop = targetCard.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({
+        top: Math.max(0, cardTop),
+        behavior: 'smooth'
+      });
+    }
+
+    if (history.replaceState) {
+      history.replaceState(null, '', '#' + stepId);
+    }
+  }
+
+  flowNodes.forEach(function(node) {
+    node.addEventListener('click', function() {
+      var stepId = this.getAttribute('data-step');
+      activateStep(stepId, true);
+    });
+  });
+
+  document.querySelectorAll('.step-nav-btn[data-next]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var nextStep = this.getAttribute('data-next');
+      activateStep(nextStep, true);
+    });
+  });
+
+  document.querySelectorAll('.step-nav-btn[data-prev]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var prevStep = this.getAttribute('data-prev');
+      activateStep(prevStep, true);
+    });
+  });
+
+  var hash = window.location.hash.replace('#', '');
+  if (hash) {
+    var hashMapping = {
+      'igangsaetning': 'step-plan-1',
+      'forslag': 'step-plan-2',
+      'hoering': 'step-plan-3',
+      'indsigelser': 'step-plan-4',
+      'vedtagelse': 'step-plan-5',
+      'klage': 'step-plan-6'
+    };
+    var targetStep = hashMapping[hash] || hash;
+    if (document.getElementById(targetStep)) {
+      activateStep(targetStep, true);
+    }
+  }
+})();
+</script>
+
 </body>
 </html>

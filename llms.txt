@@ -10,7 +10,7 @@ Tilgængelig direkte på https://voresmiljo.dk
 - [Råstofprocesser](https://voresmiljo.dk/raastofprocesser.html): Guide til råstoftilladelser og Råstofloven
 - [VVM Flowchart](https://voresmiljo.dk/vejviser.html): Interaktivt flowchart og procesdiagram for miljøvurderingsloven
 - [Sagsarkiv](https://voresmiljo.dk/sagsarkiv.html): Faglige analyser af konkrete afgørelser
-- [Miljøfaglig rådgivning](https://voresmiljo.dk/om.html): Uvildig rådgivning, sagsbelysning og kontakt
+- [Kontakt](https://voresmiljo.dk/om.html): Uvildig rådgivning, sagsbelysning og kontakt
 
 ## Sagsanalyser
 - [Sanderødgård Grusgrav](https://voresmiljo.dk/sag-sanderoedgaard.html): Analyse af screening/tilladelsesgrundlag, bl.a. grundvand, kontinuitet og retlig belysning
