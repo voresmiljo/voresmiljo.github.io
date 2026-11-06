@@ -817,6 +817,18 @@ h3 {
   margin-top: 1.25rem;
 }
 
+.process-nav-links .btn {
+  background: #ffffff;
+  color: var(--earth);
+  border: 1px solid rgba(74, 103, 65, 0.35);
+}
+
+.process-nav-links .btn:hover {
+  background: var(--earth);
+  color: var(--sand);
+  border-color: var(--earth);
+}
+
 .phase-section {
   margin-bottom: 5rem;
   padding-bottom: 3rem;
