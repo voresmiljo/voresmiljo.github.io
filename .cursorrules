@@ -6,6 +6,7 @@
 - **Dependencies / Build:** INGEN npm, node_modules, bundlers eller build-steps.
 - **CSS-frameworks:** **BRUG IKKE TAILWIND CSS** eller andre CSS-biblioteker.
 - **Sprog:** Dansk (`lang="da"`), professionel, saglig og miljøfaglig tone.
+- **Tone & Personlighed:** Siden drives personligt af én uvildig rådgiver. Brug ALDRIG flertalsformer som "vi", "os" eller "vores" (bortset fra egennavnet "Vores Miljø"). Formuler sætninger personligt/fagligt (fx "Rådgivningen henvender sig til...", "Der ydes...", "Hjælper med...", "Formålet er...").
 
 ## 2. Designsystem & Styling
 - **Hovedstylesheet:** Alt fælles design styles via `site.css`.
